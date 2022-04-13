@@ -1,0 +1,22 @@
+{
+  "name": "ptudw-19tn-nhom13",
+  "version": "1.0.0",
+  "description": "Landing page for Covid Web",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxminlevel/PTUDW-19TN-Nhom13.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxminlevel/PTUDW-19TN-Nhom13/issues"
+  },
+  "homepage": "https://github.com/maxminlevel/PTUDW-19TN-Nhom13#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
