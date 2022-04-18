@@ -1,0 +1,108 @@
+.heading-primary {
+    color: #3786be;
+    text-transform: capitalize;
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  
+  ::placeholder {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #999;
+  }
+  
+  .text-devide {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .text-help {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #777;
+  }
+  
+  .u-center-text {
+    text-align: center !important;
+  }
+  
+  .u-mb-l {
+    margin-bottom: 8rem;
+  }
+  
+  .u-mb-l {
+    margin-bottom: 4rem;
+  }
+  
+  .u-mb-s {
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    transition: all 0.2s;
+    border: none;
+    transition: all 0.2s;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn--primary {
+    background-color: #3786be;
+    color: #fff;
+  }
+  
+  .btn-link:link,
+  .btn-link:visited {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #777;
+    text-transform: capitalize;
+    transition: all 0.2s;
+  }
+  
+  .btn-icon:link,
+  .btn-icon:visited {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+  }
+  
+  .btn-icon:link img,
+  .btn-icon:visited img {
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .btn-icon:link:hover,
+  .btn-icon:visited:hover {
+    transform: scale(1.25) translateY(-3px);
+  }
+  
+  .btn-icon:link:active,
+  .btn-icon:visited:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  

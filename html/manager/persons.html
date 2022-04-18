@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../css/admin/persons.css" />
+    <title>Persons</title>
+  </head>
+  <body>
+    <div class="a_main">
+      <div class="a_nav" id="a_nav"></div>
+      <div class="a_container">
+        <div class="a_sidebar" id="a_sidebar"></div>
+        <div class="a_content">
+          <div class="a_content_header">
+            <div class="a_content_header_title heading-primary">User</div>
+            <div class="btn btn--primary">New user</div>
+            <div class="btn btn--primary">Import file</div>
+          </div>
+          <div class="s_filter"></div>
+          <table class="s_table"></table>
+          <tr>
+            <th>
+              <span>
+                ID
+                <button><i class="fa-solid fa-chevron-down"></i></button>
+              </span>
+            </th>
+          </tr>
+          <div class="s_paging"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#a_nav").load("../shared/admin/navbar.html");
+        $("#a_sidebar").load("../shared/admin/sidebar.html");
+      });
+    </script>
+  </body>
+</html>
