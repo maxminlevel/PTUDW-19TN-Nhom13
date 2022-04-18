@@ -4,62 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Covid - Login</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Covide page</title>
   </head>
   <body>
-    <div class="login">
-      <div class="login__img"></div>
-      <div class="login__box">
-        <img src="img/logo.png" alt="Logo" class="logo" />
-        <h1 class="heading-primary u-center-text">Covid website</h1>
-        <form class="form">
-          <input
-            type="email"
-            autofocus
-            class="form__contact"
-            required
-            placeholder="Email"
-          />
-          <input
-            type="password"
-            class="form__contact"
-            required
-            placeholder="Password"
-          />
-          <a href="#" class="btn-link u-mb-s">Forgot password?</a>
-          <input type="submit" value="Login" class="btn btn--primary" />
-        </form>
-        <span class="text-devide">Or</span>
-        <ul class="social-list">
-          <li>
-            <a href="#" class="btn-icon"
-              ><img src="img/logo-facebook.jpg" alt="Logo Facebook"
-            /></a>
-          </li>
-          <li>
-            <a href="#" class="btn-icon"
-              ><img src="img/logo-google.png" alt="Logo Google"
-            /></a>
-          </li>
-          <li>
-            <a href="#" class="btn-icon"
-              ><img src="img/logo-twitter.png" alt="Logo Twitter"
-            /></a>
-          </li>
+    <ul>
+      <li><a href="./html/login.html" class="href">Login</a></li>
+      <li><a href="./html/signup.html" class="href">Signup</a></li>
+      <li>
+        Customer
+        <ul>
+          <li><a href="./html/customer/packs.html">Packs</a></li>
+          <li><a href="./html/customer/pack.html">Pack</a></li>
+          <li><a href="./html/customer/products.html">Producs</a></li>
+          <li><a href="./html/customer/product.html">Product</a></li>
+          <li><a href="./html/customer/cart.html">Cart</a></li>
+          <li><a href="./html/customer/profile.html">Profile</a></li>
+          <li><a href="./html/customer/wallet.html">Wallet</a></li>
+          <li><a href="./html/customer/history/activity.html">Activity</a></li>
+          <li><a href="./html/customer/history/managed.html">Managed</a></li>
         </ul>
-        <p class="text-help">
-          Don't have an account? <a href="#" class="btn-link">Sign up</a>
-        </p>
-      </div>
-    </div>
+      </li>
+      <li>
+        Admin
+        <ul>
+          <li><a href="./html/admin/persons.html">Persons</a></li>
+          <li><a href="./html/admin/products.html">Products</a></li>
+          <li><a href="./html/admin/packs.html">Packs</a></li>
+          <li><a href="./html/admin/pack.html">Pack</a></li>
+          <li><a href="./html/admin/money.html">Money</a></li>
+          <li><a href="./html/admin/statistic.html">Statistic</a></li>
+        </ul>
+      </li>
+      <li>
+        Manager
+        <ul>
+          <li><a href="./html/manager/users.html">Users</a></li>
+          <li><a href="./html/manager/location.html">Location</a></li>
+          <li><a href="./html/manager/history.html">History</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Example load innerHtml
+  Step 1: Insert jquery min js
+  Step 2: Create null div with id or loading div
+  Step 3: load html -->
+
+    <!-- <div id="test"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $('#test').load('./html/admin/persons.html');
+    })
+  </script> -->
   </body>
 </html>
