@@ -1,0 +1,62 @@
+// For button style
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  text-decoration: none;
+  font-size: $default-font-size;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  transition: all 0.2s;
+  border: none;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--primary {
+    background-color: $color-accent;
+    color: $color-white;
+  }
+}
+
+.btn-link:link,
+.btn-link:visited {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color-grey-dark;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+.btn-icon:link,
+.btn-icon:visited {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-shadow: 0 0.8rem 1.2rem rgba($color: $color-black, $alpha: 0.2);
+  transition: all 0.2s;
+
+  img {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  &:hover {
+    transform: scale(1.25) translateY(-3px);
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+}
