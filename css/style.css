@@ -51,6 +51,12 @@ body {
   font-size: 2rem;
   font-weight: 400; }
 
+.heading-tertiary {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700; }
+
 ::placeholder {
   font-size: 1.6rem;
   font-weight: 700;
@@ -66,6 +72,10 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: #777; }
+
+.phone-number {
+  color: #FF1818;
+  font-weight: 700; }
 
 .u-center-text {
   text-align: center !important; }
@@ -331,8 +341,8 @@ body {
           margin: 0 1rem; }
 
 .main {
-  background-color: #e5e5e5;
-  height: 70vh; }
+  height: 68vh;
+  background-color: #e5e5e5; }
   .main .cart {
     padding: 0 4rem; }
 
@@ -354,3 +364,27 @@ body {
       flex: 2; }
     .header__container .form__contact {
       margin-bottom: 0; }
+
+.footer {
+  position: relative;
+  height: 20vh;
+  background-color: #e5e5e5; }
+  .footer__container {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    border-top: 2px solid #c4c4c4;
+    column-gap: 3rem; }
+  .footer .introduction,
+  .footer .contact {
+    list-style: none;
+    font-size: 1.2rem; }
+    .footer .introduction li,
+    .footer .contact li {
+      font-weight: 500;
+      margin-top: 0.6rem; }
+      .footer .introduction li a,
+      .footer .contact li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500; }
