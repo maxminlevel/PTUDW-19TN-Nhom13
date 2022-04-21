@@ -137,6 +137,19 @@ body {
     outline-color: #3786be;
     margin-bottom: 1.2rem; }
 
+.m__nav {
+  display: flex;
+  background-color: #e4f4ff;
+  width: 100vh; }
+  .m__nav__logo a {
+    text-decoration: none;
+    font-size: 1.5rem; }
+  .m__nav__info {
+    display: flex; }
+    .m__nav__info img {
+      width: 48px;
+      border-radius: 3rem; }
+
 .login {
   display: flex;
   height: 100vh; }
@@ -175,3 +188,17 @@ body {
         margin-bottom: 1rem; }
         .login__box .social-list li:nth-child(2) {
           margin: 0 1rem; }
+
+.m__btn--link {
+  color: black; }
+
+.m__persons {
+  display: flex;
+  height: 100vh; }
+  .m__persons__img {
+    flex: 1;
+    background-size: cover;
+    background-image: linear-gradient(rgba(55, 134, 190, 0.75), rgba(55, 134, 190, 0.75)), url("../../images/bg-login.png");
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in; }

@@ -1,0 +1,26 @@
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+.m {
+  &__nav {
+    display: flex;
+    background-color: #e4f4ff;
+    width: 100vh;
+
+    &__logo {
+      a {
+        text-decoration: none;
+        font-size: 1.5rem;
+      }
+    }
+    &__info {
+      display: flex;
+      &__name {
+      }
+      &__role {
+      }
+      img {
+        width: 48px;
+        border-radius: 3rem;
+      }
+    }
+  }
+}
