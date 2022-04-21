@@ -9,9 +9,11 @@
 
 @import 'components/button';
 @import 'components/form';
-@import 'components/m_navbar';
+
 @import 'pages/login';
 
 @import 'pages/manager/shared';
+@import 'components/m_navbar';
+@import 'components/m_sidebar';
 @import 'pages/manager/persons';
 // @import "../node_modules/bootstrap/scss/bootstrap.scss"

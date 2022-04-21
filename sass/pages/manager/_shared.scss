@@ -1,7 +1,31 @@
+@import '../../components/button';
 .m {
   &__btn {
-    &--link {
+    &-link {
+      @extend .btn;
+      font-size: 1rem;
+      padding: 0.1rem 0.5rem;
+      border-top-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      background-color: none;
       color: black;
     }
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+  &__sidebar {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    flex: 2 auto;
+    width: 15rem;
+    height: 100vh;
+    position: sticky;
+    background-color: $m-color-primary;
+  }
+  &__content {
+    padding: 1rem;
   }
 }
