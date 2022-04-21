@@ -17,3 +17,8 @@ body {
   image-rendering: optimizeSpeed;
   box-sizing: border-box;
 }
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+}

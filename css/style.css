@@ -7,13 +7,17 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 100%; }
+  font-size: 62.5%; }
 
 body {
   overflow: hidden;
   text-rendering: optimizeSpeed;
   image-rendering: optimizeSpeed;
   box-sizing: border-box; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
 
 @keyframes moveInBottom {
   0% {
@@ -73,53 +77,71 @@ body {
 .btn {
   display: inline-block;
   text-transform: uppercase;
-  padding: 1.5rem 4rem;
   text-decoration: none;
   font-size: 1.6rem;
-  border-top-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
   transition: all 0.2s;
   border: none;
   transition: all 0.2s; }
-  .btn:hover {
+  .btn:hover:not(.btn--accent-dark) {
     cursor: pointer;
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:active {
+  .btn:active:not(.btn--accent-dark) {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--primary {
+    padding: 1.5rem 4rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
     background-color: #3786be;
     color: #fff; }
+  .btn--primary-dark {
+    background-color: #2579f2;
+    color: #fff; }
+  .btn--accent-dark {
+    height: inherit;
+    background-color: #0A59CC;
+    color: #fff;
+    padding: 2rem 3rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
 
-.btn-link:link,
-.btn-link:visited {
+.btn-link:link, .btn-link:visited {
   display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #777;
-  text-transform: capitalize;
   transition: all 0.2s; }
 
-.btn-icon:link,
-.btn-icon:visited {
+.btn-link--grey {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #777;
+  text-transform: capitalize; }
+
+.btn-link--white {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none; }
+
+.btn-icon:link, .btn-icon:visited {
   display: inline-block;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.2);
-  transition: all 0.2s; }
-  .btn-icon:link img,
-  .btn-icon:visited img {
-    padding: 1rem;
-    width: 100%; }
-  .btn-icon:link:hover,
-  .btn-icon:visited:hover {
-    transform: scale(1.25) translateY(-3px); }
-  .btn-icon:link:active,
-  .btn-icon:visited:active {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  transition: all 0.2s;
+  overflow: hidden; }
+
+.btn-icon img {
+  width: 100%;
+  image-rendering: optimizeSpeed;
+  padding: 1rem; }
+
+.btn-icon:hover {
+  transform: scale(1.25) translateY(-3px); }
+
+.btn-icon:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .form {
   width: 70%;
@@ -130,12 +152,55 @@ body {
   .form__contact {
     display: block;
     width: 100%;
+    font-size: 1.8rem;
+    font-weight: 300;
     height: 4.5rem;
     border: 1px solid #777;
     border-radius: 5px;
     padding: 0.2rem 0.6rem;
     outline-color: #3786be;
     margin-bottom: 1.2rem; }
+
+.search-bar {
+  display: flex;
+  justify-content: center; }
+  .search-bar .form__contact {
+    width: 80%;
+    height: 4.5rem;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .search-bar__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 4.5rem; }
+    .search-bar__icon .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem; }
+
+.infor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 2rem; }
+  .infor__avatar {
+    width: 5rem;
+    height: 5rem;
+    clip-path: circle(50% at 50% 50%);
+    object-fit: cover; }
+  .infor__text {
+    display: flex;
+    flex-direction: column; }
+    .infor__text a {
+      text-align: right; }
+  .infor__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff; }
 
 .login {
   display: flex;
@@ -175,3 +240,22 @@ body {
         margin-bottom: 1rem; }
         .login__box .social-list li:nth-child(2) {
           margin: 0 1rem; }
+
+.header {
+  background-color: #2579f2;
+  height: 8rem; }
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0; }
+    .header__container .logo {
+      height: 6rem;
+      width: 6rem;
+      flex: 1; }
+    .header__container .search-bar {
+      flex: 7; }
+    .header__container .infor {
+      flex: 2; }
+    .header__container .form__contact {
+      margin-bottom: 0; }
