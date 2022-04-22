@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/maxminlevel/PTUDW-19TN-Nhom13#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "jquery": "^3.6.0",
     "node-sass": "^7.0.1"
   }
