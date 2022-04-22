@@ -1,13 +1,22 @@
-@import "abstracts/function";
-@import "abstracts/mixin";
-@import "abstracts/variables";
+@import 'abstracts/function';
+@import 'abstracts/mixin';
+@import 'abstracts/variables';
 
-@import "base/base";
-@import "base/animations";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/utilities';
 
-@import "components/button";
-@import "components/form";
+@import 'components/button';
+@import 'components/form';
+@import 'components/search-bar';
+@import 'components/infor';
+@import 'components/breadcrumb';
+@import 'components/table';
+@import 'components/polygon-icon';
 
-@import "pages/login";
+@import 'pages/login';
+@import 'pages/c-product';
+
+@import 'layouts/header';
+@import 'layouts/footer';

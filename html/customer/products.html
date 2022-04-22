@@ -1,14 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
-<title>Products</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../../images/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>Products</title>
+    </head>
+    <body>
+        <div>
+            <header class="header">
+                <div class="row">
+                    <div class="header__container">
+                        <a href="#">
+                            <img
+                                src="../../images/logo.png"
+                                alt="Logo website"
+                                class="logo"
+                            />
+                        </a>
+                        <div class="search-bar">
+                            <input
+                                type="text"
+                                class="form__contact"
+                                placeholder="Tìm kiếm sản phẩm"
+                            />
+                            <div class="search-bar__icon">
+                                <div class="btn btn--accent-dark">
+                                    <i
+                                        class="fa-solid fa-magnifying-glass search-icon"
+                                    ></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infor">
+                            <img
+                                src="../../images/avatar.jpg"
+                                alt="Avatar person"
+                                class="infor__avatar"
+                            />
+                            <div class="infor__text">
+                                <p class="infor__name">Trịnh Nguyên Hưng</p>
+                                <a href="#" class="btn-link btn-link--white"
+                                    >Đăng xuất</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</body>
+            <main class="main">
+                <form>
+                    <div class="filter">
+                        <div class="dropbox__container">
+                            <label for="filter__sort">Sắp xếp</label>
+                            <select
+                                class="dropbox__inner"
+                                name="Sắp xếp"
+                                id="filter__sort"
+                            >
+                                <option value="default">Mặc định</option>
+                                <option value="nameAZ">Tên từ A đến Z</option>
+                                <option value="nameZA">Tên từ Z đến A</option>
+                            </select>
+                        </div>
+                        <div class="dropbox__container">
+                            <label for="filter__classify">Phân loại</label>
+                            <select
+                                class="dropbox__inner"
+                                name="Phân loại"
+                                id="filter__classify"
+                            >
+                                <option value="default">Tất cả</option>
+                                <option value="day pack">Gói ngày</option>
+                                <option value="week pack">Gói tuần</option>
+                                <option value="month pack">Gói tháng</option>
+                            </select>
+                        </div>
+                        <div class="dropbox__container">
+                            <label for="filter__type">Xem dưới dạng</label>
+                            <select
+                                class="dropbox__inner"
+                                name="Xem dưới dụng"
+                                id="filter__type"
+                            >
+                                <option value="by package">Theo gói</option>
+                                <option value="by product">
+                                    Theo sản phẩm
+                                </option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="submit" class="button__filter">
+                                <i class="fa-solid fa-filter"></i>
+                                <div>Lọc</div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="main__content">
+                    <div class="list__product">
+                        <div class="item__product">
+                            <a class="image__product" tabindex="-1" href="#">
+                                <img
+                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                />
+                            </a>
+                            <a class="name__product" href="#"
+                                >Gói nhu yếu phẩm 1</a
+                            >
+                            <div class="type__product">
+                                <div>Gói tuần</div>
+                            </div>
+                        </div>
+                        <div class="item__product">
+                            <a class="image__product" tabindex="-1" href="#">
+                                <img
+                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                />
+                            </a>
+                            <a class="name__product" href="#"
+                                >Gói nhu yếu phẩm 1</a
+                            >
+                            <div class="type__product">
+                                <div>Gói tuần</div>
+                            </div>
+                        </div>
+                        <div class="item__product">
+                            <a class="image__product" tabindex="-1" href="#">
+                                <img
+                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                />
+                            </a>
+                            <a class="name__product" href="#"
+                                >Gói nhu yếu phẩm 1</a
+                            >
+                            <div class="type__product">
+                                <div>Gói tuần</div>
+                            </div>
+                        </div>
+                        <div class="item__product">
+                            <a class="image__product" tabindex="-1" href="#">
+                                <img
+                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                />
+                            </a>
+                            <a class="name__product" href="#"
+                                >Gói nhu yếu phẩm 1</a
+                            >
+                            <div class="type__product">
+                                <div>Gói tuần</div>
+                            </div>
+                        </div>
+                        <div class="item__product">
+                            <a class="image__product" tabindex="-1" href="#">
+                                <img
+                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                />
+                            </a>
+                            <a class="name__product" href="#"
+                                >Gói nhu yếu phẩm 1</a
+                            >
+                            <div class="type__product">
+                                <div>Gói tuần</div>
+                            </div>
+                        </div>
+                        <div class="item__product">
+                            <a class="image__product" tabindex="-1" href="#">
+                                <img
+                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                />
+                            </a>
+                            <a class="name__product" href="#"
+                                >Gói nhu yếu phẩm 1</a
+                            >
+                            <div class="type__product">
+                                <div>Gói tuần</div>
+                            </div>
+                        </div>
+                        <div class="item__product">
+                            <a class="image__product" tabindex="-1" href="#">
+                                <img
+                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                />
+                            </a>
+                            <a class="name__product" href="#"
+                                >Gói nhu yếu phẩm 1</a
+                            >
+                            <div class="type__product">
+                                <div>Gói tuần</div>
+                            </div>
+                        </div>
+                        <div class="item__product">
+                            <a class="image__product" tabindex="-1" href="#">
+                                <img
+                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                />
+                            </a>
+                            <a class="name__product" href="#"
+                                >Gói nhu yếu phẩm 1</a
+                            >
+                            <div class="type__product">
+                                <div>Gói tuần</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="row">
+                    <div class="footer__container">
+                        <ul class="introduction">
+                            <h3 class="heading-tertiary">Giới thiệu</h3>
+                            <li><a href="#">Giới thiệu Covid Website</a></li>
+                            <li><a href="#">Điều khoản dịch vụ</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                        <ul class="contact">
+                            <h3 class="heading-tertiary">Liên hệ</h3>
+                            <li>
+                                <a href="#">Hotline</a>
+                                <span class="phone-number">1900 000 000</span>
+                            </li>
+                            <li>
+                                <span>(Các ngày trong tuần từ 8h đến 24h)</span>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    >Email hỗ trợ: hotro@covidwebsite.vn</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </body>
 </html>
