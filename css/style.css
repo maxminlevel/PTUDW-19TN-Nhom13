@@ -10,7 +10,6 @@ html {
   font-size: 62.5%; }
 
 body {
-  overflow: hidden;
   text-rendering: optimizeSpeed;
   image-rendering: optimizeSpeed;
   box-sizing: border-box; }
@@ -80,6 +79,9 @@ body {
 .u-center-text {
   text-align: center !important; }
 
+.u-bold-text {
+  font-weight: 700; }
+
 .u-mb-l {
   margin-bottom: 8rem; }
 
@@ -97,22 +99,32 @@ body {
   transition: all 0.2s;
   border: none;
   transition: all 0.2s; }
-  .btn:hover:not(.btn--accent-dark) {
-    cursor: pointer;
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:active:not(.btn--accent-dark) {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--primary {
     padding: 1.5rem 4rem;
     border-top-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     background-color: #3786be;
     color: #fff; }
+    .btn--primary:hover {
+      cursor: pointer;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn--primary:active {
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--primary-dark {
     background-color: #2579f2;
     color: #fff; }
+    .btn--primary-dark:hover {
+      cursor: pointer;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn--primary-dark:active {
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    background-color: #fff;
+    color: #000; }
   .btn--accent-dark {
     height: inherit;
     background-color: #0A59CC;
@@ -120,6 +132,9 @@ body {
     padding: 2rem 3rem;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
+    .btn--accent-dark:hover {
+      opacity: 0.8;
+      cursor: pointer; }
 
 .btn-link:link, .btn-link:visited {
   display: inline-block;
@@ -218,11 +233,11 @@ body {
     color: #fff; }
 
 .breadcrumb {
-  padding: 1rem 1.6rem;
+  padding: 1rem 1.4rem;
   list-style: none; }
   .breadcrumb__item {
     display: inline;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 500; }
     .breadcrumb__item a {
       color: #0A59CC;
@@ -271,9 +286,12 @@ body {
         margin-right: 9rem; }
       .table__item li:nth-child(4) {
         margin-left: 5rem; }
+      .table__item li a,
       .table__item li span {
         color: #000;
-        display: inline-block; }
+        display: inline-block;
+        text-decoration: none; }
+        .table__item li a:nth-child(3),
         .table__item li span:nth-child(3) {
           padding-left: 8rem; }
   .table .amount {
@@ -340,8 +358,65 @@ body {
         .login__box .social-list li:nth-child(2) {
           margin: 0 1rem; }
 
+.c-profile {
+  padding: 2rem;
+  display: flex;
+  column-gap: 2rem; }
+  .c-profile__list, .c-profile__infor {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #c4c4c4; }
+  .c-profile__infor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 1.4rem;
+    font-size: 1.4rem; }
+  .c-profile__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none; }
+    .c-profile__list .selected {
+      border-left: 5px solid #2579f2; }
+    .c-profile__list li {
+      display: block;
+      padding: 0.8rem 0rem 0.8rem 1.4rem;
+      max-width: 16rem; }
+      .c-profile__list li:not(:last-child) {
+        border-bottom: 1px solid #c4c4c4; }
+      .c-profile__list li a {
+        display: flex;
+        align-content: center;
+        font-size: 1.4rem;
+        text-transform: none; }
+      .c-profile__list li .a--center {
+        align-items: center; }
+  .c-profile__icon {
+    font-size: 1.4rem;
+    min-width: 2.4rem; }
+  .c-profile__table {
+    color: #000; }
+    .c-profile__table tr:nth-child(odd) td {
+      padding-top: 1rem; }
+    .c-profile__table td {
+      max-width: 2rem; }
+    .c-profile__table .social-list {
+      list-style-type: none; }
+      .c-profile__table .social-list li {
+        display: inline-block;
+        margin-bottom: 1rem; }
+        .c-profile__table .social-list li:nth-child(2) {
+          margin: 0 1rem; }
+  .c-profile__title {
+    color: #000;
+    font-weight: 700; }
+
 .main {
-  height: 68vh;
+  height: 80vh;
+  padding-bottom: 4rem;
   background-color: #e5e5e5; }
   .main .cart {
     padding: 0 4rem; }
@@ -367,7 +442,7 @@ body {
 
 .footer {
   position: relative;
-  height: 20vh;
+  height: fit-content;
   background-color: #e5e5e5; }
   .footer__container {
     display: flex;

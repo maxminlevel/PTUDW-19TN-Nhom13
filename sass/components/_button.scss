@@ -8,29 +8,28 @@
   border: none;
   transition: all 0.2s;
 
-  &:hover:not(&--accent-dark) {
-    cursor: pointer;
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-  }
-
-  &:active:not(&--accent-dark) {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-  }
-
   &--primary {
     padding: 1.5rem 4rem;
     border-top-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     background-color: $color-accent;
     color: $color-white;
+
+    @include hoverBtnUp;
   }
 
   &--primary-dark {
     background-color: $color-primary-dark;
     color: $color-white;
+
+    @include hoverBtnUp;
   }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-black;
+  }
+
   &--accent-dark {
     height: inherit;
     background-color: $color-accent-dark;
@@ -38,6 +37,10 @@
     padding: 2rem 3rem;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
   }
 }
 

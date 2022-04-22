@@ -50,9 +50,11 @@
       &:nth-child(4) {
         margin-left: 5rem;
       }
+      & a,
       & span {
         color: $color-black;
         display: inline-block;
+        text-decoration: none;
         &:nth-child(3) {
           padding-left: 8rem;
         }
