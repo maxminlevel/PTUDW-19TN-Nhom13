@@ -1,0 +1,77 @@
+.table {
+  width: 92%;
+  margin: 1rem auto;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 1.2rem;
+  &__titles,
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: $color-white;
+    & li {
+      position: relative;
+      display: inline-block;
+    }
+  }
+
+  &__titles {
+    border-radius: 4px;
+    margin-bottom: 0.6rem;
+    & li {
+      padding: 1rem;
+      &:nth-child(4) {
+        margin-right: 5rem;
+      }
+      font-size: 1.4rem;
+      & span {
+        font-weight: 700;
+        color: $color-black;
+      }
+    }
+  }
+
+  &__item {
+    border-radius: 4px;
+    &:not(:last-child) {
+      margin-bottom: 0.2rem;
+    }
+    & li {
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+      &:nth-child(1) {
+        margin-right: 4rem;
+      }
+      &:nth-child(2) {
+        margin-right: 9rem;
+      }
+      &:nth-child(4) {
+        margin-left: 5rem;
+      }
+      & span {
+        color: $color-black;
+        display: inline-block;
+        &:nth-child(3) {
+          padding-left: 8rem;
+        }
+      }
+    }
+  }
+
+  .amount {
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+    .btn--primary-dark {
+      padding: 0.3rem 0.5rem;
+      border-radius: 0.4rem;
+    }
+    &__value {
+      width: 2.5rem;
+      height: 2.5rem;
+      text-align: center;
+    }
+  }
+}

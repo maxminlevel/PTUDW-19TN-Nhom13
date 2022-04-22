@@ -1,0 +1,14 @@
+.polygon-icon {
+  display: inline-block;
+  position: absolute;
+  top: 18%;
+  right: -10%;
+  &::before {
+    position: absolute;
+    top: 65%;
+    left: 1%;
+    display: block;
+    content: "\0394";
+    transform: rotate(180deg);
+  }
+}

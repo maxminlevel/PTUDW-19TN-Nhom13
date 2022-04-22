@@ -1,0 +1,27 @@
+.infor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 2rem;
+
+  &__avatar {
+    width: 5rem;
+    height: 5rem;
+    clip-path: circle(50% at 50% 50%);
+    object-fit: cover;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    a {
+      text-align: right;
+    }
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+  position: relative;
+  height: 20vh;
+  background-color: $color-grey;
+
+  &__container {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    border-top: 2px solid #c4c4c4;
+    column-gap: 3rem;
+  }
+
+  .introduction,
+  .contact {
+    list-style: none;
+    font-size: 1.2rem;
+    li {
+      font-weight: 500;
+      margin-top: 0.6rem;
+      a {
+        text-decoration: none;
+        color: $color-black;
+        font-weight: 500;
+      }
+    }
+  }
+}

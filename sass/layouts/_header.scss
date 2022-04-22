@@ -1,1 +1,26 @@
 // File for header style
+.header {
+  background-color: $color-primary-dark;
+  height: 8rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    .logo {
+      height: 6rem;
+      width: 6rem;
+      flex: 1;
+    }
+    .search-bar {
+      flex: 7;
+    }
+    .infor {
+      flex: 2;
+    }
+    .form__contact {
+      margin-bottom: 0;
+    }
+  }
+}
