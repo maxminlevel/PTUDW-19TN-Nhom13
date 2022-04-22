@@ -1,0 +1,19 @@
+.m {
+  &__persons {
+    display: flex;
+    height: 100vh;
+
+    &__img {
+      flex: 1;
+      background-size: cover;
+      background-image: linear-gradient(
+          rgba($color-accent, 0.75),
+          rgba($color-accent, 0.75)
+        ),
+        url('../../images/bg-login.png');
+      animation-name: fadeIn;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-in;
+    }
+  }
+}
