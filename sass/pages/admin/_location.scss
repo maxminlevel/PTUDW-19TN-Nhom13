@@ -1,9 +1,13 @@
 // Edit for customer-cart layout
+.header
+{
+    background-color: $color-primary;
+}
 .main {
     height: 68vh;
-    background-color: $color-grey;
+    
   
-    .cart {
+    .locations {
       padding: 0 4rem;
     }
   }
