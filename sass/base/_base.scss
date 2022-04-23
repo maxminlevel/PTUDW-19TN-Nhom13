@@ -12,8 +12,12 @@ html {
 }
 
 body {
-  overflow: hidden;
   text-rendering: optimizeSpeed;
   image-rendering: optimizeSpeed;
   box-sizing: border-box;
+}
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
 }

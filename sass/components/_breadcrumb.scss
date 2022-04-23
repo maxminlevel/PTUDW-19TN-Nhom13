@@ -1,0 +1,19 @@
+.breadcrumb {
+  padding: 1rem 1.4rem;
+  list-style: none;
+  &__item {
+    display: inline;
+    font-size: 1.4rem;
+    font-weight: 500;
+    & a {
+      color: $color-accent-dark;
+      text-decoration: none;
+    }
+  }
+
+  &__item + &__item::before {
+    padding: 0.8rem;
+    color: black;
+    content: "\003e";
+  }
+}
