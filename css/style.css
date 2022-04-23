@@ -357,6 +357,119 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 114rem; }
+  .main h1 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 0.5rem; }
+  .main .filter {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem; }
+    .main .filter .dropbox__container {
+      position: relative;
+      margin-right: 4rem; }
+      .main .filter .dropbox__container .dropbox__inner {
+        width: 16rem;
+        height: 3rem;
+        padding-bottom: 0;
+        padding-top: 1.25rem;
+        padding-left: 0.75rem;
+        padding-right: 3rem;
+        border-color: #d1d5db;
+        border-radius: 0.375rem;
+        border-width: 1px;
+        display: block;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        text-transform: none; }
+      .main .filter .dropbox__container .dropbox__inner:hover {
+        border-color: #2579f2; }
+      .main .filter .dropbox__container label {
+        transform: translateX(2px) translateY(-0.5rem);
+        transform-origin: top left;
+        transition: transform 0.125s ease-out;
+        left: 1px;
+        padding: 0.75rem 1rem;
+        pointer-events: none;
+        position: absolute;
+        top: 1px; }
+    .main .filter .button__filter {
+      height: 4.25rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      align-items: center;
+      display: flex;
+      background-color: #2579f2;
+      border-color: transparent;
+      border-width: 1px;
+      color: #fff;
+      border-radius: 0.375rem;
+      cursor: pointer; }
+      .main .filter .button__filter div {
+        margin-left: 0.5rem;
+        font-weight: 500; }
+  .main .main__content {
+    margin-top: 1.25rem;
+    padding-bottom: 1rem;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column; }
+    .main .main__content .product__list {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 3rem;
+      column-gap: 5rem; }
+      .main .main__content .product__list .product__item {
+        display: relative;
+        flex-basis: calc(25% - 5rem * 3 / 4);
+        background-color: #fff;
+        border-width: 1px;
+        border-radius: 1rem;
+        padding-bottom: 1rem; }
+        .main .main__content .product__list .product__item .product__image {
+          display: inline-block position;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 16rem; }
+          .main .main__content .product__list .product__item .product__image img {
+            object-fit: fill;
+            max-width: 100%; }
+        .main .main__content .product__list .product__item .product__name {
+          margin-top: 0.75rem;
+          padding-left: 0.75rem;
+          color: #000;
+          font-size: 1.5rem;
+          text-decoration: inherit;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          min-height: 1.5rem;
+          max-height: 3rem; }
+          .main .main__content .product__list .product__item .product__name:hover {
+            text-decoration-line: underline; }
+        .main .main__content .product__list .product__item .product__type {
+          padding-right: 0.75rem;
+          text-align: end;
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: #2579f2;
+          cursor: default; }
+
+body {
+  background-color: #e5e5e5; }
+
+.main {
+  height: 100%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 114rem; }
+  .main h1 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 0.5rem; }
   .main .filter {
     display: flex;
     flex-wrap: wrap;
@@ -450,10 +563,116 @@ body {
           color: #2579f2;
           cursor: default; }
 
+.product__main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 2rem 3rem 2rem;
+  width: 114rem;
+  background-color: #fff;
+  margin: auto; }
+  .product__main .product__viewImage .product__mainImage {
+    max-width: 100%;
+    height: 450px; }
+    .product__main .product__viewImage .product__mainImage img {
+      object-fit: fill;
+      max-width: 100%;
+      height: 100%; }
+  .product__main .product__viewImage .product__listImage {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem; }
+    .product__main .product__viewImage .product__listImage div {
+      display: flex;
+      justify-content: center;
+      height: 100px; }
+      .product__main .product__viewImage .product__listImage div:hover {
+        border: solid 1px #000;
+        padding: 8px; }
+    .product__main .product__viewImage .product__listImage img {
+      object-fit: fill;
+      max-width: 100%;
+      max-height: 100%; }
+  .product__main .product__detail {
+    width: 100%;
+    padding-left: 2rem; }
+    .product__main .product__detail h1 {
+      margin-bottom: 5rem;
+      color: #000;
+      font-size: 3rem; }
+    .product__main .product__detail .product__unit {
+      height: 2rem;
+      font-size: 1.75rem;
+      margin-bottom: 5rem; }
+    .product__main .product__detail .product__price {
+      margin-bottom: 4rem;
+      color: #000;
+      font-size: 2rem; }
+    .product__main .product__detail .product__quantity {
+      height: 3rem;
+      display: flex;
+      font-size: 1.75rem;
+      font-weight: 400;
+      align-items: center;
+      margin-bottom: 3.5rem; }
+      .product__main .product__detail .product__quantity .product__chooseQuantity {
+        display: flex;
+        height: 100%;
+        margin-left: 3rem; }
+        .product__main .product__detail .product__quantity .product__chooseQuantity .btn {
+          display: flex;
+          width: 3rem;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #000; }
+          .product__main .product__detail .product__quantity .product__chooseQuantity .btn:hover {
+            transform: none; }
+        .product__main .product__detail .product__quantity .product__chooseQuantity .amount__value {
+          width: 4rem;
+          height: 100%;
+          text-align: center;
+          border-width: 1px 0 1px 0; }
+    .product__main .product__detail .product__mainButton {
+      display: flex;
+      gap: 4rem;
+      font-size: 2rem; }
+      .product__main .product__detail .product__mainButton .product__btnAdd {
+        color: #fff;
+        padding: 0.75rem 1rem;
+        background-color: #2579f2;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center; }
+      .product__main .product__detail .product__mainButton .product__btnBack {
+        color: #2579f2;
+        padding: 0.75rem 1rem;
+        background-color: #fff;
+        border: solid;
+        border-width: 2px;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center; }
+    .product__main .product__detail .btn__close {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      font-size: 3rem;
+      cursor: pointer; }
+
 .header {
   background-color: #2579f2;
-  height: 8rem; }
+  height: 13rem; }
   .header__container {
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -468,6 +687,38 @@ body {
       flex: 2; }
     .header__container .form__contact {
       margin-bottom: 0; }
+  .header .navbar__customer {
+    margin-bottom: 0;
+    background-color: #fff;
+    height: 5rem; }
+    .header .navbar__customer .navbar__inner {
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 114rem;
+      display: flex;
+      gap: 3rem; }
+      .header .navbar__customer .navbar__inner .item {
+        display: flex;
+        align-items: center;
+        text-decoration: inherit; }
+        .header .navbar__customer .navbar__inner .item svg {
+          align-items: center;
+          color: #fff;
+          border-radius: 0.5rem;
+          width: 3rem;
+          height: 3rem;
+          padding: 0.5rem; }
+        .header .navbar__customer .navbar__inner .item:nth-child(1) svg {
+          background-color: #2579f2; }
+        .header .navbar__customer .navbar__inner .item:nth-child(2) svg {
+          background-color: #FF1818; }
+        .header .navbar__customer .navbar__inner .item div {
+          color: #000;
+          margin-left: 0.75rem;
+          font-weight: 700;
+          font-size: 1.2rem; }
 
 .footer {
   position: relative;
