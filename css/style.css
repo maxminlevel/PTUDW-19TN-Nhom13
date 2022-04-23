@@ -79,6 +79,9 @@ body {
 .u-center-text {
   text-align: center !important; }
 
+.u-left-text {
+  text-align: left !important; }
+
 .u-bold-text {
   font-weight: 700; }
 
@@ -247,77 +250,55 @@ body {
     color: black;
     content: "\003e"; }
 
-.table {
-  width: 92%;
-  margin: 1rem auto;
-  border: 1px solid #c4c4c4;
-  border-radius: 5px;
-  padding: 1.2rem; }
-  .table__titles, .table__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    background-color: #fff; }
-    .table__titles li, .table__item li {
-      position: relative;
-      display: inline-block; }
-  .table__titles {
+.cart__table {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.4rem;
+  border: 1px solid transparent;
+  border-collapse: collapse; }
+  .cart__table th,
+  .cart__table td {
+    padding: 0.8rem 1rem;
     border-radius: 4px;
-    margin-bottom: 0.6rem; }
-    .table__titles li {
-      padding: 1rem;
-      font-size: 1.4rem; }
-      .table__titles li:nth-child(4) {
-        margin-right: 5rem; }
-      .table__titles li span {
-        font-weight: 700;
-        color: #000; }
-  .table__item {
-    border-radius: 4px; }
-    .table__item:not(:last-child) {
-      margin-bottom: 0.2rem; }
-    .table__item li {
-      padding: 0.5rem 1rem;
-      font-size: 1.5rem; }
-      .table__item li:nth-child(1) {
-        margin-right: 4rem; }
-      .table__item li:nth-child(2) {
-        margin-right: 9rem; }
-      .table__item li:nth-child(4) {
-        margin-left: 5rem; }
-      .table__item li a,
-      .table__item li span {
-        color: #000;
-        display: inline-block;
-        text-decoration: none; }
-        .table__item li a:nth-child(3),
-        .table__item li span:nth-child(3) {
-          padding-left: 8rem; }
-  .table .amount {
+    border-bottom: 5px solid #e5e5e5;
+    text-align: right; }
+  .cart__table th:first-child,
+  .cart__table td:first-child,
+  .cart__table th:nth-child(2),
+  .cart__table td:nth-child(2) {
+    text-align: left; }
+  .cart__table td:nth-child(3) {
+    padding-right: 4rem; }
+  .cart__table td a {
+    text-decoration: none;
+    color: #000; }
+  .cart__table .amount {
     display: flex;
-    align-items: center;
-    column-gap: 0.4rem; }
-    .table .amount .btn--primary-dark {
-      padding: 0.3rem 0.5rem;
-      border-radius: 0.4rem; }
-    .table .amount__value {
-      width: 2.5rem;
-      height: 2.5rem;
-      text-align: center; }
+    justify-content: flex-end;
+    column-gap: 0.4rem;
+    align-items: flex-end; }
+    .cart__table .amount .btn {
+      padding: 0.2rem 0.6rem; }
+    .cart__table .amount__value {
+      text-align: center;
+      width: 2.4rem;
+      padding: 0.2rem; }
 
 .polygon-icon {
+  position: relative;
   display: inline-block;
-  position: absolute;
-  top: 18%;
-  right: -10%; }
+  top: -5px;
+  right: -5px; }
   .polygon-icon::before {
     position: absolute;
-    top: 65%;
-    left: 1%;
     display: block;
+    top: 75%;
+    left: 0;
     content: "\0394";
     transform: rotate(180deg); }
+  .polygon-icon:hover {
+    cursor: pointer; }
 
 .login {
   display: flex;
@@ -420,6 +401,38 @@ body {
   background-color: #e5e5e5; }
   .main .cart {
     padding: 0 4rem; }
+    .main .cart__content {
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+    .main .cart__table-container {
+      width: 90%;
+      margin: auto;
+      padding: 1rem 1.6rem;
+      border: 1px solid #c4c4c4;
+      border-radius: 5px; }
+    .main .cart__btn {
+      width: 90%;
+      display: flex;
+      margin: 1rem auto;
+      column-gap: 1.5rem;
+      justify-content: flex-end; }
+      .main .cart__btn .btn {
+        padding: 0.4rem 1.2rem;
+        text-transform: none;
+        font-weight: 700;
+        border-radius: 3px; }
+        .main .cart__btn .btn--white:hover:hover {
+          cursor: pointer;
+          transform: translateY(-0.3rem);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+        .main .cart__btn .btn--white:hover:active {
+          transform: translateY(-1px);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+        .main .cart__btn .btn--white {
+          color: #2579f2;
+          border: 2px solid #2579f2; }
 
 .header {
   background-color: #2579f2;

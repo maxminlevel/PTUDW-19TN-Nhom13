@@ -1,79 +1,48 @@
-.table {
-  width: 92%;
-  margin: 1rem auto;
-  border: 1px solid #c4c4c4;
-  border-radius: 5px;
-  padding: 1.2rem;
-  &__titles,
-  &__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    background-color: $color-white;
-    & li {
-      position: relative;
-      display: inline-block;
-    }
+.cart__table {
+  width: 100%;
+  background-color: $color-white;
+  color: $color-black;
+  font-size: 1.4rem;
+  border: 1px solid transparent;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    border-bottom: 5px solid $color-grey;
+    text-align: right;
   }
 
-  &__titles {
-    border-radius: 4px;
-    margin-bottom: 0.6rem;
-    & li {
-      padding: 1rem;
-      &:nth-child(4) {
-        margin-right: 5rem;
-      }
-      font-size: 1.4rem;
-      & span {
-        font-weight: 700;
-        color: $color-black;
-      }
-    }
+  th:first-child,
+  td:first-child,
+  th:nth-child(2),
+  td:nth-child(2) {
+    text-align: left;
   }
 
-  &__item {
-    border-radius: 4px;
-    &:not(:last-child) {
-      margin-bottom: 0.2rem;
+  td {
+    &:nth-child(3) {
+      padding-right: 4rem;
     }
-    & li {
-      padding: 0.5rem 1rem;
-      font-size: 1.5rem;
-      &:nth-child(1) {
-        margin-right: 4rem;
-      }
-      &:nth-child(2) {
-        margin-right: 9rem;
-      }
-      &:nth-child(4) {
-        margin-left: 5rem;
-      }
-      & a,
-      & span {
-        color: $color-black;
-        display: inline-block;
-        text-decoration: none;
-        &:nth-child(3) {
-          padding-left: 8rem;
-        }
-      }
+    a {
+      text-decoration: none;
+      color: $color-black;
     }
   }
 
   .amount {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
     column-gap: 0.4rem;
-    .btn--primary-dark {
-      padding: 0.3rem 0.5rem;
-      border-radius: 0.4rem;
+    align-items: flex-end;
+    .btn {
+      padding: 0.2rem 0.6rem;
     }
     &__value {
-      width: 2.5rem;
-      height: 2.5rem;
       text-align: center;
+      width: 2.4rem;
+      padding: 0.2rem;
     }
   }
 }
