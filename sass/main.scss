@@ -7,13 +7,24 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/button';
-@import 'components/form';
+@import "components/button";
+@import "components/form";
+@import "components/search-bar";
+@import "components/infor";
+@import "components/breadcrumb";
+@import "components/table";
+@import "components/polygon-icon";
 
-@import 'pages/login';
+@import "layouts/header";
+@import "layouts/footer";
 
+@import "pages/login";
+@import "pages/c-cart";
+@import "pages/admin/location";
+@import "pages/admin/modelbox";
 @import 'pages/manager/shared';
 @import 'components/m_navbar';
 @import 'components/m_sidebar';
 @import 'pages/manager/persons';
-// @import "../node_modules/bootstrap/scss/bootstrap.scss"
+
+

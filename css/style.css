@@ -15,6 +15,10 @@ body {
   image-rendering: optimizeSpeed;
   box-sizing: border-box; }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -33,13 +37,24 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   /* Nghĩa là line height gấp 1.7 lần line height mặc định */
-  line-height: 1.7;
+  line-height: 1.2;
   color: #777; }
 
 .heading-primary {
   color: #3786be;
   text-transform: capitalize;
   font-size: 2rem;
+  font-weight: 700; }
+
+.heading-secondary {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 400; }
+
+.heading-tertiary {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.5rem;
   font-weight: 700; }
 
 ::placeholder {
@@ -58,6 +73,10 @@ body {
   font-weight: 700;
   color: #777; }
 
+.phone-number {
+  color: #FF1818;
+  font-weight: 700; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -70,56 +89,74 @@ body {
 .u-mb-s {
   margin-bottom: 1rem; }
 
-.btn, .form__search, .m__btn-link, .m__func div, .m__paging ul li, .s__btn__submit ul li, .btn__save, .btn__cancel, .m__sidebar li, .m__person__btn_edit, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
+.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .s__btn__submit ul li, .btn__save, .btn__cancel, .m__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
   display: inline-block;
   text-transform: uppercase;
-  padding: 1.5rem 4rem;
   text-decoration: none;
   font-size: 1.6rem;
-  border-top-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
   transition: all 0.2s;
   border: none;
   transition: all 0.2s; }
-  .btn:hover, .form__search:hover, .m__btn-link:hover, .m__func div:hover, .m__paging ul li:hover, .s__btn__submit ul li:hover, .btn__save:hover, .btn__cancel:hover, .m__sidebar li:hover, .m__person__btn_edit:hover, .m__person__btn_delete:hover {
+  .btn:hover:not(.btn--accent-dark), .form__search:hover:not(.btn--accent-dark), .m__location__btn_edit:hover:not(.btn--accent-dark), .m__location__btn_delete:hover:not(.btn--accent-dark), .m__btn-link:hover:not(.btn--accent-dark), .m__func div:hover:not(.btn--accent-dark), .m__paging ul li:hover:not(.btn--accent-dark), .s__btn__submit ul li:hover:not(.btn--accent-dark), .btn__save:hover:not(.btn--accent-dark), .btn__cancel:hover:not(.btn--accent-dark), .m__sidebar li:hover:not(.btn--accent-dark), .m__person__btn_edit:hover:not(.btn--accent-dark), .m__person__btn_delete:hover:not(.btn--accent-dark) {
     cursor: pointer;
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:active, .form__search:active, .m__btn-link:active, .m__func div:active, .m__paging ul li:active, .s__btn__submit ul li:active, .btn__save:active, .btn__cancel:active, .m__sidebar li:active, .m__person__btn_edit:active, .m__person__btn_delete:active {
+  .btn:active:not(.btn--accent-dark), .form__search:active:not(.btn--accent-dark), .m__location__btn_edit:active:not(.btn--accent-dark), .m__location__btn_delete:active:not(.btn--accent-dark), .m__btn-link:active:not(.btn--accent-dark), .m__func div:active:not(.btn--accent-dark), .m__paging ul li:active:not(.btn--accent-dark), .s__btn__submit ul li:active:not(.btn--accent-dark), .btn__save:active:not(.btn--accent-dark), .btn__cancel:active:not(.btn--accent-dark), .m__sidebar li:active:not(.btn--accent-dark), .m__person__btn_edit:active:not(.btn--accent-dark), .m__person__btn_delete:active:not(.btn--accent-dark) {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--primary, .btn__save {
+    padding: 1.5rem 4rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
     background-color: #3786be;
     color: #fff; }
+  .btn--primary-dark {
+    background-color: #2579f2;
+    color: #fff; }
+  .btn--accent-dark {
+    height: inherit;
+    background-color: #0A59CC;
+    color: #fff;
+    padding: 2rem 3rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
 
-.btn-link:link,
-.btn-link:visited {
+.btn-link:link, .btn-link:visited {
   display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #777;
-  text-transform: capitalize;
   transition: all 0.2s; }
 
-.btn-icon:link,
-.btn-icon:visited {
+.btn-link--grey {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #777;
+  text-transform: capitalize; }
+
+.btn-link--white {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none; }
+
+.btn-icon:link, .btn-icon:visited {
   display: inline-block;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.2);
-  transition: all 0.2s; }
-  .btn-icon:link img,
-  .btn-icon:visited img {
-    padding: 1rem;
-    width: 100%; }
-  .btn-icon:link:hover,
-  .btn-icon:visited:hover {
-    transform: scale(1.25) translateY(-3px); }
-  .btn-icon:link:active,
-  .btn-icon:visited:active {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  transition: all 0.2s;
+  overflow: hidden; }
+
+.btn-icon img {
+  width: 100%;
+  image-rendering: optimizeSpeed;
+  padding: 1rem; }
+
+.btn-icon:hover {
+  transform: scale(1.25) translateY(-3px); }
+
+.btn-icon:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .form {
   width: 70%;
@@ -130,6 +167,8 @@ body {
   .form__contact {
     display: block;
     width: 100%;
+    font-size: 1.8rem;
+    font-weight: 300;
     height: 4.5rem;
     border: 1px solid #777;
     border-radius: 5px;
@@ -141,6 +180,174 @@ body {
     padding: 0 !important;
     font-size: 1rem !important;
     background: none !important; }
+
+.search-bar {
+  display: flex;
+  justify-content: center; }
+  .search-bar .form__contact {
+    width: 80%;
+    height: 4.5rem;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .search-bar__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 4.5rem; }
+    .search-bar__icon .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem; }
+
+.infor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 2rem; }
+  .infor__avatar {
+    width: 5rem;
+    height: 5rem;
+    clip-path: circle(50% at 50% 50%);
+    object-fit: cover; }
+  .infor__text {
+    display: flex;
+    flex-direction: column; }
+    .infor__text a {
+      text-align: right; }
+  .infor__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff; }
+
+.breadcrumb {
+  padding: 1rem 1.6rem;
+  list-style: none; }
+  .breadcrumb__item {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 500; }
+    .breadcrumb__item a {
+      color: #0A59CC;
+      text-decoration: none; }
+  .breadcrumb__item + .breadcrumb__item::before {
+    padding: 0.8rem;
+    color: black;
+    content: "\003e"; }
+
+.table {
+  width: 92%;
+  margin: 1rem auto;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 1.2rem; }
+  .table__titles, .table__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: #fff; }
+    .table__titles li, .table__item li {
+      position: relative;
+      display: inline-block; }
+  .table__titles {
+    border-radius: 4px;
+    margin-bottom: 0.6rem; }
+    .table__titles li {
+      padding: 1rem;
+      font-size: 1.4rem; }
+      .table__titles li:nth-child(4) {
+        margin-right: 5rem; }
+      .table__titles li span {
+        font-weight: 700;
+        color: #000; }
+  .table__item {
+    border-radius: 4px; }
+    .table__item:not(:last-child) {
+      margin-bottom: 0.2rem; }
+    .table__item li {
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem; }
+      .table__item li:nth-child(1) {
+        margin-right: 4rem; }
+      .table__item li:nth-child(2) {
+        margin-right: 9rem; }
+      .table__item li:nth-child(4) {
+        margin-left: 5rem; }
+      .table__item li span {
+        color: #000;
+        display: inline-block; }
+        .table__item li span:nth-child(3) {
+          padding-left: 8rem; }
+  .table .amount {
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem; }
+    .table .amount .btn--primary-dark {
+      padding: 0.3rem 0.5rem;
+      border-radius: 0.4rem; }
+    .table .amount__value {
+      width: 2.5rem;
+      height: 2.5rem;
+      text-align: center; }
+
+.polygon-icon {
+  display: inline-block;
+  position: absolute;
+  top: 18%;
+  right: -10%; }
+  .polygon-icon::before {
+    position: absolute;
+    top: 65%;
+    left: 1%;
+    display: block;
+    content: "\0394";
+    transform: rotate(180deg); }
+
+.header {
+  background-color: #2579f2;
+  height: 8rem; }
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0; }
+    .header__container .logo {
+      height: 6rem;
+      width: 6rem;
+      flex: 1; }
+    .header__container .search-bar {
+      flex: 7; }
+    .header__container .infor {
+      flex: 2; }
+    .header__container .form__contact {
+      margin-bottom: 0; }
+
+.footer {
+  position: relative;
+  height: 20vh;
+  background-color: #e5e5e5; }
+  .footer__container {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    border-top: 2px solid #c4c4c4;
+    column-gap: 3rem; }
+  .footer .introduction,
+  .footer .contact {
+    list-style: none;
+    font-size: 1.2rem; }
+    .footer .introduction li,
+    .footer .contact li {
+      font-weight: 500;
+      margin-top: 0.6rem; }
+      .footer .introduction li a,
+      .footer .contact li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500; }
 
 .login {
   display: flex;
@@ -169,7 +376,7 @@ body {
       padding: 2rem 0; }
     .login__box .btn-link {
       align-self: flex-end; }
-    .login__box .btn, .login__box .form__search, .login__box .m__btn-link, .login__box .m__func div, .m__func .login__box div, .login__box .m__paging ul li, .m__paging ul .login__box li, .login__box .s__btn__submit ul li, .s__btn__submit ul .login__box li, .login__box .btn__save, .login__box .btn__cancel, .login__box .m__sidebar li, .m__sidebar .login__box li, .login__box .m__person__btn_edit, .login__box .m__person__btn_delete {
+    .login__box .btn, .login__box .form__search, .login__box .m__location__btn_edit, .login__box .m__location__btn_delete, .login__box .m__btn-link, .login__box .m__func div, .m__func .login__box div, .login__box .m__paging ul li, .m__paging ul .login__box li, .login__box .s__btn__submit ul li, .s__btn__submit ul .login__box li, .login__box .btn__save, .login__box .btn__cancel, .login__box .m__sidebar li, .m__sidebar .login__box li, .login__box .m__person__btn_edit, .login__box .m__person__btn_delete {
       width: 100%; }
     .login__box .text-devide {
       margin: 1rem 0; }
@@ -181,56 +388,184 @@ body {
         .login__box .social-list li:nth-child(2) {
           margin: 0 1rem; }
 
-.btn, .form__search, .m__btn-link, .m__func div, .m__paging ul li, .s__btn__submit ul li, .btn__save, .btn__cancel, .m__sidebar li, .m__person__btn_edit, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
+.main {
+  height: 68vh;
+  background-color: #e5e5e5; }
+  .main .cart {
+    padding: 0 4rem; }
+
+.m__location__btn_ed {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  align-items: center;
+  justify-content: center; }
+
+.m__location__btn_edit, .m__location__btn_delete {
+  border-radius: 1rem;
+  background-color: #ffd363;
+  width: auto;
+  padding: 0 0.5rem;
+  font-size: 1rem; }
+
+.m__location__btn_delete {
+  background-color: #ff6363; }
+
+.m__location__related .form__search, .m__location__related .m__location__btn_edit, .m__location__related .m__location__btn_delete, .m__location__related .m__btn-link, .m__location__related .m__func div, .m__func .m__location__related div, .m__location__related .m__paging ul li, .m__paging ul .m__location__related li, .m__location__related .s__btn__submit ul li, .s__btn__submit ul .m__location__related li, .m__location__related .btn__save, .m__location__related .btn__cancel, .m__location__related .m__sidebar li, .m__sidebar .m__location__related li, .m__location__related .m__person__btn_edit, .m__location__related .btn, .m__location__related .m__person__btn_delete, .m__location__history .form__search, .m__location__history .m__location__btn_edit, .m__location__history .m__location__btn_delete, .m__location__history .m__btn-link, .m__location__history .m__func div, .m__func .m__location__history div, .m__location__history .m__paging ul li, .m__paging ul .m__location__history li, .m__location__history .s__btn__submit ul li, .s__btn__submit ul .m__location__history li, .m__location__history .btn__save, .m__location__history .btn__cancel, .m__location__history .m__sidebar li, .m__sidebar .m__location__history li, .m__location__history .m__person__btn_edit, .m__location__history .btn, .m__location__history .m__person__btn_delete {
+  background-color: #63bdff;
+  width: auto;
+  padding: 0 0.5rem;
+  color: white; }
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 3rem;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; }
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+  .modal .modal-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    text-align: center; }
+    .modal .modal-content .m__title {
+      font-size: xxx-large;
+      font-weight: bold; }
+    .modal .modal-content form li {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .modal .modal-content form li label {
+        float: left;
+        clear: left;
+        width: 10rem;
+        text-align: right;
+        margin: 0.4rem;
+        font-weight: bold;
+        font-size: x-large;
+        padding: 0.5rem; }
+      .modal .modal-content form li input {
+        display: inline-block;
+        font-size: x-large;
+        align-self: right;
+        margin: 0.4rem;
+        width: 60%;
+        padding: 0.5rem; }
+    .modal .modal-content form .btn, .modal .modal-content form .form__search, .modal .modal-content form .m__location__btn_edit, .modal .modal-content form .m__location__btn_delete, .modal .modal-content form .m__btn-link, .modal .modal-content form .m__func div, .m__func .modal .modal-content form div, .modal .modal-content form .m__paging ul li, .m__paging ul .modal .modal-content form li, .modal .modal-content form .s__btn__submit ul li, .s__btn__submit ul .modal .modal-content form li, .modal .modal-content form .btn__save, .modal .modal-content form .btn__cancel, .modal .modal-content form .m__sidebar li, .m__sidebar .modal .modal-content form li, .modal .modal-content form .m__person__btn_edit, .modal .modal-content form .m__person__btn_delete {
+      margin: 2rem 5rem;
+      width: 12rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 25% 0 25% 0; }
+    .modal .modal-content form .modal-content__btn_save {
+      background-color: #63bdff;
+      color: white; }
+    .modal .modal-content form .modal-content__btn_cancel {
+      border: 1px solid black;
+      border-radius: 25% 0 25% 0; }
+
+.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .s__btn__submit ul li, .btn__save, .btn__cancel, .m__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
   display: inline-block;
   text-transform: uppercase;
-  padding: 1.5rem 4rem;
   text-decoration: none;
   font-size: 1.6rem;
-  border-top-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
   transition: all 0.2s;
   border: none;
   transition: all 0.2s; }
-  .btn:hover, .form__search:hover, .m__btn-link:hover, .m__func div:hover, .m__paging ul li:hover, .s__btn__submit ul li:hover, .btn__save:hover, .btn__cancel:hover, .m__sidebar li:hover, .m__person__btn_edit:hover, .m__person__btn_delete:hover {
+  .btn:hover:not(.btn--accent-dark), .form__search:hover:not(.btn--accent-dark), .m__location__btn_edit:hover:not(.btn--accent-dark), .m__location__btn_delete:hover:not(.btn--accent-dark), .m__btn-link:hover:not(.btn--accent-dark), .m__func div:hover:not(.btn--accent-dark), .m__paging ul li:hover:not(.btn--accent-dark), .s__btn__submit ul li:hover:not(.btn--accent-dark), .btn__save:hover:not(.btn--accent-dark), .btn__cancel:hover:not(.btn--accent-dark), .m__sidebar li:hover:not(.btn--accent-dark), .m__person__btn_edit:hover:not(.btn--accent-dark), .m__person__btn_delete:hover:not(.btn--accent-dark) {
     cursor: pointer;
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:active, .form__search:active, .m__btn-link:active, .m__func div:active, .m__paging ul li:active, .s__btn__submit ul li:active, .btn__save:active, .btn__cancel:active, .m__sidebar li:active, .m__person__btn_edit:active, .m__person__btn_delete:active {
+  .btn:active:not(.btn--accent-dark), .form__search:active:not(.btn--accent-dark), .m__location__btn_edit:active:not(.btn--accent-dark), .m__location__btn_delete:active:not(.btn--accent-dark), .m__btn-link:active:not(.btn--accent-dark), .m__func div:active:not(.btn--accent-dark), .m__paging ul li:active:not(.btn--accent-dark), .s__btn__submit ul li:active:not(.btn--accent-dark), .btn__save:active:not(.btn--accent-dark), .btn__cancel:active:not(.btn--accent-dark), .m__sidebar li:active:not(.btn--accent-dark), .m__person__btn_edit:active:not(.btn--accent-dark), .m__person__btn_delete:active:not(.btn--accent-dark) {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--primary, .btn__save {
+    padding: 1.5rem 4rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
     background-color: #3786be;
     color: #fff; }
+  .btn--primary-dark {
+    background-color: #2579f2;
+    color: #fff; }
+  .btn--accent-dark {
+    height: inherit;
+    background-color: #0A59CC;
+    color: #fff;
+    padding: 2rem 3rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
 
-.btn-link:link,
-.btn-link:visited {
+.btn-link:link, .btn-link:visited {
   display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #777;
-  text-transform: capitalize;
   transition: all 0.2s; }
 
-.btn-icon:link,
-.btn-icon:visited {
+.btn-link--grey {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #777;
+  text-transform: capitalize; }
+
+.btn-link--white {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none; }
+
+.btn-icon:link, .btn-icon:visited {
   display: inline-block;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.2);
-  transition: all 0.2s; }
-  .btn-icon:link img,
-  .btn-icon:visited img {
-    padding: 1rem;
-    width: 100%; }
-  .btn-icon:link:hover,
-  .btn-icon:visited:hover {
-    transform: scale(1.25) translateY(-3px); }
-  .btn-icon:link:active,
-  .btn-icon:visited:active {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  transition: all 0.2s;
+  overflow: hidden; }
+
+.btn-icon img {
+  width: 100%;
+  image-rendering: optimizeSpeed;
+  padding: 1rem; }
+
+.btn-icon:hover {
+  transform: scale(1.25) translateY(-3px); }
+
+.btn-icon:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .m__btn-link {
   font-size: 1rem;
@@ -410,13 +745,13 @@ body {
       text-decoration: none;
       color: gray; }
 
-.m__person__btn_ed, .m__person__related, .m__person__history {
+.m__person__btn_ed, .m__location__related, .m__location__history, .m__person__related, .m__person__history {
   display: flex;
   flex-direction: row;
   column-gap: 0.5rem;
   width: 100%; }
 
-.m__person__btn_edit, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
+.m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
   border-radius: 1rem;
   background-color: #ffd363;
   width: auto;
@@ -427,7 +762,7 @@ body {
 .m__person__btn_delete {
   background-color: #ff6363; }
 
-.m__person__related .form__search, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .s__btn__submit ul li, .s__btn__submit ul .m__person__related li, .m__person__related .btn__save, .m__person__related .btn__cancel, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .m__person__btn_edit, .m__person__related .btn, .m__person__related .m__person__btn_delete, .m__person__history .form__search, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .s__btn__submit ul li, .s__btn__submit ul .m__person__history li, .m__person__history .btn__save, .m__person__history .btn__cancel, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .m__person__btn_edit, .m__person__history .btn, .m__person__history .m__person__btn_delete {
+.m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .s__btn__submit ul li, .s__btn__submit ul .m__person__related li, .m__person__related .btn__save, .m__person__related .btn__cancel, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .m__person__btn_edit, .m__person__related .btn, .m__person__related .m__person__btn_delete, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .s__btn__submit ul li, .s__btn__submit ul .m__person__history li, .m__person__history .btn__save, .m__person__history .btn__cancel, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .m__person__btn_edit, .m__person__history .btn, .m__person__history .m__person__btn_delete {
   background-color: #63bdff;
   width: 100%;
   padding: 0 0.5rem;

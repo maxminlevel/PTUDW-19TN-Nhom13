@@ -1,14 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
-<title>Location</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <title>Treatment Locations</title>
 </head>
+
 <body>
+  <div class="m__main">
+    <div id="m__nav"></div>
+    <div class="m__container">
+      <div id="m__sidebar"></div>
+      <div class="m__content">
+        <div class="m__content__header">
+          <div class="m__title heading-primary">Treatment Locations</div>
+          <div class="m__func">
+            <div class="btn btn--primary" id="new_location_btn">
+              <a>New Location</a>
+            </div>
+            <div class="btn btn--primary" id="import_file">Import file</div>
+          </div>
+        </div>
+        <form action="submit" method="post">
+          <ul class="s__filter">
+            <li>
+              <label for="locationID">ID</label>
+              <input type="text" name="locationID" id="locationID" />
+            </li>
+            <li>
+              <label for="location"> Location</label>
+              <input type="text" name="location" id="location" />
+            </li>
+            <li>
+              <label for="detail">Detail</label>
+              <input type="text" name="detail" id="detail" />
+            </li>
+            <li>
+              <label for="capacity">Capacity</label>
+              <input type="text" name="capacity" id="capacity" />
+            </li>
+            <li>
+              <label for="current">Current</label>
+              <input type="text" name="current" id="current" />
+            </li>
+            <li>
+              <button type="submit" value="submit" class="form__search">
+                <i class="fa-solid fa-magnifying-glass" style="font-size: 40px;"></i>
+              </button>
+            </li>
+          </ul>
+        </form>
+        <div class="line"></div>
+
+        <table class="s__table">
+          <tr>
+            <th>
+              <span>
+                ID
+                <button><i class="fa-solid fa-chevron-down"></i></button>
+              </span>
+            </th>
+            <th>
+              <span>
+                Location
+                <button><i class="fa-solid fa-chevron-down"></i></button>
+              </span>
+            </th>
+            <th>
+              <span>
+                Detail
+                <button><i class="fa-solid fa-chevron-down"></i></button>
+              </span>
+            </th>
+            <th>
+              <span>
+                Capacity
+                <button><i class="fa-solid fa-chevron-down"></i></button>
+              </span>
+            </th>
+            <th>
+              <span>
+                Current
+                <button><i class="fa-solid fa-chevron-down"></i></button>
+              </span>
+            </th>
+            <th>
+              <span>
+                Actions
+                <button><i class="fa-solid fa-chevron-down"></i></button>
+              </span>
+            </th>
+
+
+          </tr>
+          <tr class="m__location__row">
+            <td>001</td>
+            <td>Bệnh viện Bạch Mai</td>
+            <td>109 An Dương Vương, Quận Ba Đình, Hà Nội</td>
+            <td>200</td>
+            <td>123</td>
+
+            </td>
+            <td class="m__location__btn_ed">
+              <div class="m__location__btn_edit" id="edit_location_btn">
+                <i class="fa-solid fa-pen"></i>
+              </div>
+              <div class="m__location__btn_delete" id="remove_location_btn">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </td>
+          </tr>
+
+          </tr>
+          <tr class="m__location__row">
+            <td>002</td>
+            <td>Bệnh Viện Chợ Rẫy</td>
+            <td>12 Thành Thứ, Quận 5, Tp HCM</td>
+            <td>200</td>
+            <td>123</td>
+
+            </td>
+            <td class="m__location__btn_ed">
+              <div class="m__location__btn_edit">
+                <i class="fa-solid fa-pen"></i>
+              </div>
+              <div class="m__location__btn_delete">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </td>
+          </tr>
+
+          </tr>
+          <tr class="m__location__row">
+            <td>003</td>
+            <td>Trạm xá Yên La</td>
+            <td>22 Trần Quốc Toản, Thị trấn Đa Thành, Huyện Đa Hưng, Bình Phước</td>
+            <td>200</td>
+            <td>123</td>
+
+            </td>
+            <td class="m__location__btn_ed">
+              <div class="m__location__btn_edit">
+                <i class="fa-solid fa-pen"></i>
+              </div>
+              <div class="m__location__btn_delete">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </td>
+          </tr>
+
+          </tr>
+          <tr class="m__location__row">
+            <td>004</td>
+            <td>Bệnh viện Đa khoa QUận 5</td>
+            <td>33 Lê Duẩn, Quận 5, Tp HCM</td>
+            <td>200</td>
+            <td>123</td>
+
+            </td>
+            <td class="m__location__btn_ed">
+              <div class="m__location__btn_edit">
+                <i class="fa-solid fa-pen"></i>
+              </div>
+              <div class="m__location__btn_delete">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div id="s__paging"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Location box -->
+  <div id="add_location_modal" class="modal">
+    <div class="modal-content">
+      <span class="new_location_btn_close close">&times;</span>
+      <div class="m__title heading-primary u-center-text">Add new location</div>
+      <form action="submit" method="post">
+        <ul>
+          <li>
+            <label for="location"> Name</label>
+            <input type="text" name="location" id="location" />
+          </li>
+          <li>
+            <label for="detail">Detail</label>
+            <input type="text" name="detail" id="detail" />
+          </li>
+          <li>
+            <label for="capacity">Capacity</label>
+            <input type="text" name="capacity" id="capacity" />
+          </li>
+          <li>
+            <label for="current">Current</label>
+            <input type="text" name="current" id="current" />
+          </li>
+        </ul>
+        <div class="modal-content__btn_save btn">
+          <p>Save</p>
+        </div>
+        <div class="modal-content__btn_cancel btn">
+          <p>Cancel</p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Edit Location box -->
+  <div id="edit_location_modal" class="modal">
+    <div class="modal-content">
+      <span class="edit_location_btn_close close">&times;</span>
+      <div class="m__title heading-primary u-center-text">Edit location</div>
+      <form action="submit" method="post">
+        <ul>
+          <li>
+            <label for="location"> Name</label>
+            <input type="text" name="location" id="location" />
+          </li>
+          <li>
+            <label for="detail">Detail</label>
+            <input type="text" name="detail" id="detail" />
+          </li>
+          <li>
+            <label for="capacity">Capacity</label>
+            <input type="text" name="capacity" id="capacity" />
+          </li>
+          <li>
+            <label for="current">Current</label>
+            <input type="text" name="current" id="current" />
+          </li>
+        </ul>
+        <div class="modal-content__btn_save btn">
+          <p>Save</p>
+        </div>
+        <div class="modal-content__btn_cancel btn">
+          <p>Cancel</p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Edit Location box -->
+  <div id="remove_location_modal" class="modal">
+    <div class="modal-content">
+      <span class="remove_location_btn_close close">&times;</span>
+      <div class="m__title heading-primary u-center-text">Edit location</div>
+      <form action="submit" method="post">
+        <div class="modal-content__btn_save btn">
+          <p>YES</p>
+        </div>
+        <div class="modal-content__btn_cancel btn">
+          <p>NO</p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('#m__nav').load('../shared/admin/navbar.html')
+      $('#m__sidebar').load('../shared/admin/sidebar.html')
+      $('#s__paging').load('../shared/paging.html')
+    })
+
+    var new_location_modal = document.getElementById("add_location_modal");
+    var edit_location_modal = document.getElementById("edit_location_modal");
+    var remove_location_modal = document.getElementById("remove_location_modal");
+    // Get the button that opens the modal
+    var new_location_btn = document.getElementById("new_location_btn");
+    var edit_location_btn = document.getElementById("edit_location_btn");
+    var remove_location_btn = document.getElementById("remove_location_btn");
+    // Get the <span> element that closes the modal
+    var new_location_close = document.getElementsByClassName("new_location_btn_close")[0];
+    var edit_location_close = document.getElementsByClassName("edit_location_btn_close")[0];
+    var remove_location_close = document.getElementsByClassName("remove_location_btn_close")[0];
+    // When the user clicks the button, open the modal 
+    new_location_btn.onclick = function () {
+      new_location_modal.style.display = "block";
+    }
+
+    edit_location_btn.onclick = function () {
+      edit_location_modal.style.display = "block";
+    }
+
+    remove_location_btn.onclick = function () {
+      remove_location_modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    new_location_close.onclick = function () {
+      new_location_modal.style.display = "none";
+    }
+
+    edit_location_close.onclick = function () {
+      new_location_modal.style.display = "none";
+    }
+
+    remove_location_close.onclick = function () {
+      remove_location_modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == new_location_modal) {
+        new_location_modal.style.display = "none";
+      }
+
+      if (event.target == edit_location_modal) {
+        edit_location_modal.style.display = "none";
+      }
+
+      if (event.target == remove_location_modal) {
+        remove_location_modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
+
 </html>
