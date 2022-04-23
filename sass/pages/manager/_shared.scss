@@ -36,13 +36,17 @@
       flex-direction: row;
       justify-content: space-between;
     }
+    table {
+      width: 100%;
+    }
     table,
     td,
     th {
       border: 1px solid black;
       border-collapse: collapse;
       padding: 0.5rem 0.2rem;
-      align-content: center;
+      text-align: center;
+      align-items: center;
       color: black;
     }
     th {
@@ -113,5 +117,29 @@
       flex-direction: column;
       color: black;
     }
+  }
+  &__btn__submit {
+    @extend .m__paging;
+    column-gap: 1rem;
+  }
+}
+
+.btn {
+  &__save,
+  &__cancel {
+    @extend .btn;
+    font-size: 1rem;
+    padding: 0 1rem;
+    border-radius: 1rem 0;
+    text-align: center;
+  }
+
+  &__save {
+    @extend .btn--primary;
+    background-color: $m-color-foreground;
+  }
+
+  &__cancel {
+    border: 2px solid #9ecaed;
   }
 }

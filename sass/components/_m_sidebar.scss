@@ -11,8 +11,11 @@
     }
     .active {
       border: 1px dashed;
-      color: $m-color-foreground;
       font-weight: bold;
+      color: $m-color-foreground;
+      a {
+        color: $m-color-foreground;
+      }
     }
     li {
       @extend .btn;
@@ -28,6 +31,10 @@
       }
       div {
         flex: 2;
+      }
+      a {
+        text-decoration: none;
+        color: gray;
       }
     }
   }
