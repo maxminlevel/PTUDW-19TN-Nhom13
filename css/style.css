@@ -756,8 +756,7 @@ body {
   background-color: #ffd363;
   width: auto;
   padding: 0 0.5rem;
-  font-size: 1rem;
-  border: none !important; }
+  font-size: 1rem; }
 
 .m__person__btn_delete {
   background-color: #ff6363; }
