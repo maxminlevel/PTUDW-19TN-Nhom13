@@ -89,7 +89,7 @@ body {
 .u-mb-s {
   margin-bottom: 1rem; }
 
-.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .m__sidebar li, .a__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
+.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .m__sidebar li, .a__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__related .form__search, .m__location__related .m__location__btn_edit, .m__location__related .m__location__btn_delete, .m__location__related .m__btn-link, .m__location__related .m__func div, .m__func .m__location__related div, .m__location__related .m__paging ul li, .m__paging ul .m__location__related li, .m__location__related .m__sidebar li, .m__sidebar .m__location__related li, .m__location__related .a__sidebar li, .a__sidebar .m__location__related li, .m__location__history .btn, .m__location__history .form__search, .m__location__history .m__location__btn_edit, .m__location__history .m__location__btn_delete, .m__location__history .m__btn-link, .m__location__history .m__func div, .m__func .m__location__history div, .m__location__history .m__paging ul li, .m__paging ul .m__location__history li, .m__location__history .m__sidebar li, .m__sidebar .m__location__history li, .m__location__history .a__sidebar li, .a__sidebar .m__location__history li, .m__person__related .btn, .m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .a__sidebar li, .a__sidebar .m__person__related li, .m__person__history .btn, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .a__sidebar li, .a__sidebar .m__person__history li, .m__person__btn_delete {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -388,6 +388,65 @@ body {
         .login__box .social-list li:nth-child(2) {
           margin: 0 1rem; }
 
+.homepage {
+  display: flex;
+  height: 100vh; }
+  .homepage__img-container {
+    display: flex;
+    flex: 1;
+    position: relative;
+    text-align: center;
+    color: white;
+    text-align: left; }
+    .homepage__img-container__img {
+      flex: 1;
+      background-size: cover;
+      background-image: linear-gradient(rgba(55, 134, 190, 0.75), rgba(55, 134, 190, 0.75)), url("../../images/bg-login.png");
+      animation-name: fadeIn;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-in; }
+    .homepage__img-container__introtext {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      transform: translate(-20%, -20%);
+      animation-name: fadeIn;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-in;
+      font-size: 2rem; }
+  .homepage__box {
+    flex: 1;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.6);
+    flex-direction: column;
+    align-items: center;
+    animation-name: moveInBottom;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-out; }
+    .homepage__box .logo {
+      width: 12rem;
+      height: 15rem;
+      margin-top: 1rem;
+      margin-bottom: -2rem;
+      padding: 2rem 0; }
+    .homepage__box__button {
+      display: flex;
+      flex-direction: row; }
+      .homepage__box__button .btn-link {
+        align-self: flex-end; }
+      .homepage__box__button .btn, .homepage__box__button .form__search, .homepage__box__button .m__location__btn_edit, .homepage__box__button .m__location__btn_delete, .homepage__box__button .m__btn-link, .homepage__box__button .m__func div, .m__func .homepage__box__button div, .homepage__box__button .m__paging ul li, .m__paging ul .homepage__box__button li, .homepage__box__button .m__sidebar li, .m__sidebar .homepage__box__button li, .homepage__box__button .a__sidebar li, .a__sidebar .homepage__box__button li, .homepage__box__button .m__person__btn_edit, .homepage__box__button .m__person__btn_delete {
+        width: 50%;
+        margin: 15rem 2rem 2rem 2em; }
+    .homepage__box .text-devide {
+      margin: 1rem 0; }
+    .homepage__box .social-list {
+      list-style-type: none; }
+      .homepage__box .social-list li {
+        display: inline-block;
+        margin-bottom: 1rem; }
+        .homepage__box .social-list li:nth-child(2) {
+          margin: 0 1rem; }
+
 .main {
   height: 68vh;
   background-color: #e5e5e5; }
@@ -411,7 +470,7 @@ body {
 .m__location__btn_delete {
   background-color: #ff6363; }
 
-.m__location__related .form__search, .m__location__related .m__location__btn_edit, .m__location__related .m__location__btn_delete, .m__location__related .m__btn-link, .m__location__related .m__func div, .m__func .m__location__related div, .m__location__related .m__paging ul li, .m__paging ul .m__location__related li, .m__location__related .m__sidebar li, .m__sidebar .m__location__related li, .m__location__related .a__sidebar li, .a__sidebar .m__location__related li, .m__location__related .m__person__btn_edit, .m__location__related .btn, .m__location__related .m__person__btn_delete, .m__location__history .form__search, .m__location__history .m__location__btn_edit, .m__location__history .m__location__btn_delete, .m__location__history .m__btn-link, .m__location__history .m__func div, .m__func .m__location__history div, .m__location__history .m__paging ul li, .m__paging ul .m__location__history li, .m__location__history .m__sidebar li, .m__sidebar .m__location__history li, .m__location__history .a__sidebar li, .a__sidebar .m__location__history li, .m__location__history .m__person__btn_edit, .m__location__history .btn, .m__location__history .m__person__btn_delete {
+.m__location__related .m__person__btn_edit, .m__location__related .btn, .m__location__related .form__search, .m__location__related .m__location__btn_edit, .m__location__related .m__location__btn_delete, .m__location__related .m__btn-link, .m__location__related .m__func div, .m__func .m__location__related div, .m__location__related .m__paging ul li, .m__paging ul .m__location__related li, .m__location__related .m__sidebar li, .m__sidebar .m__location__related li, .m__location__related .a__sidebar li, .a__sidebar .m__location__related li, .m__location__related .m__person__btn_delete, .m__location__history .m__person__btn_edit, .m__location__history .btn, .m__location__history .form__search, .m__location__history .m__location__btn_edit, .m__location__history .m__location__btn_delete, .m__location__history .m__btn-link, .m__location__history .m__func div, .m__func .m__location__history div, .m__location__history .m__paging ul li, .m__paging ul .m__location__history li, .m__location__history .m__sidebar li, .m__sidebar .m__location__history li, .m__location__history .a__sidebar li, .a__sidebar .m__location__history li, .m__location__history .m__person__btn_delete {
   background-color: #63bdff;
   width: auto;
   padding: 0 0.5rem;
@@ -498,7 +557,7 @@ body {
       border: 1px solid black;
       border-radius: 25% 0 25% 0; }
 
-.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .m__sidebar li, .a__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
+.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .m__sidebar li, .a__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__related .form__search, .m__location__related .m__location__btn_edit, .m__location__related .m__location__btn_delete, .m__location__related .m__btn-link, .m__location__related .m__func div, .m__func .m__location__related div, .m__location__related .m__paging ul li, .m__paging ul .m__location__related li, .m__location__related .m__sidebar li, .m__sidebar .m__location__related li, .m__location__related .a__sidebar li, .a__sidebar .m__location__related li, .m__location__history .btn, .m__location__history .form__search, .m__location__history .m__location__btn_edit, .m__location__history .m__location__btn_delete, .m__location__history .m__btn-link, .m__location__history .m__func div, .m__func .m__location__history div, .m__location__history .m__paging ul li, .m__paging ul .m__location__history li, .m__location__history .m__sidebar li, .m__sidebar .m__location__history li, .m__location__history .a__sidebar li, .a__sidebar .m__location__history li, .m__person__related .btn, .m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .a__sidebar li, .a__sidebar .m__person__related li, .m__person__history .btn, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .a__sidebar li, .a__sidebar .m__person__history li, .m__person__btn_delete {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -727,7 +786,7 @@ body {
   flex-direction: row;
   column-gap: 0.5rem; }
 
-.m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
+.m__person__btn_edit, .m__location__related .btn, .m__location__related .form__search, .m__location__related .m__location__btn_edit, .m__location__related .m__location__btn_delete, .m__location__related .m__btn-link, .m__location__related .m__func div, .m__func .m__location__related div, .m__location__related .m__paging ul li, .m__paging ul .m__location__related li, .m__location__related .m__sidebar li, .m__sidebar .m__location__related li, .m__location__related .a__sidebar li, .a__sidebar .m__location__related li, .m__location__history .btn, .m__location__history .form__search, .m__location__history .m__location__btn_edit, .m__location__history .m__location__btn_delete, .m__location__history .m__btn-link, .m__location__history .m__func div, .m__func .m__location__history div, .m__location__history .m__paging ul li, .m__paging ul .m__location__history li, .m__location__history .m__sidebar li, .m__sidebar .m__location__history li, .m__location__history .a__sidebar li, .a__sidebar .m__location__history li, .m__person__related .btn, .m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .a__sidebar li, .a__sidebar .m__person__related li, .m__person__history .btn, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .a__sidebar li, .a__sidebar .m__person__history li, .m__person__btn_delete {
   border-radius: 1rem;
   background-color: #ffd363;
   width: auto;
@@ -737,7 +796,28 @@ body {
 .m__person__btn_delete {
   background-color: #ff6363; }
 
-.m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .a__sidebar li, .a__sidebar .m__person__related li, .m__person__related .m__person__btn_edit, .m__person__related .btn, .m__person__related .m__person__btn_delete, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .a__sidebar li, .a__sidebar .m__person__history li, .m__person__history .m__person__btn_edit, .m__person__history .btn, .m__person__history .m__person__btn_delete {
+.m__person__related .m__person__btn_edit, .m__person__related .btn, .m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .a__sidebar li, .a__sidebar .m__person__related li, .m__person__related .m__person__btn_delete, .m__person__history .m__person__btn_edit, .m__person__history .btn, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .a__sidebar li, .a__sidebar .m__person__history li, .m__person__history .m__person__btn_delete {
+  background-color: #63bdff;
+  width: auto;
+  padding: 0 0.5rem;
+  color: white; }
+
+.m__person__btn_ed, .m__location__related, .m__location__history, .m__person__related, .m__person__history {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem; }
+
+.m__person__btn_edit, .m__location__related .btn, .m__location__related .form__search, .m__location__related .m__location__btn_edit, .m__location__related .m__location__btn_delete, .m__location__related .m__btn-link, .m__location__related .m__func div, .m__func .m__location__related div, .m__location__related .m__paging ul li, .m__paging ul .m__location__related li, .m__location__related .m__sidebar li, .m__sidebar .m__location__related li, .m__location__related .a__sidebar li, .a__sidebar .m__location__related li, .m__location__history .btn, .m__location__history .form__search, .m__location__history .m__location__btn_edit, .m__location__history .m__location__btn_delete, .m__location__history .m__btn-link, .m__location__history .m__func div, .m__func .m__location__history div, .m__location__history .m__paging ul li, .m__paging ul .m__location__history li, .m__location__history .m__sidebar li, .m__sidebar .m__location__history li, .m__location__history .a__sidebar li, .a__sidebar .m__location__history li, .m__person__related .btn, .m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .a__sidebar li, .a__sidebar .m__person__related li, .m__person__history .btn, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .a__sidebar li, .a__sidebar .m__person__history li, .m__person__btn_delete {
+  border-radius: 1rem;
+  background-color: #ffd363;
+  width: auto;
+  padding: 0 0.5rem;
+  font-size: 1rem; }
+
+.m__person__btn_delete {
+  background-color: #ff6363; }
+
+.m__person__related .m__person__btn_edit, .m__person__related .btn, .m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .a__sidebar li, .a__sidebar .m__person__related li, .m__person__related .m__person__btn_delete, .m__person__history .m__person__btn_edit, .m__person__history .btn, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .a__sidebar li, .a__sidebar .m__person__history li, .m__person__history .m__person__btn_delete {
   background-color: #63bdff;
   width: auto;
   padding: 0 0.5rem;
