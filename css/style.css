@@ -157,6 +157,22 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+.btn-float {
+  position: fixed;
+  width: 6rem;
+  height: 6rem;
+  bottom: 4rem;
+  right: 4rem;
+  background-color: #2579f2;
+  color: #fff;
+  border-radius: 5rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem #999;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+
 .form {
   width: 70%;
   display: flex;
@@ -454,6 +470,85 @@ body {
           font-weight: 700;
           color: #2579f2;
           cursor: default; }
+
+.icon__status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  color: #FF1818; }
+
+#payment_modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+  #payment_modal .payment_modal_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #777;
+    width: 30%;
+    color: #000; }
+    #payment_modal .payment_modal_container h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    #payment_modal .payment_modal_container .payment_detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem; }
+    #payment_modal .payment_modal_container .divine {
+      height: 0.2rem;
+      background-color: #e5e5e5;
+      margin-bottom: 1rem; }
+    #payment_modal .payment_modal_container .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #fff;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer; }
+    #payment_modal .payment_modal_container .payment__deposit {
+      background-color: #FF1818;
+      margin-bottom: 1rem; }
+    #payment_modal .payment_modal_container .payment__payoff {
+      background-color: #2579f2;
+      margin-bottom: 1rem; }
+    #payment_modal .payment_modal_container .payment__payoff_withAnother {
+      background-color: #005baa; }
+    #payment_modal .payment_modal_container .btn__close {
+      position: absolute;
+      top: 0.4rem;
+      right: 0.8rem;
+      font-size: 1.5rem;
+      cursor: pointer; }
 
 body {
   background-color: #e5e5e5; }
