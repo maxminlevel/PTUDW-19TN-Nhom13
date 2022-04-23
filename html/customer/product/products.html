@@ -12,13 +12,13 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         />
-        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="/css/style.css" />
         <link
             rel="shortcut icon"
-            href="../../images/favicon.ico"
+            href="/images/favicon.ico"
             type="image/x-icon"
         />
-        <title>Packs</title>
+        <title>Products</title>
     </head>
     <body>
         <div>
@@ -27,7 +27,7 @@
                     <div class="header__container">
                         <a href="#">
                             <img
-                                src="../../images/logo.png"
+                                src="/images/logo.png"
                                 alt="Logo website"
                                 class="logo"
                             />
@@ -48,7 +48,7 @@
                         </div>
                         <div class="infor">
                             <img
-                                src="../../images/avatar.jpg"
+                                src="/images/avatar.jpg"
                                 alt="Avatar person"
                                 class="infor__avatar"
                             />
@@ -63,7 +63,7 @@
                 </div>
                 <div class="navbar__customer">
                     <div class="navbar__inner">
-                        <a href="packs.html" class="item">
+                        <a href="../pack/packs.html" class="item">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 enable-background="new 0 0 24 24"
@@ -91,7 +91,7 @@
                             </svg>
                             <div>Mua theo gói</div>
                         </a>
-                        <a href="products.html" class="item">
+                        <a href="../product/products.html" class="item">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 height="24px"
@@ -110,8 +110,8 @@
                 </div>
             </header>
 
-            <main class="main">
-                <h1>Mua theo gói</h1>
+            <main class="main__products">
+                <h1>Mua riêng sản phẩm</h1>
 
                 <form>
                     <div class="filter">
@@ -135,9 +135,10 @@
                                 id="filter__classify"
                             >
                                 <option value="default">Tất cả</option>
-                                <option value="day pack">Gói ngày</option>
-                                <option value="week pack">Gói tuần</option>
-                                <option value="month pack">Gói tháng</option>
+                                <option value="food">Đồ ăn</option>
+                                <option value="drink">Thức uống</option>
+                                <option value="item">Đồ dùng</option>
+                                <option value="medicine">Thuốc</option>
                             </select>
                         </div>
                         <div>
@@ -150,109 +151,103 @@
                 </form>
 
                 <div class="main__content">
-                    <div class="list__product">
-                        <div class="item__product">
-                            <a class="image__product" tabindex="-1" href="#">
+                    <div class="product__list">
+                        <div class="product__item">
+                            <a class="product__image" tabindex="-1" href="#">
                                 <img
-                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                    src="https://cf.shopee.vn/file/26b8c231754594ad20e92447891ae696"
                                 />
                             </a>
-                            <a class="name__product" href="#"
-                                >Gói nhu yếu phẩm 1</a
-                            >
-                            <div class="type__product">
-                                <div>Gói tuần</div>
+                            <a class="product__name" href="#">Mì tôm hảo hảo</a>
+                            <div class="product__type">
+                                <div>120.000đ</div>
                             </div>
                         </div>
-                        <div class="item__product">
-                            <a class="image__product" tabindex="-1" href="#">
+                        <div class="product__item">
+                            <a class="product__image" tabindex="-1" href="#">
                                 <img
-                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                    src="https://cf.shopee.vn/file/7d1ad1340182f5e5baca900994aafcd3"
                                 />
                             </a>
-                            <a class="name__product" href="#"
-                                >Gói nhu yếu phẩm 1</a
-                            >
-                            <div class="type__product">
-                                <div>Gói tuần</div>
+                            <a class="product__name" href="#">Mì tôm Omachi</a>
+                            <div class="product__type">
+                                <div>255.000đ</div>
                             </div>
                         </div>
-                        <div class="item__product">
-                            <a class="image__product" tabindex="-1" href="#">
+                        <div class="product__item">
+                            <a class="product__image" tabindex="-1" href="#">
                                 <img
-                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                    src="https://cdn.tgdd.vn/Products/Images/2563/84812/bhx/thung-24-chai-nuoc-khoang-la-vie-500ml-202112312140494206.jpg"
                                 />
                             </a>
-                            <a class="name__product" href="#"
-                                >Gói nhu yếu phẩm 1</a
+                            <a class="product__name" href="#"
+                                >Nước suối lavie</a
                             >
-                            <div class="type__product">
-                                <div>Gói tuần</div>
+                            <div class="product__type">
+                                <div>26.000đ</div>
                             </div>
                         </div>
-                        <div class="item__product">
-                            <a class="image__product" tabindex="-1" href="#">
+                        <div class="product__item">
+                            <a class="product__image" tabindex="-1" href="#">
                                 <img
-                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                    src="https://minhcaumart.vn/media/com_eshop/products/8936034875258.jpg"
                                 />
                             </a>
-                            <a class="name__product" href="#"
-                                >Gói nhu yếu phẩm 1</a
+                            <a class="product__name" href="#"
+                                >Xúc xích Ponnie</a
                             >
-                            <div class="type__product">
-                                <div>Gói tuần</div>
+                            <div class="product__type">
+                                <div>40.000đ</div>
                             </div>
                         </div>
-                        <div class="item__product">
-                            <a class="image__product" tabindex="-1" href="#">
+                        <div class="product__item">
+                            <a class="product__image" tabindex="-1" href="#">
                                 <img
-                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                    src="https://product.hstatic.net/1000273655/product/gao-st25-soc-trang_461561282c4144d691615df52ebd8e0c_master.png"
                                 />
                             </a>
-                            <a class="name__product" href="#"
-                                >Gói nhu yếu phẩm 1</a
-                            >
-                            <div class="type__product">
-                                <div>Gói tuần</div>
+                            <a class="product__name" href="#">Gạo ST25</a>
+                            <div class="product__type">
+                                <div>270.000đ</div>
                             </div>
                         </div>
-                        <div class="item__product">
-                            <a class="image__product" tabindex="-1" href="#">
+                        <div class="product__item">
+                            <a class="product__image" tabindex="-1" href="#">
                                 <img
-                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                    src="https://www.minhcaumart.vn/media/com_eshop/products/8934839125080.jpg"
                                 />
                             </a>
-                            <a class="name__product" href="#"
-                                >Gói nhu yếu phẩm 1</a
+                            <a class="product__name" href="#"
+                                >Kem đánh răng PS</a
                             >
-                            <div class="type__product">
-                                <div>Gói tuần</div>
+                            <div class="product__type">
+                                <div>20.000đ</div>
                             </div>
                         </div>
-                        <div class="item__product">
-                            <a class="image__product" tabindex="-1" href="#">
+                        <div class="product__item">
+                            <a class="product__image" tabindex="-1" href="#">
                                 <img
-                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                    src="https://cdn.tgdd.vn/Products/Images/2567/213563/bhx/tuong-ot-chinsu-chai-500g-201911011615532253.jpg"
                                 />
                             </a>
-                            <a class="name__product" href="#"
-                                >Gói nhu yếu phẩm 1</a
+                            <a class="product__name" href="#"
+                                >Tương ớt Chinsu</a
                             >
-                            <div class="type__product">
-                                <div>Gói tuần</div>
+                            <div class="product__type">
+                                <div>10.000đ</div>
                             </div>
                         </div>
-                        <div class="item__product">
-                            <a class="image__product" tabindex="-1" href="#">
+                        <div class="product__item">
+                            <a class="product__image" tabindex="-1" href="#">
                                 <img
-                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                                    src="https://sangha.vn/image/xa-bong-cuc-lifebuoy-sach-hon-a7.png"
                                 />
                             </a>
-                            <a class="name__product" href="#"
-                                >Gói nhu yếu phẩm 1</a
+                            <a class="product__name" href="#"
+                                >Xà bông Lifebuoy</a
                             >
-                            <div class="type__product">
-                                <div>Gói tuần</div>
+                            <div class="product__type">
+                                <div>45.000đ</div>
                             </div>
                         </div>
                     </div>

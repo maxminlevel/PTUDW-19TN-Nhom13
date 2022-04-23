@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>Covide page</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./images/favicon.ico"
+            type="image/x-icon"
+        />
+        <title>Covide page</title>
+    </head>
 
-  <body>
-    <ul>
-      <li><a href="./html/login.html" class="href">Login</a></li>
-      <li><a href="./html/signup.html" class="href">Signup</a></li>
-      <li>
-        Customer
+    <body>
         <ul>
-          <li><a href="./html/customer/packs.html">Packs</a></li>
-          <li><a href="./html/customer/pack.html">Pack</a></li>
-          <li><a href="./html/customer/products.html">Producs</a></li>
-          <li><a href="./html/customer/product.html">Product</a></li>
-          <li><a href="./html/customer/cart.html">Cart</a></li>
-          <li><a href="./html/customer/profile.html">Profile</a></li>
-          <li><a href="./html/customer/wallet.html">Wallet</a></li>
-          <li><a href="./html/customer/history/activity.html">Activity</a></li>
-          <li><a href="./html/customer/history/managed.html">Managed</a></li>
+            <li><a href="./html/login.html" class="href">Login</a></li>
+            <li><a href="./html/signup.html" class="href">Signup</a></li>
+            <li>
+                Customer
+                <ul>
+                    <li><a href="./html/customer/pack/packs.html">Packs</a></li>
+                    <li><a href="./html/customer/pack/pack.html">Pack</a></li>
+                    <li>
+                        <a href="./html/customer/pack/packProduct.html"
+                            >Pack Product</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./html/customer/product/products.html"
+                            >Producs</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./html/customer/product/product.html"
+                            >Product</a
+                        >
+                    </li>
+                    <li><a href="./html/customer/cart.html">Cart</a></li>
+                    <li><a href="./html/customer/profile.html">Profile</a></li>
+                    <li><a href="./html/customer/wallet.html">Wallet</a></li>
+                    <li>
+                        <a href="./html/customer/history/activity.html"
+                            >Activity</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./html/customer/history/managed.html"
+                            >Managed</a
+                        >
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Manager
+                <ul>
+                    <li><a href="./html/manager/persons.html">Persons</a></li>
+                    <li><a href="./html/manager/products.html">Products</a></li>
+                    <li><a href="./html/manager/packs.html">Packs</a></li>
+                    <li><a href="./html/manager/pack.html">Pack</a></li>
+                    <li><a href="./html/manager/money.html">Money</a></li>
+                    <li>
+                        <a href="./html/manager/statistic.html">Statistic</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Admin
+                <ul>
+                    <li><a href="./html/admin/users.html">Users</a></li>
+                    <li><a href="./html/admin/location.html">Location</a></li>
+                    <li><a href="./html/admin/history.html">History</a></li>
+                </ul>
+            </li>
         </ul>
-      </li>
-      <li>
-        Manager
-        <ul>
-          <li><a href="./html/manager/persons.html">Persons</a></li>
-          <li><a href="./html/manager/products.html">Products</a></li>
-          <li><a href="./html/manager/packs.html">Packs</a></li>
-          <li><a href="./html/manager/pack.html">Pack</a></li>
-          <li><a href="./html/manager/money.html">Money</a></li>
-          <li><a href="./html/manager/statistic.html">Statistic</a></li>
-        </ul>
-      </li>
-      <li>
-        Admin
-        <ul>
-          <li><a href="./html/admin/users.html">Users</a></li>
-          <li><a href="./html/admin/location.html">Location</a></li>
-          <li><a href="./html/admin/history.html">History</a></li>
-        </ul>
-      </li>
-    </ul>
 
-    <!-- Example load innerHtml
+        <!-- Example load innerHtml
   Step 1: Insert jquery min js
   Step 2: Create null div with id or loading div
   Step 3: load html -->
 
-    <!-- <div id="test"></div>
+        <!-- <div id="test"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(function(){
       $('#test').load('./html/admin/persons.html');
     })
   </script> -->
-  </body>
+    </body>
 </html>

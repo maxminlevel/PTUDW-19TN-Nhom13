@@ -18,36 +18,32 @@
     .product__viewImage {
         .product__mainImage {
             max-width: 100%;
-            height: 450px;
+            height: 45rem;
 
             img {
-                object-fit: fill;
                 max-width: 100%;
                 height: 100%;
             }
         }
 
         .product__listImage {
-            display: grid;
+            display: flex;
             width: 100%;
-
-            grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 1rem;
 
             div {
                 display: flex;
                 justify-content: center;
 
-                height: 100px;
+                height: 10rem;
 
                 &:hover {
-                    border: solid 1px $color-black;
-                    padding: 8px;
+                    border: solid 0.1rem $color-black;
+                    padding: 0.8rem;
                 }
             }
 
             img {
-                object-fit: fill;
                 max-width: 100%;
                 max-height: 100%;
             }
@@ -98,7 +94,7 @@
                     align-items: center;
 
                     border-style: solid;
-                    border-width: 1px;
+                    border-width: 0.1rem;
                     border-color: $color-black;
 
                     &:hover {
@@ -111,7 +107,7 @@
                     height: 100%;
                     text-align: center;
 
-                    border-width: 1px 0 1px 0;
+                    border-width: 0.1rem 0 0.1rem 0;
                 }
             }
         }
@@ -134,10 +130,10 @@
 
             .product__btnBack {
                 color: $color-primary-dark;
-                padding: 0.75rem 1rem;
+                padding: 0.75rem 2rem;
                 background-color: $color-white;
                 border: solid;
-                border-width: 2px;
+                border-width: 0.2rem;
                 border-radius: 0.5rem;
                 cursor: pointer;
 
@@ -148,8 +144,8 @@
 
         .btn__close {
             position: absolute;
-            top: 8px;
-            right: 10px;
+            top: 0.8rem;
+            right: 1rem;
 
             font-size: 3rem;
 
