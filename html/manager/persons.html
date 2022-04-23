@@ -25,12 +25,43 @@
         <div class="m__content">
           <div class="m__content__header">
             <div class="m__title heading-primary">User</div>
-            <div class="btn btn--primary">
-              <a href="./add-person.html">New user</a>
+            <div class="m__func">
+              <div class="btn btn--primary">
+                <a href="./add-person.html">New user</a>
+              </div>
+              <div class="btn btn--primary">Import file</div>
             </div>
-            <div class="btn btn--primary">Import file</div>
           </div>
-          <div class="s__filter"></div>
+          <form action="submit" method="post">
+            <ul class="s__filter">
+              <li>
+                <label for="fullname">Fullname</label>
+                <input type="text" name="fullname" id="fullname" />
+              </li>
+              <li>
+                <label for="citizen">Citizen ID</label>
+                <input type="text" name="citizen" id="citizen" />
+              </li>
+              <li>
+                <label for="dob">DoB</label>
+                <input type="date" name="dob" id="dob" />
+              </li>
+              <li>
+                <label for="state">State</label>
+                <input type="text" name="state" id="state" />
+              </li>
+              <li>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" />
+              </li>
+              <li>
+                <button type="submit" value="submit" class="form__search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </li>
+            </ul>
+          </form>
+          <div class="line"></div>
           <table class="s__table">
             <tr>
               <th>
@@ -85,24 +116,200 @@
                 <span> </span>
               </th>
             </tr>
-            <tr>
+            <tr class="m__person__row">
               <td>001</td>
               <td>Nguyễn Văn A</td>
               <td>1122334556677</td>
               <td>12/12/1999</td>
               <td>F0</td>
-              <td>112 Nguyễn Văn Cừ, phường 10, quận 5, TP Hồ Chí Minh</td>
+              <td>112 Nguyễn Văn Cừ, P 10, Q 5, TP HCM</td>
               <td>
-                <span>
-                  <p>1</p>
-                  <a href="#"><button>Detail</button></a>
-                </span>
+                <div class="m__person__history">
+                  <div id="m__person__history">1</div>
+                  <div class="btn">Detail</div>
+                </div>
               </td>
               <td>
-                <span>
-                  <p>1</p>
-                  <a href="#"><button>Detail</button></a>
-                </span>
+                <div class="m__person__related">
+                  <div id="m__person__related">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td class="m__person__btn_ed">
+                <div class="m__person__btn_edit">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="m__person__btn_delete">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </td>
+            </tr>
+            <tr class="m__person__row">
+              <td>001</td>
+              <td>Nguyễn Văn A</td>
+              <td>1122334556677</td>
+              <td>12/12/1999</td>
+              <td>F0</td>
+              <td>112 Nguyễn Văn Cừ, P 10, Q 5, TP HCM</td>
+              <td>
+                <div class="m__person__history">
+                  <div id="m__person__history">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td>
+                <div class="m__person__related">
+                  <div id="m__person__related">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td class="m__person__btn_ed">
+                <div class="m__person__btn_edit">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="m__person__btn_delete">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </td>
+            </tr>
+            <tr class="m__person__row">
+              <td>001</td>
+              <td>Nguyễn Văn A</td>
+              <td>1122334556677</td>
+              <td>12/12/1999</td>
+              <td>F0</td>
+              <td>112 Nguyễn Văn Cừ, P 10, Q 5, TP HCM</td>
+              <td>
+                <div class="m__person__history">
+                  <div id="m__person__history">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td>
+                <div class="m__person__related">
+                  <div id="m__person__related">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td class="m__person__btn_ed">
+                <div class="m__person__btn_edit">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="m__person__btn_delete">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </td>
+            </tr>
+            <tr class="m__person__row">
+              <td>001</td>
+              <td>Nguyễn Văn A</td>
+              <td>1122334556677</td>
+              <td>12/12/1999</td>
+              <td>F0</td>
+              <td>112 Nguyễn Văn Cừ, P 10, Q 5, TP HCM</td>
+              <td>
+                <div class="m__person__history">
+                  <div id="m__person__history">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td>
+                <div class="m__person__related">
+                  <div id="m__person__related">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td class="m__person__btn_ed">
+                <div class="m__person__btn_edit">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="m__person__btn_delete">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </td>
+            </tr>
+            <tr class="m__person__row">
+              <td>001</td>
+              <td>Nguyễn Văn A</td>
+              <td>1122334556677</td>
+              <td>12/12/1999</td>
+              <td>F0</td>
+              <td>112 Nguyễn Văn Cừ, P 10, Q 5, TP HCM</td>
+              <td>
+                <div class="m__person__history">
+                  <div id="m__person__history">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td>
+                <div class="m__person__related">
+                  <div id="m__person__related">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td class="m__person__btn_ed">
+                <div class="m__person__btn_edit">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="m__person__btn_delete">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </td>
+            </tr>
+            <tr class="m__person__row">
+              <td>001</td>
+              <td>Nguyễn Văn A</td>
+              <td>1122334556677</td>
+              <td>12/12/1999</td>
+              <td>F0</td>
+              <td>112 Nguyễn Văn Cừ, P 10, Q 5, TP HCM</td>
+              <td>
+                <div class="m__person__history">
+                  <div id="m__person__history">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td>
+                <div class="m__person__related">
+                  <div id="m__person__related">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td class="m__person__btn_ed">
+                <div class="m__person__btn_edit">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="m__person__btn_delete">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </td>
+            </tr>
+            <tr class="m__person__row">
+              <td>001</td>
+              <td>Nguyễn Văn A</td>
+              <td>1122334556677</td>
+              <td>12/12/1999</td>
+              <td>F0</td>
+              <td>112 Nguyễn Văn Cừ, P 10, Q 5, TP HCM</td>
+              <td>
+                <div class="m__person__history">
+                  <div id="m__person__history">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td>
+                <div class="m__person__related">
+                  <div id="m__person__related">1</div>
+                  <div class="btn">Detail</div>
+                </div>
+              </td>
+              <td class="m__person__btn_ed">
+                <div class="m__person__btn_edit">
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="m__person__btn_delete">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
               </td>
             </tr>
           </table>

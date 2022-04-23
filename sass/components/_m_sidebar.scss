@@ -10,8 +10,9 @@
       row-gap: 0.8rem;
     }
     .active {
-      color: black;
       border: 1px dashed;
+      color: $m-color-foreground;
+      font-weight: bold;
     }
     li {
       @extend .btn;
