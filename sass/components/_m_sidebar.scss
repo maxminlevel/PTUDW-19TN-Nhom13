@@ -10,8 +10,12 @@
       row-gap: 0.8rem;
     }
     .active {
-      color: black;
       border: 1px dashed;
+      font-weight: bold;
+      color: $m-color-foreground;
+      a {
+        color: $m-color-foreground;
+      }
     }
     li {
       @extend .btn;
@@ -27,6 +31,10 @@
       }
       div {
         flex: 2;
+      }
+      a {
+        text-decoration: none;
+        color: gray;
       }
     }
   }
