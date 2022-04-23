@@ -1,26 +1,43 @@
-// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 .m {
   &__nav {
+    position: sticky;
     display: flex;
-    background-color: #e4f4ff;
-    width: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $m-color-primary;
+    padding: 1rem 0rem 1rem 1rem;
+    align-items: center;
 
     &__logo {
       a {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
         text-decoration: none;
         font-size: 1.5rem;
+        gap: 0.5rem;
+        color: black;
+      }
+      img {
+        width: 64px;
       }
     }
     &__info {
       display: flex;
-      &__name {
-      }
-      &__role {
-      }
+      flex-direction: row;
+      padding-right: 3rem;
+      font-weight: bold;
+      gap: 1rem;
+      align-items: center;
       img {
-        width: 48px;
+        width: 4rem;
         border-radius: 3rem;
       }
+    }
+    &__profile {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
     }
   }
 }
