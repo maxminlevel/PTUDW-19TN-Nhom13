@@ -130,11 +130,12 @@ body {
       width: 12rem;
       height: 15rem;
       margin-top: 1rem;
-      margin-bottom: -2rem;
+      margin-bottom: -1rem;
       padding: 2rem 0; }
     .login__box .btn-link {
       align-self: flex-end; }
-    .login__box .btn, .login__box .form__search, .login__box .m__location__btn_edit, .login__box .m__location__btn_delete, .login__box .m__btn-link, .login__box .m__func div, .m__func .login__box div, .login__box .m__paging ul li, .m__paging ul .login__box li, .login__box .s__btn__submit ul li, .s__btn__submit ul .login__box li, .login__box .btn__save, .login__box .btn__cancel, .login__box .m__sidebar li, .m__sidebar .login__box li, .login__box .a__sidebar li, .a__sidebar .login__box li, .login__box .m__person__btn_edit, .login__box .m__person__btn_delete {
+    .login__box .btn, .login__box .form__search, .login__box .m__location__btn_edit, .login__box .m__location__btn_delete, .login__box .m__btn-link, .login__box .m__func div, .m__func .login__box div, .login__box .m__paging ul li, .m__paging ul .login__box li, .login__box .s__btn__submit ul li, .s__btn__submit ul .login__box li, .login__box .btn__save, .login__box .btn__cancel, .login__box .m__sidebar li, .m__sidebar .login__box li,
+    .login__box .a__sidebar li, .a__sidebar .login__box li, .login__box .m__person__btn_edit, .login__box .m__person__btn_delete {
       width: 100%; }
     .login__box .text-devide {
       margin: 1rem 0; }
@@ -148,8 +149,8 @@ body {
   .login .demo {
     position: absolute;
     top: 50%;
-    left: 5rem;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center; }
     .login .demo__text {
@@ -178,7 +179,8 @@ body {
         transform: translateY(-1px);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .s__btn__submit ul li, .btn__save, .btn__cancel, .m__sidebar li, .a__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
+.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .s__btn__submit ul li, .btn__save, .btn__cancel, .m__sidebar li,
+.a__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -222,11 +224,13 @@ body {
     .btn--accent-dark:hover {
       opacity: 0.8;
       cursor: pointer; }
-  .btn:hover:not(.btn--accent-dark), .form__search:hover:not(.btn--accent-dark), .m__location__btn_edit:hover:not(.btn--accent-dark), .m__location__btn_delete:hover:not(.btn--accent-dark), .m__btn-link:hover:not(.btn--accent-dark), .m__func div:hover:not(.btn--accent-dark), .m__paging ul li:hover:not(.btn--accent-dark), .s__btn__submit ul li:hover:not(.btn--accent-dark), .btn__save:hover:not(.btn--accent-dark), .btn__cancel:hover:not(.btn--accent-dark), .m__sidebar li:hover:not(.btn--accent-dark), .a__sidebar li:hover:not(.btn--accent-dark), .m__person__btn_edit:hover:not(.btn--accent-dark), .m__person__btn_delete:hover:not(.btn--accent-dark) {
+  .btn:hover:not(.btn--accent-dark), .form__search:hover:not(.btn--accent-dark), .m__location__btn_edit:hover:not(.btn--accent-dark), .m__location__btn_delete:hover:not(.btn--accent-dark), .m__btn-link:hover:not(.btn--accent-dark), .m__func div:hover:not(.btn--accent-dark), .m__paging ul li:hover:not(.btn--accent-dark), .s__btn__submit ul li:hover:not(.btn--accent-dark), .btn__save:hover:not(.btn--accent-dark), .btn__cancel:hover:not(.btn--accent-dark), .m__sidebar li:hover:not(.btn--accent-dark),
+  .a__sidebar li:hover:not(.btn--accent-dark), .m__person__btn_edit:hover:not(.btn--accent-dark), .m__person__btn_delete:hover:not(.btn--accent-dark) {
     cursor: pointer;
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:active:not(.btn--accent-dark), .form__search:active:not(.btn--accent-dark), .m__location__btn_edit:active:not(.btn--accent-dark), .m__location__btn_delete:active:not(.btn--accent-dark), .m__btn-link:active:not(.btn--accent-dark), .m__func div:active:not(.btn--accent-dark), .m__paging ul li:active:not(.btn--accent-dark), .s__btn__submit ul li:active:not(.btn--accent-dark), .btn__save:active:not(.btn--accent-dark), .btn__cancel:active:not(.btn--accent-dark), .m__sidebar li:active:not(.btn--accent-dark), .a__sidebar li:active:not(.btn--accent-dark), .m__person__btn_edit:active:not(.btn--accent-dark), .m__person__btn_delete:active:not(.btn--accent-dark) {
+  .btn:active:not(.btn--accent-dark), .form__search:active:not(.btn--accent-dark), .m__location__btn_edit:active:not(.btn--accent-dark), .m__location__btn_delete:active:not(.btn--accent-dark), .m__btn-link:active:not(.btn--accent-dark), .m__func div:active:not(.btn--accent-dark), .m__paging ul li:active:not(.btn--accent-dark), .s__btn__submit ul li:active:not(.btn--accent-dark), .btn__save:active:not(.btn--accent-dark), .btn__cancel:active:not(.btn--accent-dark), .m__sidebar li:active:not(.btn--accent-dark),
+  .a__sidebar li:active:not(.btn--accent-dark), .m__person__btn_edit:active:not(.btn--accent-dark), .m__person__btn_delete:active:not(.btn--accent-dark) {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
@@ -282,6 +286,13 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer; }
+  .btn-float:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn-float:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .form {
   width: 70%;
@@ -303,8 +314,10 @@ body {
   .form__search {
     background-color: white;
     padding: 0 !important;
-    font-size: 1rem !important;
-    background: none !important; }
+    font-size: 2.5rem !important;
+    background: none !important;
+    align-items: center;
+    margin-top: 1rem; }
 
 .search-bar {
   display: flex;
@@ -345,7 +358,8 @@ body {
   .infor__name {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 0.5rem; }
 
 .breadcrumb {
   padding: 1rem 1.4rem;
@@ -390,7 +404,8 @@ body {
     justify-content: flex-end;
     column-gap: 0.4rem;
     align-items: flex-end; }
-    .cart__table .amount .btn, .cart__table .amount .form__search, .cart__table .amount .m__location__btn_edit, .cart__table .amount .m__location__btn_delete, .cart__table .amount .m__btn-link, .cart__table .amount .m__func div, .m__func .cart__table .amount div, .cart__table .amount .m__paging ul li, .m__paging ul .cart__table .amount li, .cart__table .amount .s__btn__submit ul li, .s__btn__submit ul .cart__table .amount li, .cart__table .amount .btn__save, .cart__table .amount .btn__cancel, .cart__table .amount .m__sidebar li, .m__sidebar .cart__table .amount li, .cart__table .amount .a__sidebar li, .a__sidebar .cart__table .amount li, .cart__table .amount .m__person__btn_edit, .cart__table .amount .m__person__btn_delete {
+    .cart__table .amount .btn, .cart__table .amount .form__search, .cart__table .amount .m__location__btn_edit, .cart__table .amount .m__location__btn_delete, .cart__table .amount .m__btn-link, .cart__table .amount .m__func div, .m__func .cart__table .amount div, .cart__table .amount .m__paging ul li, .m__paging ul .cart__table .amount li, .cart__table .amount .s__btn__submit ul li, .s__btn__submit ul .cart__table .amount li, .cart__table .amount .btn__save, .cart__table .amount .btn__cancel, .cart__table .amount .m__sidebar li, .m__sidebar .cart__table .amount li,
+    .cart__table .amount .a__sidebar li, .a__sidebar .cart__table .amount li, .cart__table .amount .m__person__btn_edit, .cart__table .amount .m__person__btn_delete {
       padding: 0.2rem 0.6rem; }
     .cart__table .amount__value {
       text-align: center;
@@ -413,8 +428,7 @@ body {
     cursor: pointer; }
 
 .header {
-  background-color: #2579f2;
-  height: 13rem; }
+  background-color: #2579f2; }
   .header__container {
     height: 8rem;
     display: flex;
@@ -431,38 +445,39 @@ body {
       flex: 2; }
     .header__container .form__contact {
       margin-bottom: 0; }
-  .header .navbar__customer {
-    margin-bottom: 0;
-    background-color: #fff;
-    height: 5rem; }
-    .header .navbar__customer .navbar__inner {
-      padding-bottom: 1rem;
-      padding-top: 1rem;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 114rem;
+
+.navbar__customer {
+  margin-bottom: 0;
+  background-color: #fff;
+  height: 5rem; }
+  .navbar__customer .navbar__inner {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 114rem;
+    display: flex;
+    gap: 3rem; }
+    .navbar__customer .navbar__inner .item {
       display: flex;
-      gap: 3rem; }
-      .header .navbar__customer .navbar__inner .item {
-        display: flex;
+      align-items: center;
+      text-decoration: inherit; }
+      .navbar__customer .navbar__inner .item svg {
         align-items: center;
-        text-decoration: inherit; }
-        .header .navbar__customer .navbar__inner .item svg {
-          align-items: center;
-          color: #fff;
-          border-radius: 0.5rem;
-          width: 3rem;
-          height: 3rem;
-          padding: 0.5rem; }
-        .header .navbar__customer .navbar__inner .item:nth-child(1) svg {
-          background-color: #2579f2; }
-        .header .navbar__customer .navbar__inner .item:nth-child(2) svg {
-          background-color: #ff1818; }
-        .header .navbar__customer .navbar__inner .item div {
-          color: #000;
-          margin-left: 0.75rem;
-          font-weight: 700;
-          font-size: 1.2rem; }
+        color: #fff;
+        border-radius: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem; }
+      .navbar__customer .navbar__inner .item:nth-child(1) svg {
+        background-color: #2579f2; }
+      .navbar__customer .navbar__inner .item:nth-child(2) svg {
+        background-color: #ff1818; }
+      .navbar__customer .navbar__inner .item div {
+        color: #000;
+        margin-left: 0.75rem;
+        font-weight: 700;
+        font-size: 1.2rem; }
 
 .footer {
   position: relative;
@@ -524,11 +539,12 @@ body {
       width: 12rem;
       height: 15rem;
       margin-top: 1rem;
-      margin-bottom: -2rem;
+      margin-bottom: -1rem;
       padding: 2rem 0; }
     .login__box .btn-link {
       align-self: flex-end; }
-    .login__box .btn, .login__box .form__search, .login__box .m__location__btn_edit, .login__box .m__location__btn_delete, .login__box .m__btn-link, .login__box .m__func div, .m__func .login__box div, .login__box .m__paging ul li, .m__paging ul .login__box li, .login__box .s__btn__submit ul li, .s__btn__submit ul .login__box li, .login__box .btn__save, .login__box .btn__cancel, .login__box .m__sidebar li, .m__sidebar .login__box li, .login__box .a__sidebar li, .a__sidebar .login__box li, .login__box .m__person__btn_edit, .login__box .m__person__btn_delete {
+    .login__box .btn, .login__box .form__search, .login__box .m__location__btn_edit, .login__box .m__location__btn_delete, .login__box .m__btn-link, .login__box .m__func div, .m__func .login__box div, .login__box .m__paging ul li, .m__paging ul .login__box li, .login__box .s__btn__submit ul li, .s__btn__submit ul .login__box li, .login__box .btn__save, .login__box .btn__cancel, .login__box .m__sidebar li, .m__sidebar .login__box li,
+    .login__box .a__sidebar li, .a__sidebar .login__box li, .login__box .m__person__btn_edit, .login__box .m__person__btn_delete {
       width: 100%; }
     .login__box .text-devide {
       margin: 1rem 0; }
@@ -542,8 +558,8 @@ body {
   .login .demo {
     position: absolute;
     top: 50%;
-    left: 5rem;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center; }
     .login .demo__text {
@@ -595,7 +611,8 @@ body {
       margin: 1rem auto;
       column-gap: 1.5rem;
       justify-content: flex-end; }
-      .main .cart__btn .btn, .main .cart__btn .form__search, .main .cart__btn .m__location__btn_edit, .main .cart__btn .m__location__btn_delete, .main .cart__btn .m__btn-link, .main .cart__btn .m__func div, .m__func .main .cart__btn div, .main .cart__btn .m__paging ul li, .m__paging ul .main .cart__btn li, .main .cart__btn .s__btn__submit ul li, .s__btn__submit ul .main .cart__btn li, .main .cart__btn .btn__save, .main .cart__btn .btn__cancel, .main .cart__btn .m__sidebar li, .m__sidebar .main .cart__btn li, .main .cart__btn .a__sidebar li, .a__sidebar .main .cart__btn li, .main .cart__btn .m__person__btn_edit, .main .cart__btn .m__person__btn_delete {
+      .main .cart__btn .btn, .main .cart__btn .form__search, .main .cart__btn .m__location__btn_edit, .main .cart__btn .m__location__btn_delete, .main .cart__btn .m__btn-link, .main .cart__btn .m__func div, .m__func .main .cart__btn div, .main .cart__btn .m__paging ul li, .m__paging ul .main .cart__btn li, .main .cart__btn .s__btn__submit ul li, .s__btn__submit ul .main .cart__btn li, .main .cart__btn .btn__save, .main .cart__btn .btn__cancel, .main .cart__btn .m__sidebar li, .m__sidebar .main .cart__btn li,
+      .main .cart__btn .a__sidebar li, .a__sidebar .main .cart__btn li, .main .cart__btn .m__person__btn_edit, .main .cart__btn .m__person__btn_delete {
         padding: 0.4rem 1.2rem;
         text-transform: none;
         font-weight: 700;
@@ -628,7 +645,9 @@ body {
 .m__location__btn_delete {
   background-color: #ff6363; }
 
-.m__location__related .form__search, .m__location__related .m__location__btn_edit, .m__location__related .m__location__btn_delete, .m__location__related .m__btn-link, .m__location__related .m__func div, .m__func .m__location__related div, .m__location__related .m__paging ul li, .m__paging ul .m__location__related li, .m__location__related .s__btn__submit ul li, .s__btn__submit ul .m__location__related li, .m__location__related .btn__save, .m__location__related .btn__cancel, .m__location__related .m__sidebar li, .m__sidebar .m__location__related li, .m__location__related .a__sidebar li, .a__sidebar .m__location__related li, .m__location__related .m__person__btn_edit, .m__location__related .btn, .m__location__related .m__person__btn_delete, .m__location__history .form__search, .m__location__history .m__location__btn_edit, .m__location__history .m__location__btn_delete, .m__location__history .m__btn-link, .m__location__history .m__func div, .m__func .m__location__history div, .m__location__history .m__paging ul li, .m__paging ul .m__location__history li, .m__location__history .s__btn__submit ul li, .s__btn__submit ul .m__location__history li, .m__location__history .btn__save, .m__location__history .btn__cancel, .m__location__history .m__sidebar li, .m__sidebar .m__location__history li, .m__location__history .a__sidebar li, .a__sidebar .m__location__history li, .m__location__history .m__person__btn_edit, .m__location__history .btn, .m__location__history .m__person__btn_delete {
+.m__location__related .form__search, .m__location__related .m__location__btn_edit, .m__location__related .m__location__btn_delete, .m__location__related .m__btn-link, .m__location__related .m__func div, .m__func .m__location__related div, .m__location__related .m__paging ul li, .m__paging ul .m__location__related li, .m__location__related .s__btn__submit ul li, .s__btn__submit ul .m__location__related li, .m__location__related .btn__save, .m__location__related .btn__cancel, .m__location__related .m__sidebar li, .m__sidebar .m__location__related li,
+.m__location__related .a__sidebar li, .a__sidebar .m__location__related li, .m__location__related .m__person__btn_edit, .m__location__related .btn, .m__location__related .m__person__btn_delete, .m__location__history .form__search, .m__location__history .m__location__btn_edit, .m__location__history .m__location__btn_delete, .m__location__history .m__btn-link, .m__location__history .m__func div, .m__func .m__location__history div, .m__location__history .m__paging ul li, .m__paging ul .m__location__history li, .m__location__history .s__btn__submit ul li, .s__btn__submit ul .m__location__history li, .m__location__history .btn__save, .m__location__history .btn__cancel, .m__location__history .m__sidebar li, .m__sidebar .m__location__history li,
+.m__location__history .a__sidebar li, .a__sidebar .m__location__history li, .m__location__history .m__person__btn_edit, .m__location__history .btn, .m__location__history .m__person__btn_delete {
   background-color: #63bdff;
   width: auto;
   padding: 0 0.5rem;
@@ -703,7 +722,8 @@ body {
         margin: 0.4rem;
         width: 60%;
         padding: 0.5rem; }
-    .modal .modal-content form .btn, .modal .modal-content form .form__search, .modal .modal-content form .m__location__btn_edit, .modal .modal-content form .m__location__btn_delete, .modal .modal-content form .m__btn-link, .modal .modal-content form .m__func div, .m__func .modal .modal-content form div, .modal .modal-content form .m__paging ul li, .m__paging ul .modal .modal-content form li, .modal .modal-content form .s__btn__submit ul li, .s__btn__submit ul .modal .modal-content form li, .modal .modal-content form .btn__save, .modal .modal-content form .btn__cancel, .modal .modal-content form .m__sidebar li, .m__sidebar .modal .modal-content form li, .modal .modal-content form .a__sidebar li, .a__sidebar .modal .modal-content form li, .modal .modal-content form .m__person__btn_edit, .modal .modal-content form .m__person__btn_delete {
+    .modal .modal-content form .btn, .modal .modal-content form .form__search, .modal .modal-content form .m__location__btn_edit, .modal .modal-content form .m__location__btn_delete, .modal .modal-content form .m__btn-link, .modal .modal-content form .m__func div, .m__func .modal .modal-content form div, .modal .modal-content form .m__paging ul li, .m__paging ul .modal .modal-content form li, .modal .modal-content form .s__btn__submit ul li, .s__btn__submit ul .modal .modal-content form li, .modal .modal-content form .btn__save, .modal .modal-content form .btn__cancel, .modal .modal-content form .m__sidebar li, .m__sidebar .modal .modal-content form li,
+    .modal .modal-content form .a__sidebar li, .a__sidebar .modal .modal-content form li, .modal .modal-content form .m__person__btn_edit, .modal .modal-content form .m__person__btn_delete {
       margin: 2rem 5rem;
       width: 12rem;
       padding: 0.5rem 0.5rem;
@@ -715,7 +735,8 @@ body {
       border: 1px solid black;
       border-radius: 25% 0 25% 0; }
 
-.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .s__btn__submit ul li, .btn__save, .btn__cancel, .m__sidebar li, .a__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
+.btn, .form__search, .m__location__btn_edit, .m__location__btn_delete, .m__btn-link, .m__func div, .m__paging ul li, .s__btn__submit ul li, .btn__save, .btn__cancel, .m__sidebar li,
+.a__sidebar li, .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -759,11 +780,13 @@ body {
     .btn--accent-dark:hover {
       opacity: 0.8;
       cursor: pointer; }
-  .btn:hover:not(.btn--accent-dark), .form__search:hover:not(.btn--accent-dark), .m__location__btn_edit:hover:not(.btn--accent-dark), .m__location__btn_delete:hover:not(.btn--accent-dark), .m__btn-link:hover:not(.btn--accent-dark), .m__func div:hover:not(.btn--accent-dark), .m__paging ul li:hover:not(.btn--accent-dark), .s__btn__submit ul li:hover:not(.btn--accent-dark), .btn__save:hover:not(.btn--accent-dark), .btn__cancel:hover:not(.btn--accent-dark), .m__sidebar li:hover:not(.btn--accent-dark), .a__sidebar li:hover:not(.btn--accent-dark), .m__person__btn_edit:hover:not(.btn--accent-dark), .m__person__btn_delete:hover:not(.btn--accent-dark) {
+  .btn:hover:not(.btn--accent-dark), .form__search:hover:not(.btn--accent-dark), .m__location__btn_edit:hover:not(.btn--accent-dark), .m__location__btn_delete:hover:not(.btn--accent-dark), .m__btn-link:hover:not(.btn--accent-dark), .m__func div:hover:not(.btn--accent-dark), .m__paging ul li:hover:not(.btn--accent-dark), .s__btn__submit ul li:hover:not(.btn--accent-dark), .btn__save:hover:not(.btn--accent-dark), .btn__cancel:hover:not(.btn--accent-dark), .m__sidebar li:hover:not(.btn--accent-dark),
+  .a__sidebar li:hover:not(.btn--accent-dark), .m__person__btn_edit:hover:not(.btn--accent-dark), .m__person__btn_delete:hover:not(.btn--accent-dark) {
     cursor: pointer;
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:active:not(.btn--accent-dark), .form__search:active:not(.btn--accent-dark), .m__location__btn_edit:active:not(.btn--accent-dark), .m__location__btn_delete:active:not(.btn--accent-dark), .m__btn-link:active:not(.btn--accent-dark), .m__func div:active:not(.btn--accent-dark), .m__paging ul li:active:not(.btn--accent-dark), .s__btn__submit ul li:active:not(.btn--accent-dark), .btn__save:active:not(.btn--accent-dark), .btn__cancel:active:not(.btn--accent-dark), .m__sidebar li:active:not(.btn--accent-dark), .a__sidebar li:active:not(.btn--accent-dark), .m__person__btn_edit:active:not(.btn--accent-dark), .m__person__btn_delete:active:not(.btn--accent-dark) {
+  .btn:active:not(.btn--accent-dark), .form__search:active:not(.btn--accent-dark), .m__location__btn_edit:active:not(.btn--accent-dark), .m__location__btn_delete:active:not(.btn--accent-dark), .m__btn-link:active:not(.btn--accent-dark), .m__func div:active:not(.btn--accent-dark), .m__paging ul li:active:not(.btn--accent-dark), .s__btn__submit ul li:active:not(.btn--accent-dark), .btn__save:active:not(.btn--accent-dark), .btn__cancel:active:not(.btn--accent-dark), .m__sidebar li:active:not(.btn--accent-dark),
+  .a__sidebar li:active:not(.btn--accent-dark), .m__person__btn_edit:active:not(.btn--accent-dark), .m__person__btn_delete:active:not(.btn--accent-dark) {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
@@ -819,9 +842,20 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer; }
+  .btn-float:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn-float:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.m__main {
+  background-color: white;
+  height: 100vh; }
 
 .m__btn-link {
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 0.1rem 0.5rem;
   border-top-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -841,6 +875,8 @@ body {
   height: 100vh;
   position: sticky;
   background-color: #e4f4ff; }
+  .m__sidebar__func {
+    font-size: 1.5rem; }
 
 .m__content {
   padding: 1rem;
@@ -862,25 +898,27 @@ body {
     padding: 0.5rem 0.2rem;
     text-align: center;
     align-items: center;
-    color: black; }
+    color: black;
+    font-size: 2rem; }
   .m__content th {
     background-color: #f5f6f8; }
 
 .m__func div {
   margin: 0 0.25rem;
   padding: 0rem 1.5rem;
-  font-size: 1rem;
   border: 1px solid gray;
   border-radius: 0rem 1rem;
   text-align: center;
   background-color: #047ffa;
-  border-width: 0; }
+  border-width: 0;
+  padding: 1rem; }
   .m__func div a {
+    font-size: 1.6rem;
     text-decoration: none;
     color: white; }
 
 .m__title {
-  font-size: 1.5rem;
+  font-size: 3rem;
   order: 0;
   color: #047ffa; }
 
@@ -899,9 +937,9 @@ body {
     .m__paging ul li, .s__btn__submit ul li {
       padding: 0;
       border-radius: 0;
-      font-size: 1rem;
+      font-size: 2rem;
       border: 1px solid gray;
-      width: 2rem;
+      width: 4rem;
       text-align: center; }
 
 .line {
@@ -912,7 +950,7 @@ body {
   background-color: #f5f6f8;
   display: flex;
   flex-direction: row;
-  font-size: 1rem;
+  font-size: 2rem;
   justify-content: space-between; }
   .s__filter li {
     display: flex;
@@ -923,7 +961,7 @@ body {
   column-gap: 1rem; }
 
 .btn__save, .btn__cancel {
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 0 1rem;
   border-radius: 1rem 0;
   text-align: center; }
@@ -934,7 +972,8 @@ body {
 .btn__cancel {
   border: 2px solid #9ecaed; }
 
-.m__nav, .a__nav {
+.m__nav,
+.a__nav {
   position: sticky;
   display: flex;
   flex-direction: row;
@@ -942,7 +981,8 @@ body {
   background-color: #e4f4ff;
   padding: 1rem 0rem 1rem 1rem;
   align-items: center; }
-  .m__nav__logo a, .a__nav__logo a {
+  .m__nav__logo a,
+  .a__nav__logo a {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -950,39 +990,53 @@ body {
     font-size: 1.5rem;
     gap: 0.5rem;
     color: black; }
-  .m__nav__logo img, .a__nav__logo img {
+    .m__nav__logo a p,
+    .a__nav__logo a p {
+      margin-left: 1rem;
+      font-size: 2rem; }
+  .m__nav__logo img,
+  .a__nav__logo img {
+    margin-left: 1rem;
     width: 64px; }
-  .m__nav__info, .a__nav__info {
+  .m__nav__info,
+  .a__nav__info {
     display: flex;
     flex-direction: row;
     padding-right: 3rem;
     font-weight: bold;
     gap: 1rem;
     align-items: center; }
-    .m__nav__info img, .a__nav__info img {
+    .m__nav__info img,
+    .a__nav__info img {
       width: 4rem;
       border-radius: 3rem; }
-  .m__nav__profile, .a__nav__profile {
+  .m__nav__profile,
+  .a__nav__profile {
     display: flex;
     flex-direction: column;
     gap: 0.2rem; }
 
-.m__sidebar, .a__sidebar {
+.m__sidebar,
+.a__sidebar {
   color: gray;
-  width: 15rem; }
-  .m__sidebar ul, .a__sidebar ul {
+  width: 20rem; }
+  .m__sidebar ul,
+  .a__sidebar ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     font-size: 1rem;
     row-gap: 0.8rem; }
-  .m__sidebar .active, .a__sidebar .active {
+  .m__sidebar .active,
+  .a__sidebar .active {
     border: 1px dashed;
     font-weight: bold;
     color: #047ffa; }
-    .m__sidebar .active a, .a__sidebar .active a {
+    .m__sidebar .active a,
+    .a__sidebar .active a {
       color: #047ffa; }
-  .m__sidebar li, .a__sidebar li {
+  .m__sidebar li,
+  .a__sidebar li {
     display: flex;
     flex-direction: row;
     border-radius: 0.5rem;
@@ -990,31 +1044,42 @@ body {
     gap: 0.5rem;
     padding: 0.5rem;
     font-size: 1rem; }
-    .m__sidebar li i, .a__sidebar li i {
+    .m__sidebar li i,
+    .a__sidebar li i {
       flex: 0.5; }
-    .m__sidebar li div, .a__sidebar li div {
+    .m__sidebar li div,
+    .a__sidebar li div {
       flex: 2; }
-    .m__sidebar li a, .a__sidebar li a {
+    .m__sidebar li a,
+    .a__sidebar li a {
       text-decoration: none;
       color: gray; }
+    .m__sidebar li i,
+    .a__sidebar li i {
+      font-size: 1.8rem; }
 
 .m__person__btn_ed, .m__location__related, .m__location__history, .m__person__related, .m__person__history {
   display: flex;
   flex-direction: row;
   column-gap: 0.5rem;
+  justify-content: center;
   width: 100%; }
 
 .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
   border-radius: 1rem;
   background-color: #ffd363;
   width: auto;
-  padding: 0 0.5rem;
-  font-size: 1rem; }
+  padding: 0 1rem;
+  font-size: 1.8rem; }
 
 .m__person__btn_delete {
   background-color: #ff6363; }
 
-.m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .s__btn__submit ul li, .s__btn__submit ul .m__person__related li, .m__person__related .btn__save, .m__person__related .btn__cancel, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li, .m__person__related .a__sidebar li, .a__sidebar .m__person__related li, .m__person__related .m__person__btn_edit, .m__person__related .btn, .m__person__related .m__person__btn_delete, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .s__btn__submit ul li, .s__btn__submit ul .m__person__history li, .m__person__history .btn__save, .m__person__history .btn__cancel, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li, .m__person__history .a__sidebar li, .a__sidebar .m__person__history li, .m__person__history .m__person__btn_edit, .m__person__history .btn, .m__person__history .m__person__btn_delete {
+.m__person__related .form__search, .m__person__related .m__location__btn_edit, .m__person__related .m__location__btn_delete, .m__person__related .m__btn-link, .m__person__related .m__func div, .m__func .m__person__related div, .m__person__related .m__paging ul li, .m__paging ul .m__person__related li, .m__person__related .s__btn__submit ul li, .s__btn__submit ul .m__person__related li, .m__person__related .btn__save, .m__person__related .btn__cancel, .m__person__related .m__sidebar li, .m__sidebar .m__person__related li,
+.m__person__related .a__sidebar li, .a__sidebar .m__person__related li, .m__person__related .m__person__btn_edit, .m__person__related .btn, .m__person__related .m__person__btn_delete, .m__person__history .form__search, .m__person__history .m__location__btn_edit, .m__person__history .m__location__btn_delete, .m__person__history .m__btn-link, .m__person__history .m__func div, .m__func .m__person__history div, .m__person__history .m__paging ul li, .m__paging ul .m__person__history li, .m__person__history .s__btn__submit ul li, .s__btn__submit ul .m__person__history li, .m__person__history .btn__save, .m__person__history .btn__cancel, .m__person__history .m__sidebar li, .m__sidebar .m__person__history li,
+.m__person__history .a__sidebar li, .a__sidebar .m__person__history li, .m__person__history .m__person__btn_edit, .m__person__history .btn, .m__person__history .m__person__btn_delete {
+  line-height: 2.5rem;
+  font-size: 1.6rem;
   background-color: #63bdff;
   width: 100%;
   padding: 0 0.5rem;
@@ -1102,7 +1167,8 @@ body {
       margin: 1rem auto;
       column-gap: 1.5rem;
       justify-content: flex-end; }
-      .main .cart__btn .btn, .main .cart__btn .form__search, .main .cart__btn .m__location__btn_edit, .main .cart__btn .m__location__btn_delete, .main .cart__btn .m__btn-link, .main .cart__btn .m__func div, .m__func .main .cart__btn div, .main .cart__btn .m__paging ul li, .m__paging ul .main .cart__btn li, .main .cart__btn .s__btn__submit ul li, .s__btn__submit ul .main .cart__btn li, .main .cart__btn .btn__save, .main .cart__btn .btn__cancel, .main .cart__btn .m__sidebar li, .m__sidebar .main .cart__btn li, .main .cart__btn .a__sidebar li, .a__sidebar .main .cart__btn li, .main .cart__btn .m__person__btn_edit, .main .cart__btn .m__person__btn_delete {
+      .main .cart__btn .btn, .main .cart__btn .form__search, .main .cart__btn .m__location__btn_edit, .main .cart__btn .m__location__btn_delete, .main .cart__btn .m__btn-link, .main .cart__btn .m__func div, .m__func .main .cart__btn div, .main .cart__btn .m__paging ul li, .m__paging ul .main .cart__btn li, .main .cart__btn .s__btn__submit ul li, .s__btn__submit ul .main .cart__btn li, .main .cart__btn .btn__save, .main .cart__btn .btn__cancel, .main .cart__btn .m__sidebar li, .m__sidebar .main .cart__btn li,
+      .main .cart__btn .a__sidebar li, .a__sidebar .main .cart__btn li, .main .cart__btn .m__person__btn_edit, .main .cart__btn .m__person__btn_delete {
         padding: 0.4rem 1.2rem;
         text-transform: none;
         font-weight: 700;
@@ -1141,7 +1207,8 @@ body {
       margin: 1rem auto;
       column-gap: 1.5rem;
       justify-content: flex-end; }
-      .main .cart__btn .btn, .main .cart__btn .form__search, .main .cart__btn .m__location__btn_edit, .main .cart__btn .m__location__btn_delete, .main .cart__btn .m__btn-link, .main .cart__btn .m__func div, .m__func .main .cart__btn div, .main .cart__btn .m__paging ul li, .m__paging ul .main .cart__btn li, .main .cart__btn .s__btn__submit ul li, .s__btn__submit ul .main .cart__btn li, .main .cart__btn .btn__save, .main .cart__btn .btn__cancel, .main .cart__btn .m__sidebar li, .m__sidebar .main .cart__btn li, .main .cart__btn .a__sidebar li, .a__sidebar .main .cart__btn li, .main .cart__btn .m__person__btn_edit, .main .cart__btn .m__person__btn_delete {
+      .main .cart__btn .btn, .main .cart__btn .form__search, .main .cart__btn .m__location__btn_edit, .main .cart__btn .m__location__btn_delete, .main .cart__btn .m__btn-link, .main .cart__btn .m__func div, .m__func .main .cart__btn div, .main .cart__btn .m__paging ul li, .m__paging ul .main .cart__btn li, .main .cart__btn .s__btn__submit ul li, .s__btn__submit ul .main .cart__btn li, .main .cart__btn .btn__save, .main .cart__btn .btn__cancel, .main .cart__btn .m__sidebar li, .m__sidebar .main .cart__btn li,
+      .main .cart__btn .a__sidebar li, .a__sidebar .main .cart__btn li, .main .cart__btn .m__person__btn_edit, .main .cart__btn .m__person__btn_delete {
         padding: 0.4rem 1.2rem;
         text-transform: none;
         font-weight: 700;
@@ -1192,6 +1259,7 @@ body {
         display: block;
         outline: 0.2rem solid transparent;
         outline-offset: 0.2rem;
+        background-color: white;
         text-transform: none; }
       .main__products .filter .dropbox__container .dropbox__inner:hover {
         border-color: #2579f2; }
@@ -1381,7 +1449,8 @@ body {
         display: block;
         outline: 0.2rem solid transparent;
         outline-offset: 0.2rem;
-        text-transform: none; }
+        text-transform: none;
+        background-color: white; }
       .main__packs .filter .dropbox__container .dropbox__inner:hover {
         border-color: #2579f2; }
       .main__packs .filter .dropbox__container label {
@@ -1457,16 +1526,12 @@ body {
           cursor: default; }
 
 .product__main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 3rem 2rem 3rem 2rem;
   width: 114rem;
   background-color: #fff;
-  margin: auto; }
+  margin: 5rem auto; }
   .product__main .product__viewImage .product__mainImage {
     max-width: 100%;
     height: 45rem; }
@@ -1513,7 +1578,8 @@ body {
         display: flex;
         height: 100%;
         margin-left: 3rem; }
-        .product__main .product__detail .product__quantity .product__chooseQuantity .btn, .product__main .product__detail .product__quantity .product__chooseQuantity .form__search, .product__main .product__detail .product__quantity .product__chooseQuantity .m__location__btn_edit, .product__main .product__detail .product__quantity .product__chooseQuantity .m__location__btn_delete, .product__main .product__detail .product__quantity .product__chooseQuantity .m__btn-link, .product__main .product__detail .product__quantity .product__chooseQuantity .m__func div, .m__func .product__main .product__detail .product__quantity .product__chooseQuantity div, .product__main .product__detail .product__quantity .product__chooseQuantity .m__paging ul li, .m__paging ul .product__main .product__detail .product__quantity .product__chooseQuantity li, .product__main .product__detail .product__quantity .product__chooseQuantity .s__btn__submit ul li, .s__btn__submit ul .product__main .product__detail .product__quantity .product__chooseQuantity li, .product__main .product__detail .product__quantity .product__chooseQuantity .btn__save, .product__main .product__detail .product__quantity .product__chooseQuantity .btn__cancel, .product__main .product__detail .product__quantity .product__chooseQuantity .m__sidebar li, .m__sidebar .product__main .product__detail .product__quantity .product__chooseQuantity li, .product__main .product__detail .product__quantity .product__chooseQuantity .a__sidebar li, .a__sidebar .product__main .product__detail .product__quantity .product__chooseQuantity li, .product__main .product__detail .product__quantity .product__chooseQuantity .m__person__btn_edit, .product__main .product__detail .product__quantity .product__chooseQuantity .m__person__btn_delete {
+        .product__main .product__detail .product__quantity .product__chooseQuantity .btn, .product__main .product__detail .product__quantity .product__chooseQuantity .form__search, .product__main .product__detail .product__quantity .product__chooseQuantity .m__location__btn_edit, .product__main .product__detail .product__quantity .product__chooseQuantity .m__location__btn_delete, .product__main .product__detail .product__quantity .product__chooseQuantity .m__btn-link, .product__main .product__detail .product__quantity .product__chooseQuantity .m__func div, .m__func .product__main .product__detail .product__quantity .product__chooseQuantity div, .product__main .product__detail .product__quantity .product__chooseQuantity .m__paging ul li, .m__paging ul .product__main .product__detail .product__quantity .product__chooseQuantity li, .product__main .product__detail .product__quantity .product__chooseQuantity .s__btn__submit ul li, .s__btn__submit ul .product__main .product__detail .product__quantity .product__chooseQuantity li, .product__main .product__detail .product__quantity .product__chooseQuantity .btn__save, .product__main .product__detail .product__quantity .product__chooseQuantity .btn__cancel, .product__main .product__detail .product__quantity .product__chooseQuantity .m__sidebar li, .m__sidebar .product__main .product__detail .product__quantity .product__chooseQuantity li,
+        .product__main .product__detail .product__quantity .product__chooseQuantity .a__sidebar li, .a__sidebar .product__main .product__detail .product__quantity .product__chooseQuantity li, .product__main .product__detail .product__quantity .product__chooseQuantity .m__person__btn_edit, .product__main .product__detail .product__quantity .product__chooseQuantity .m__person__btn_delete {
           display: flex;
           width: 3rem;
           height: 100%;
@@ -1522,7 +1588,8 @@ body {
           border-style: solid;
           border-width: 0.1rem;
           border-color: #000; }
-          .product__main .product__detail .product__quantity .product__chooseQuantity .btn:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .form__search:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__location__btn_edit:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__location__btn_delete:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__btn-link:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__func div:hover, .m__func .product__main .product__detail .product__quantity .product__chooseQuantity div:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__paging ul li:hover, .m__paging ul .product__main .product__detail .product__quantity .product__chooseQuantity li:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .s__btn__submit ul li:hover, .s__btn__submit ul .product__main .product__detail .product__quantity .product__chooseQuantity li:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .btn__save:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .btn__cancel:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__sidebar li:hover, .m__sidebar .product__main .product__detail .product__quantity .product__chooseQuantity li:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .a__sidebar li:hover, .a__sidebar .product__main .product__detail .product__quantity .product__chooseQuantity li:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__person__btn_edit:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__person__btn_delete:hover {
+          .product__main .product__detail .product__quantity .product__chooseQuantity .btn:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .form__search:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__location__btn_edit:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__location__btn_delete:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__btn-link:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__func div:hover, .m__func .product__main .product__detail .product__quantity .product__chooseQuantity div:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__paging ul li:hover, .m__paging ul .product__main .product__detail .product__quantity .product__chooseQuantity li:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .s__btn__submit ul li:hover, .s__btn__submit ul .product__main .product__detail .product__quantity .product__chooseQuantity li:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .btn__save:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .btn__cancel:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__sidebar li:hover, .m__sidebar .product__main .product__detail .product__quantity .product__chooseQuantity li:hover,
+          .product__main .product__detail .product__quantity .product__chooseQuantity .a__sidebar li:hover, .a__sidebar .product__main .product__detail .product__quantity .product__chooseQuantity li:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__person__btn_edit:hover, .product__main .product__detail .product__quantity .product__chooseQuantity .m__person__btn_delete:hover {
             transform: none; }
         .product__main .product__detail .product__quantity .product__chooseQuantity .amount__value {
           width: 4rem;
@@ -1658,7 +1725,8 @@ body {
           height: 100%;
           margin-left: 4rem;
           margin-right: 3rem; }
-          .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .form__search, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__location__btn_edit, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__location__btn_delete, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__btn-link, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__func div, .m__func .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity div, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__paging ul li, .m__paging ul .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .s__btn__submit ul li, .s__btn__submit ul .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn__save, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn__cancel, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__sidebar li, .m__sidebar .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .a__sidebar li, .a__sidebar .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__person__btn_edit, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__person__btn_delete {
+          .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .form__search, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__location__btn_edit, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__location__btn_delete, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__btn-link, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__func div, .m__func .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity div, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__paging ul li, .m__paging ul .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .s__btn__submit ul li, .s__btn__submit ul .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn__save, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn__cancel, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__sidebar li, .m__sidebar .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li,
+          .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .a__sidebar li, .a__sidebar .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__person__btn_edit, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__person__btn_delete {
             display: flex;
             width: 3rem;
             height: 100%;
@@ -1667,7 +1735,8 @@ body {
             border-style: solid;
             border-width: 0.1rem;
             border-color: #000; }
-            .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .form__search:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__location__btn_edit:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__location__btn_delete:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__btn-link:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__func div:hover, .m__func .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity div:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__paging ul li:hover, .m__paging ul .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .s__btn__submit ul li:hover, .s__btn__submit ul .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn__save:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn__cancel:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__sidebar li:hover, .m__sidebar .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .a__sidebar li:hover, .a__sidebar .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__person__btn_edit:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__person__btn_delete:hover {
+            .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .form__search:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__location__btn_edit:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__location__btn_delete:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__btn-link:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__func div:hover, .m__func .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity div:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__paging ul li:hover, .m__paging ul .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .s__btn__submit ul li:hover, .s__btn__submit ul .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn__save:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .btn__cancel:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__sidebar li:hover, .m__sidebar .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li:hover,
+            .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .a__sidebar li:hover, .a__sidebar .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity li:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__person__btn_edit:hover, .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .m__person__btn_delete:hover {
               transform: none; }
           .packProduct .packProduct__main .packProduct__detail .packProduct__quantity .packProduct__chooseQuantity .amount__value {
             width: 4rem;

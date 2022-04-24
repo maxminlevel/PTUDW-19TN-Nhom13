@@ -1,7 +1,8 @@
-.m, .a {
+.m,
+.a {
   &__sidebar {
     color: gray;
-    width: 15rem;
+    width: 20rem;
     ul {
       list-style: none;
       display: flex;
@@ -35,6 +36,9 @@
       a {
         text-decoration: none;
         color: gray;
+      }
+      i {
+        font-size: 1.8rem;
       }
     }
   }

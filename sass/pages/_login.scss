@@ -10,7 +10,7 @@
         rgba($color-accent, 0.75),
         rgba($color-accent, 0.75)
       ),
-      url("../../images/bg-login.png");
+      url('../../images/bg-login.png');
     animation-name: fadeIn;
     animation-duration: 1.2s;
     animation-timing-function: ease-in;
@@ -45,7 +45,7 @@
       width: 12rem;
       height: 15rem;
       margin-top: 1rem;
-      margin-bottom: -2rem;
+      margin-bottom: -1rem;
       padding: 2rem 0;
     }
 
@@ -76,10 +76,11 @@
   .demo {
     position: absolute;
     top: 50%;
-    left: 5rem;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center;
+
     &__text {
       font-size: 3rem;
       color: $color-white;

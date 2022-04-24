@@ -118,4 +118,5 @@
   justify-content: center;
 
   cursor: pointer;
+  @include hoverBtnUp;
 }

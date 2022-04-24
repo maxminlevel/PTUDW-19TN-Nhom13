@@ -1,428 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link
-            rel="shortcut icon"
-            href="/images/favicon.ico"
-            type="image/x-icon"
-        />
-        <title>Packs</title>
-    </head>
-    <body>
-        <div>
-            <header class="header">
-                <div class="row">
-                    <div class="header__container">
-                        <a href="#">
-                            <img
-                                src="/images/logo.png"
-                                alt="Logo website"
-                                class="logo"
-                            />
-                        </a>
-                        <div class="search-bar">
-                            <input
-                                type="text"
-                                class="form__contact"
-                                placeholder="Tìm kiếm sản phẩm"
-                            />
-                            <div class="search-bar__icon">
-                                <div class="btn btn--accent-dark">
-                                    <i
-                                        class="fa-solid fa-magnifying-glass search-icon"
-                                    ></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="infor">
-                            <img
-                                src="/images/avatar.jpg"
-                                alt="Avatar person"
-                                class="infor__avatar"
-                            />
-                            <div class="infor__text">
-                                <p class="infor__name">Trịnh Nguyên Hưng</p>
-                                <a href="#" class="btn-link btn-link--white"
-                                    >Đăng xuất</a
-                                >
-                            </div>
-                        </div>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title>Packs</title>
+  </head>
+  <body>
+    <div>
+      <header class="header">
+        <div class="row">
+          <div class="header__container">
+            <a href="../../../html/customer/product/products.html">
+              <img
+                src="../../../images/logo.png"
+                alt="Logo website"
+                class="logo"
+              />
+            </a>
+            <div class="search-bar">
+              <input
+                type="text"
+                class="form__contact"
+                placeholder="Tìm kiếm sản phẩm"
+              />
+              <div class="search-bar__icon">
+                <div class="btn btn--accent-dark">
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 </div>
-                <div class="navbar__customer">
-                    <div class="navbar__inner">
-                        <a href="../pack/packs.html" class="item">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                enable-background="new 0 0 24 24"
-                                height="24px"
-                                viewBox="0 0 24 24"
-                                width="24px"
-                                fill="#FFFFFF"
-                            >
-                                <g>
-                                    <rect fill="none" height="24" width="24" />
-                                </g>
-                                <g>
-                                    <g>
-                                        <path
-                                            d="M20,2H4C3,2,2,2.9,2,4v3.01C2,7.73,2.43,8.35,3,8.7V20c0,1.1,1.1,2,2,2h14c0.9,0,2-0.9,2-2V8.7c0.57-0.35,1-0.97,1-1.69V4 C22,2.9,21,2,20,2z M19,20H5V9h14V20z M20,7H4V4h16V7z"
-                                        />
-                                        <rect
-                                            height="2"
-                                            width="6"
-                                            x="9"
-                                            y="12"
-                                        />
-                                    </g>
-                                </g>
-                            </svg>
-                            <div>Mua theo gói</div>
-                        </a>
-                        <a href="../product/products.html" class="item">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                height="24px"
-                                viewBox="0 0 24 24"
-                                width="24px"
-                                fill="#FFFFFF"
-                            >
-                                <path d="M0 0h24v24H0V0z" fill="none" />
-                                <path
-                                    d="M1 21.98c0 .56.45 1.01 1.01 1.01H15c.56 0 1.01-.45 1.01-1.01V21H1v.98zM8.5 8.99C4.75 8.99 1 11 1 15h15c0-4-3.75-6.01-7.5-6.01zM3.62 13c1.11-1.55 3.47-2.01 4.88-2.01s3.77.46 4.88 2.01H3.62zM1 17h15v2H1zM18 5V1h-2v4h-5l.23 2h9.56l-1.4 14H18v2h1.72c.84 0 1.53-.65 1.63-1.47L23 5h-5z"
-                                />
-                            </svg>
-                            <div>Mua riêng sản phẩm</div>
-                        </a>
-                    </div>
-                </div>
-            </header>
-
-            <main class="main__packs">
-                <h1>Mua theo gói</h1>
-
-                <form>
-                    <div class="filter">
-                        <div class="dropbox__container">
-                            <label for="filter__sort">Sắp xếp</label>
-                            <select
-                                class="dropbox__inner"
-                                name="Sắp xếp"
-                                id="filter__sort"
-                            >
-                                <option value="default">Mặc định</option>
-                                <option value="nameAZ">Tên từ A đến Z</option>
-                                <option value="nameZA">Tên từ Z đến A</option>
-                            </select>
-                        </div>
-                        <div class="dropbox__container">
-                            <label for="filter__classify">Phân loại</label>
-                            <select
-                                class="dropbox__inner"
-                                name="Phân loại"
-                                id="filter__classify"
-                            >
-                                <option value="default">Tất cả</option>
-                                <option value="day pack">Gói ngày</option>
-                                <option value="week pack">Gói tuần</option>
-                                <option value="month pack">Gói tháng</option>
-                            </select>
-                        </div>
-                        <div>
-                            <button type="submit" class="button__filter">
-                                <i class="fa-solid fa-filter"></i>
-                                <div>Lọc</div>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
-                <div class="main__content">
-                    <div class="pack__list">
-                        <div class="pack__item">
-                            <a
-                                class="pack__image"
-                                tabindex="-1"
-                                href="pack.html"
-                            >
-                                <img
-                                    src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
-                                />
-                            </a>
-                            <a class="pack__name" href="pack.html"
-                                >Gói nhu yếu phẩm 1</a
-                            >
-                            <div class="pack__type">
-                                <div>Gói tuần</div>
-                            </div>
-                        </div>
-                        <div class="pack__item">
-                            <a
-                                class="pack__image"
-                                tabindex="-1"
-                                href="pack.html"
-                            >
-                                <img
-                                    src="https://donga.edu.vn/Portals/0/Images/HoatDongSV2020/nCovid/20200729-3.jpg"
-                                />
-                            </a>
-                            <a class="pack__name" href="pack.html"
-                                >Gói nhu yếu phẩm 2</a
-                            >
-                            <div class="pack__type">
-                                <div>Gói ngày</div>
-                            </div>
-                        </div>
-                        <div class="pack__item">
-                            <a
-                                class="pack__image"
-                                tabindex="-1"
-                                href="pack.html"
-                            >
-                                <img
-                                    src="http://product.hstatic.net/200000360759/product/upload_13ca1f0fd9f64918a001e73463b551ff_grande.jpg"
-                                />
-                            </a>
-                            <a class="pack__name" href="pack.html"
-                                >Gói nhu yếu phẩm 3</a
-                            >
-                            <div class="pack__type">
-                                <div>Gói tuần</div>
-                            </div>
-                        </div>
-                        <div class="pack__item">
-                            <a
-                                class="pack__image"
-                                tabindex="-1"
-                                href="pack.html"
-                            >
-                                <img
-                                    src="http://product.hstatic.net/200000360759/product/upload_4880ab9a1d9c4ba7b1707fede793eb0a_grande.jpg"
-                                />
-                            </a>
-                            <a class="pack__name" href="pack.html"
-                                >Gói nhu yếu phẩm 4</a
-                            >
-                            <div class="pack__type">
-                                <div>Gói tháng</div>
-                            </div>
-                        </div>
-                        <div class="pack__item">
-                            <a
-                                class="pack__image"
-                                tabindex="-1"
-                                href="pack.html"
-                            >
-                                <img
-                                    src="https://phunuvietnam.mediacdn.vn/thumb_w/700/179072216278405120/2021/7/7/ban-hang-online-03-1625641946612988669047-53-0-1053-1600-crop-16256420154281382707545.jpg"
-                                />
-                            </a>
-                            <a class="pack__name" href="pack.html"
-                                >Gói nhu yếu phẩm 5</a
-                            >
-                            <div class="pack__type">
-                                <div>Gói tháng</div>
-                            </div>
-                        </div>
-                        <div class="pack__item">
-                            <a
-                                class="pack__image"
-                                tabindex="-1"
-                                href="pack.html"
-                            >
-                                <img
-                                    src="https://ldld.quangbinh.gov.vn/3cms/upload/ldld/Image/2(137).jpg"
-                                />
-                            </a>
-                            <a class="pack__name" href="pack.html"
-                                >Gói nhu yếu phẩm 6</a
-                            >
-                            <div class="pack__type">
-                                <div>Gói ngày</div>
-                            </div>
-                        </div>
-                        <div class="pack__item">
-                            <a
-                                class="pack__image"
-                                tabindex="-1"
-                                href="pack.html"
-                            >
-                                <img
-                                    src="https://media.thieunien.vn/upload/oldmedia/thumb//uploads/2021/07/15/chia-se-huu-ich-ve-cach-mua-nhu-yeu-pham-can-thiet-vua-nhanh-vua-an-toan-trong-mua-dich-cua-co-ban-sai-gon_20330.jpg"
-                                />
-                            </a>
-                            <a class="pack__name" href="pack.html"
-                                >Gói nhu yếu phẩm 7</a
-                            >
-                            <div class="pack__type">
-                                <div>Gói ngày</div>
-                            </div>
-                        </div>
-                        <div class="pack__item">
-                            <a
-                                class="pack__image"
-                                tabindex="-1"
-                                href="pack.html"
-                            >
-                                <img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9deqoAAP8ORBlhsMkfC13_yGZ9KPCKcapQQ&usqp=CAU"
-                                />
-                            </a>
-                            <a class="pack__name" href="pack.html"
-                                >Gói nhu yếu phẩm 8</a
-                            >
-                            <div class="pack__type">
-                                <div>Gói tuần</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-
-            <footer class="footer">
-                <div class="row">
-                    <div class="footer__container">
-                        <ul class="introduction">
-                            <h3 class="heading-tertiary">Giới thiệu</h3>
-                            <li><a href="#">Giới thiệu Covid Website</a></li>
-                            <li><a href="#">Điều khoản dịch vụ</a></li>
-                            <li><a href="#">Chính sách bảo mật</a></li>
-                        </ul>
-                        <ul class="contact">
-                            <h3 class="heading-tertiary">Liên hệ</h3>
-                            <li>
-                                <a href="#">Hotline</a>
-                                <span class="phone-number">1900 000 000</span>
-                            </li>
-                            <li>
-                                <span>(Các ngày trong tuần từ 8h đến 24h)</span>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    >Email hỗ trợ: hotro@covidwebsite.vn</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
-        </div>
-
-        <!-- Button payment -->
-        <div class="btn-float payment">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-circle icon__status"></i>
-        </div>
-
-        <!-- Dialog payment -->
-        <div id="payment_modal">
-            <div class="payment_modal_container">
-                <h2>Thanh toán</h2>
-                <div class="payment_detail">
-                    <div>Số tiền còn nợ</div>
-                    <div>500.000đ</div>
-                </div>
-                <div class="divine"></div>
-                <div class="payment_detail">
-                    <div>Số dư hiện tại</div>
-                    <div>1.000.000đ</div>
-                </div>
-                <div class="payment_detail">
-                    <div>Số dư còn lại sau<br />thanh toán</div>
-                    <div>500.000đ</div>
-                </div>
-                <div class="button payment__deposit">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
-                        viewBox="0 0 24 24"
-                        width="24px"
-                        fill="#FFF"
-                    >
-                        <path d="M0 0h24v24H0V0z" fill="none" />
-                        <path
-                            d="M21 7.28V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-2.28c.59-.35 1-.98 1-1.72V9c0-.74-.41-1.37-1-1.72zM20 9v6h-7V9h7zM5 19V5h14v2h-6c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h6v2H5z"
-                        />
-                        <circle cx="16" cy="12" r="1.5" />
-                    </svg>
-                    <div>Nạp thêm vào tài khoản</div>
-                </div>
-                <div class="button payment__payoff">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
-                        viewBox="0 0 24 24"
-                        width="24px"
-                        fill="#FFF"
-                    >
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M11 17h2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1h-3v-1h4V8h-2V7h-2v1h-1c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3v1H9v2h2v1zm9-13H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4V6h16v12z"
-                        />
-                    </svg>
-                    <div>Thanh toán dư nợ</div>
-                </div>
-                <div class="button payment__payoff_withAnother">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
-                        viewBox="0 0 24 24"
-                        width="24px"
-                        fill="#FFF"
-                    >
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
-                        />
-                    </svg>
-                    <div>Thanh toán dư nợ với dịch vụ khác</div>
-                </div>
-                <div class="btn__close btn-icon">
-                    <i class="fa-solid fa-x"></i>
-                </div>
+              </div>
             </div>
+            <div class="infor">
+              <a href="../../../html/customer/profile.html">
+                <img
+                  src="../../../images/avatar.jpg"
+                  alt="Avatar person"
+                  class="infor__avatar"
+                />
+              </a>
+              <div class="infor__text">
+                <p class="infor__name">Trịnh Nguyên Hưng</p>
+                <a
+                  href="../../../html/login.html"
+                  class="btn-link btn-link--white"
+                  >Đăng xuất</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </header>
+      <div class="navbar__customer">
+        <div class="navbar__inner">
+          <a href="../pack/packs.html" class="item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#FFFFFF"
+            >
+              <g>
+                <rect fill="none" height="24" width="24" />
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M20,2H4C3,2,2,2.9,2,4v3.01C2,7.73,2.43,8.35,3,8.7V20c0,1.1,1.1,2,2,2h14c0.9,0,2-0.9,2-2V8.7c0.57-0.35,1-0.97,1-1.69V4 C22,2.9,21,2,20,2z M19,20H5V9h14V20z M20,7H4V4h16V7z"
+                  />
+                  <rect height="2" width="6" x="9" y="12" />
+                </g>
+              </g>
+            </svg>
+            <div>Mua theo gói</div>
+          </a>
+          <a href="../product/products.html" class="item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#FFFFFF"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M1 21.98c0 .56.45 1.01 1.01 1.01H15c.56 0 1.01-.45 1.01-1.01V21H1v.98zM8.5 8.99C4.75 8.99 1 11 1 15h15c0-4-3.75-6.01-7.5-6.01zM3.62 13c1.11-1.55 3.47-2.01 4.88-2.01s3.77.46 4.88 2.01H3.62zM1 17h15v2H1zM18 5V1h-2v4h-5l.23 2h9.56l-1.4 14H18v2h1.72c.84 0 1.53-.65 1.63-1.47L23 5h-5z"
+              />
+            </svg>
+            <div>Mua riêng sản phẩm</div>
+          </a>
+        </div>
+      </div>
+      <main class="main__packs">
+        <h1>Mua theo gói</h1>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script>
-            var payment_modal = document.getElementById('payment_modal');
+        <form>
+          <div class="filter">
+            <div class="dropbox__container">
+              <label for="filter__sort">Sắp xếp</label>
+              <select class="dropbox__inner" name="Sắp xếp" id="filter__sort">
+                <option value="default">Mặc định</option>
+                <option value="nameAZ">Tên từ A đến Z</option>
+                <option value="nameZA">Tên từ Z đến A</option>
+              </select>
+            </div>
+            <div class="dropbox__container">
+              <label for="filter__classify">Phân loại</label>
+              <select
+                class="dropbox__inner"
+                name="Phân loại"
+                id="filter__classify"
+              >
+                <option value="default">Tất cả</option>
+                <option value="day pack">Gói ngày</option>
+                <option value="week pack">Gói tuần</option>
+                <option value="month pack">Gói tháng</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit" class="button__filter">
+                <i class="fa-solid fa-filter"></i>
+                <div>Lọc</div>
+              </button>
+            </div>
+          </div>
+        </form>
 
-            var btn_payment = document.getElementsByClassName('payment')[0];
+        <div class="main__content">
+          <div class="pack__list">
+            <div class="pack__item">
+              <a class="pack__image" tabindex="-1" href="pack.html">
+                <img
+                  src="http://yte.daklak.gov.vn/images_upload/imgND/SYT/images/nh%E1%BB%AFng%20lo%E1%BA%A1i%20nhu%20y%E1%BA%BFu%20ph%E1%BA%A9m%20thi%E1%BA%BFt%20y%E1%BA%BFu%20%C4%91%C6%B0%E1%BB%A3c%20l%E1%BB%B1a%20t%C3%ADch%20tr%E1%BB%AF%20nhi%E1%BB%81u%20nh%E1%BA%A5t.jpg"
+                />
+              </a>
+              <a class="pack__name" href="pack.html">Gói nhu yếu phẩm 1</a>
+              <div class="pack__type">
+                <div>Gói tuần</div>
+              </div>
+            </div>
+            <div class="pack__item">
+              <a class="pack__image" tabindex="-1" href="pack.html">
+                <img
+                  src="https://donga.edu.vn/Portals/0/Images/HoatDongSV2020/nCovid/20200729-3.jpg"
+                />
+              </a>
+              <a class="pack__name" href="pack.html">Gói nhu yếu phẩm 2</a>
+              <div class="pack__type">
+                <div>Gói ngày</div>
+              </div>
+            </div>
+            <div class="pack__item">
+              <a class="pack__image" tabindex="-1" href="pack.html">
+                <img
+                  src="http://product.hstatic.net/200000360759/product/upload_13ca1f0fd9f64918a001e73463b551ff_grande.jpg"
+                />
+              </a>
+              <a class="pack__name" href="pack.html">Gói nhu yếu phẩm 3</a>
+              <div class="pack__type">
+                <div>Gói tuần</div>
+              </div>
+            </div>
+            <div class="pack__item">
+              <a class="pack__image" tabindex="-1" href="pack.html">
+                <img
+                  src="http://product.hstatic.net/200000360759/product/upload_4880ab9a1d9c4ba7b1707fede793eb0a_grande.jpg"
+                />
+              </a>
+              <a class="pack__name" href="pack.html">Gói nhu yếu phẩm 4</a>
+              <div class="pack__type">
+                <div>Gói tháng</div>
+              </div>
+            </div>
+            <div class="pack__item">
+              <a class="pack__image" tabindex="-1" href="pack.html">
+                <img
+                  src="https://phunuvietnam.mediacdn.vn/thumb_w/700/179072216278405120/2021/7/7/ban-hang-online-03-1625641946612988669047-53-0-1053-1600-crop-16256420154281382707545.jpg"
+                />
+              </a>
+              <a class="pack__name" href="pack.html">Gói nhu yếu phẩm 5</a>
+              <div class="pack__type">
+                <div>Gói tháng</div>
+              </div>
+            </div>
+            <div class="pack__item">
+              <a class="pack__image" tabindex="-1" href="pack.html">
+                <img
+                  src="https://ldld.quangbinh.gov.vn/3cms/upload/ldld/Image/2(137).jpg"
+                />
+              </a>
+              <a class="pack__name" href="pack.html">Gói nhu yếu phẩm 6</a>
+              <div class="pack__type">
+                <div>Gói ngày</div>
+              </div>
+            </div>
+            <div class="pack__item">
+              <a class="pack__image" tabindex="-1" href="pack.html">
+                <img
+                  src="https://media.thieunien.vn/upload/oldmedia/thumb//uploads/2021/07/15/chia-se-huu-ich-ve-cach-mua-nhu-yeu-pham-can-thiet-vua-nhanh-vua-an-toan-trong-mua-dich-cua-co-ban-sai-gon_20330.jpg"
+                />
+              </a>
+              <a class="pack__name" href="pack.html">Gói nhu yếu phẩm 7</a>
+              <div class="pack__type">
+                <div>Gói ngày</div>
+              </div>
+            </div>
+            <div class="pack__item">
+              <a class="pack__image" tabindex="-1" href="pack.html">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9deqoAAP8ORBlhsMkfC13_yGZ9KPCKcapQQ&usqp=CAU"
+                />
+              </a>
+              <a class="pack__name" href="pack.html">Gói nhu yếu phẩm 8</a>
+              <div class="pack__type">
+                <div>Gói tuần</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
 
-            btn_payment.onclick = () => {
-                payment_modal.style.display = 'block';
-            };
+      <footer class="footer">
+        <div class="row">
+          <div class="footer__container">
+            <ul class="introduction">
+              <h3 class="heading-tertiary">Giới thiệu</h3>
+              <li><a href="#">Giới thiệu Covid Website</a></li>
+              <li><a href="#">Điều khoản dịch vụ</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+            </ul>
+            <ul class="contact">
+              <h3 class="heading-tertiary">Liên hệ</h3>
+              <li>
+                <a href="#">Hotline</a>
+                <span class="phone-number">1900 000 000</span>
+              </li>
+              <li>
+                <span>(Các ngày trong tuần từ 8h đến 24h)</span>
+              </li>
+              <li>
+                <a href="#">Email hỗ trợ: hotro@covidwebsite.vn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-            var btn_close = document.getElementsByClassName('btn__close')[0];
+    <!-- Button payment -->
+    <div class="btn-float payment">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-circle icon__status"></i>
+    </div>
 
-            btn_close.onclick = () => {
-                payment_modal.style.display = 'none';
-            };
+    <!-- Dialog payment -->
+    <div id="payment_modal">
+      <div class="payment_modal_container">
+        <h2>Thanh toán</h2>
+        <div class="payment_detail">
+          <div>Số tiền còn nợ</div>
+          <div>500.000đ</div>
+        </div>
+        <div class="divine"></div>
+        <div class="payment_detail">
+          <div>Số dư hiện tại</div>
+          <div>1.000.000đ</div>
+        </div>
+        <div class="payment_detail">
+          <div>Số dư còn lại sau<br />thanh toán</div>
+          <div>500.000đ</div>
+        </div>
+        <div class="button payment__deposit">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#FFF"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M21 7.28V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-2.28c.59-.35 1-.98 1-1.72V9c0-.74-.41-1.37-1-1.72zM20 9v6h-7V9h7zM5 19V5h14v2h-6c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h6v2H5z"
+            />
+            <circle cx="16" cy="12" r="1.5" />
+          </svg>
+          <div>Nạp thêm vào tài khoản</div>
+        </div>
+        <div class="button payment__payoff">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#FFF"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M11 17h2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1h-3v-1h4V8h-2V7h-2v1h-1c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3v1H9v2h2v1zm9-13H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4V6h16v12z"
+            />
+          </svg>
+          <div>Thanh toán dư nợ</div>
+        </div>
+        <div class="button payment__payoff_withAnother">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#FFF"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+            />
+          </svg>
+          <div>Thanh toán dư nợ với dịch vụ khác</div>
+        </div>
+        <div class="btn__close btn-icon">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+    </div>
 
-            window.onclick = (event) => {
-                if (event.target == payment_modal) {
-                    payment_modal.style.display = 'none';
-                }
-            };
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      var payment_modal = document.getElementById('payment_modal')
 
-            var btn_pay = document.getElementsByClassName('button');
+      var btn_payment = document.getElementsByClassName('payment')[0]
 
-            btn_pay[0].onclick =
-                btn_pay[1].onclick =
-                btn_pay[2].onclick =
-                    btn_close.onclick;
-        </script>
-    </body>
+      btn_payment.onclick = () => {
+        payment_modal.style.display = 'block'
+      }
+
+      var btn_close = document.getElementsByClassName('btn__close')[0]
+
+      btn_close.onclick = () => {
+        payment_modal.style.display = 'none'
+      }
+
+      window.onclick = (event) => {
+        if (event.target == payment_modal) {
+          payment_modal.style.display = 'none'
+        }
+      }
+
+      var btn_pay = document.getElementsByClassName('button')
+
+      btn_pay[0].onclick =
+        btn_pay[1].onclick =
+        btn_pay[2].onclick =
+          btn_close.onclick
+    </script>
+  </body>
 </html>

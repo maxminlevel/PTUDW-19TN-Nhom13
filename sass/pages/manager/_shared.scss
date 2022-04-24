@@ -1,9 +1,13 @@
 @import '../../components/button';
 .m {
+  &__main {
+    background-color: white;
+    height: 100vh;
+  }
   &__btn {
     &-link {
       @extend .btn;
-      font-size: 1rem;
+      font-size: 1.6rem;
       padding: 0.1rem 0.5rem;
       border-top-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
@@ -24,6 +28,9 @@
     height: 100vh;
     position: sticky;
     background-color: $m-color-primary;
+    &__func {
+      font-size: 1.5rem;
+    }
   }
   &__content {
     padding: 1rem;
@@ -48,6 +55,7 @@
       text-align: center;
       align-items: center;
       color: black;
+      font-size: 2rem;
     }
     th {
       background-color: #f5f6f8;
@@ -58,20 +66,21 @@
       @extend .btn;
       margin: 0 0.25rem;
       padding: 0rem 1.5rem;
-      font-size: 1rem;
       border: 1px solid gray;
       border-radius: 0rem 1rem;
       text-align: center;
       background-color: $m-color-foreground;
       border-width: 0;
+      padding: 1rem;
       a {
+        font-size: 1.6rem;
         text-decoration: none;
         color: white;
       }
     }
   }
   &__title {
-    font-size: 1.5rem;
+    font-size: 3rem;
     order: 0;
     color: $m-color-foreground;
   }
@@ -92,9 +101,9 @@
         @extend .btn;
         padding: 0;
         border-radius: 0;
-        font-size: 1rem;
+        font-size: 2rem;
         border: 1px solid gray;
-        width: 2rem;
+        width: 4rem;
         text-align: center;
       }
     }
@@ -110,7 +119,7 @@
     background-color: #f5f6f8;
     display: flex;
     flex-direction: row;
-    font-size: 1rem;
+    font-size: 2rem;
     justify-content: space-between;
     li {
       display: flex;
@@ -128,7 +137,7 @@
   &__save,
   &__cancel {
     @extend .btn;
-    font-size: 1rem;
+    font-size: 1.6rem;
     padding: 0 1rem;
     border-radius: 1rem 0;
     text-align: center;
