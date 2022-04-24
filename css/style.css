@@ -707,17 +707,15 @@ body {
       flex-wrap: wrap;
       justify-content: center; }
       .modal .modal-content form li label {
-        float: left;
-        clear: left;
-        width: 10rem;
+        width: 15rem;
         text-align: right;
         margin: 0.4rem;
         font-weight: bold;
-        font-size: x-large;
+        font-size: 2rem;
         padding: 0.5rem; }
       .modal .modal-content form li input {
         display: inline-block;
-        font-size: x-large;
+        font-size: 2rem;
         align-self: right;
         margin: 0.4rem;
         width: 60%;
@@ -893,7 +891,7 @@ body {
   .m__content table,
   .m__content td,
   .m__content th {
-    border: 1px solid black;
+    border-bottom: 1px solid black !important;
     border-collapse: collapse;
     padding: 0.5rem 0.2rem;
     text-align: center;
@@ -962,7 +960,7 @@ body {
 
 .btn__save, .btn__cancel {
   font-size: 1.6rem;
-  padding: 0 1rem;
+  padding: 0.5rem 2rem;
   border-radius: 1rem 0;
   text-align: center; }
 
@@ -1059,18 +1057,16 @@ body {
       font-size: 1.8rem; }
 
 .m__person__btn_ed, .m__location__related, .m__location__history, .m__person__related, .m__person__history {
-  display: flex;
   flex-direction: row;
-  column-gap: 0.5rem;
   justify-content: center;
-  width: 100%; }
+  width: 8rem; }
 
 .m__person__btn_edit, .m__location__related .btn, .m__location__history .btn, .m__person__related .btn, .m__person__history .btn, .m__person__btn_delete {
   border-radius: 1rem;
   background-color: #ffd363;
-  width: auto;
+  width: 100%;
   padding: 0 1rem;
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
 
 .m__person__btn_delete {
   background-color: #ff6363; }

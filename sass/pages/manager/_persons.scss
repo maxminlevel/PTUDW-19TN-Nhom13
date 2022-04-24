@@ -2,20 +2,18 @@
   &__person {
     &__btn {
       &_ed {
-        display: flex;
         flex-direction: row;
-        column-gap: 0.5rem;
         justify-content: center;
-        width: 100%;
+        width: 8rem;
       }
       &_edit,
       &_delete {
         @extend .btn;
         border-radius: 1rem;
         background-color: #ffd363;
-        width: auto;
+        width: 100%;
         padding: 0 1rem;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
       &_delete {
         background-color: #ff6363;
