@@ -3,6 +3,7 @@
   height: 100vh;
 
   &__img {
+    position: relative;
     flex: 1;
     background-size: cover;
     background-image: linear-gradient(
@@ -13,6 +14,21 @@
     animation-name: fadeIn;
     animation-duration: 1.2s;
     animation-timing-function: ease-in;
+  }
+
+  &__slogan {
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 10%;
+    left: 1.4rem;
+    color: $color-white;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    word-spacing: 0.4rem;
+    & span {
+      font-size: 2.2rem;
+    }
   }
 
   &__box {
@@ -55,6 +71,37 @@
         }
         margin-bottom: 1rem;
       }
+    }
+  }
+  .demo {
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    text-align: center;
+    &__text {
+      font-size: 3rem;
+      color: $color-white;
+      margin-bottom: 1rem;
+    }
+    &__btns {
+      display: flex;
+      column-gap: 1.5rem;
+    }
+
+    &__btn {
+      padding: 1rem 1.2rem;
+      background-color: $color-white;
+      min-width: 16rem;
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: $color-primary-dark;
+      text-transform: capitalize;
+      font-weight: 700;
+      border-radius: 6px;
+      transition: all 0.3s;
+      @include hoverBtnUp;
     }
   }
 }

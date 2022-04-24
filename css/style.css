@@ -304,12 +304,25 @@ body {
   display: flex;
   height: 100vh; }
   .login__img {
+    position: relative;
     flex: 1;
     background-size: cover;
     background-image: linear-gradient(rgba(55, 134, 190, 0.75), rgba(55, 134, 190, 0.75)), url("../../images/bg-login.png");
     animation-name: fadeIn;
     animation-duration: 1.2s;
     animation-timing-function: ease-in; }
+  .login__slogan {
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 10%;
+    left: 1.4rem;
+    color: #fff;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    word-spacing: 0.4rem; }
+    .login__slogan span {
+      font-size: 2.2rem; }
   .login__box {
     flex: 1;
     display: flex;
@@ -338,6 +351,38 @@ body {
         margin-bottom: 1rem; }
         .login__box .social-list li:nth-child(2) {
           margin: 0 1rem; }
+  .login .demo {
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    text-align: center; }
+    .login .demo__text {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 1rem; }
+    .login .demo__btns {
+      display: flex;
+      column-gap: 1.5rem; }
+    .login .demo__btn {
+      padding: 1rem 1.2rem;
+      background-color: #fff;
+      min-width: 16rem;
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: #2579f2;
+      text-transform: capitalize;
+      font-weight: 700;
+      border-radius: 6px;
+      transition: all 0.3s; }
+      .login .demo__btn:hover {
+        cursor: pointer;
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      .login .demo__btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .c-profile {
   padding: 2rem;
