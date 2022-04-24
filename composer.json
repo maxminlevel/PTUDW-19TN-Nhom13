@@ -1,0 +1,26 @@
+{
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "maxminlevel",
+            "email": "vvtoan35@gmail.com",
+            "homepage": "https://www.maxminlevel.github.io",
+            "role": "Developer"
+        },
+        {
+            "name": "tnghung",
+            "role": "Developer"
+        },
+        {
+            "name": "drwpls",
+            "role": "Developer"
+        },
+        {
+            "name": "NXV5111",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "vvtoan.dev@gmail.com"
+    }
+}

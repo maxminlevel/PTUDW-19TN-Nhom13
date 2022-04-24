@@ -1,0 +1,40 @@
+.m {
+  &__person {
+    &__btn {
+      &_ed {
+        flex-direction: row;
+        justify-content: center;
+        width: 8rem;
+      }
+      &_edit,
+      &_delete {
+        @extend .btn;
+        border-radius: 1rem;
+        background-color: #ffd363;
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 1.6rem;
+      }
+      &_delete {
+        background-color: #ff6363;
+      }
+    }
+    &__related,
+    &__history {
+      @extend .m__person__btn_ed;
+      .btn {
+        @extend .m__person__btn_edit;
+        line-height: 2.5rem;
+        font-size: 1.6rem;
+        background-color: #63bdff;
+        width: 100%;
+        padding: 0 0.5rem;
+        color: white;
+      }
+    }
+  }
+}
+
+.releated_id {
+  background-color: black;
+}

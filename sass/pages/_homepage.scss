@@ -1,0 +1,89 @@
+.homepage {
+    display: flex;
+    height: 100vh;
+
+    &__img-container {
+        display: flex;
+        flex: 1;
+        position: relative;
+        text-align: center;
+        color: white;
+        text-align: left;
+
+        &__img {
+            flex: 1;
+            background-size: cover;
+            background-image: linear-gradient(rgba($color-accent, 0.75),
+                    rgba($color-accent, 0.75)),
+                url("../../images/bg-login.png");
+            animation-name: fadeIn;
+            animation-duration: 1.2s;
+            animation-timing-function: ease-in;
+        }
+
+        &__introtext {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            transform: translate(-20%, -20%);
+            animation-name: fadeIn;
+            animation-duration: 1.2s;
+            animation-timing-function: ease-in;
+            font-size: 2rem;
+
+        }
+    }
+
+
+    &__box {
+        flex: 1;
+        display: flex;
+        
+        background-color: rgba($color: $color-white, $alpha: 0.6);
+        flex-direction: column;
+        align-items: center;
+        animation-name: moveInBottom;
+        animation-duration: 1.6s;
+        animation-timing-function: ease-out;
+
+        .logo {
+            width: 12rem;
+            height: 15rem;
+            margin-top: 1rem;
+            margin-bottom: -2rem;
+            padding: 2rem 0;
+        }
+
+        &__button
+        {
+            display: flex;
+            flex-direction: row;
+
+            .btn-link {
+                align-self: flex-end;
+            }
+    
+            .btn {
+                width: 50%;
+                margin: 15rem 2rem 2rem 2em;
+            }
+        }
+
+        .text-devide {
+            margin: 1rem 0;
+        }
+
+        .social-list {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+
+                &:nth-child(2) {
+                    margin: 0 1rem;
+                }
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

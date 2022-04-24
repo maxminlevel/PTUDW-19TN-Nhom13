@@ -1,7 +1,8 @@
-.m {
+.m,
+.a {
   &__sidebar {
     color: gray;
-    width: 15rem;
+    width: 20rem;
     ul {
       list-style: none;
       display: flex;
@@ -10,8 +11,12 @@
       row-gap: 0.8rem;
     }
     .active {
-      color: black;
       border: 1px dashed;
+      font-weight: bold;
+      color: $m-color-foreground;
+      a {
+        color: $m-color-foreground;
+      }
     }
     li {
       @extend .btn;
@@ -27,6 +32,13 @@
       }
       div {
         flex: 2;
+      }
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+      i {
+        font-size: 1.8rem;
       }
     }
   }

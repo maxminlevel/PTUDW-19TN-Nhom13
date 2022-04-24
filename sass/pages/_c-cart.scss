@@ -1,0 +1,48 @@
+// Edit for customer-cart layout
+.main {
+  height: 80vh;
+  padding-bottom: 4rem;
+  background-color: $color-grey;
+
+  .cart {
+    padding: 0 4rem;
+
+    &__content {
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__table-container {
+      width: 90%;
+      margin: auto;
+      padding: 1rem 1.6rem;
+      border: 1px solid #c4c4c4;
+      border-radius: 5px;
+    }
+
+    &__btn {
+      width: 90%;
+      display: flex;
+      margin: 1rem auto;
+      column-gap: 1.5rem;
+      justify-content: flex-end;
+      .btn {
+        padding: 0.4rem 1.2rem;
+        text-transform: none;
+        font-weight: 700;
+        border-radius: 3px;
+
+        &--white:hover {
+          @include hoverBtnUp;
+        }
+
+        &--white {
+          color: $color-primary-dark;
+          border: 2px solid $color-primary-dark;
+        }
+      } 
+    }
+  }
+}

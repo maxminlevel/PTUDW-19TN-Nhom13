@@ -1,4 +1,5 @@
-.m {
+.m,
+.a {
   &__nav {
     position: sticky;
     display: flex;
@@ -17,8 +18,13 @@
         font-size: 1.5rem;
         gap: 0.5rem;
         color: black;
+        p {
+          margin-left: 1rem;
+          font-size: 2rem;
+        }
       }
       img {
+        margin-left: 1rem;
         width: 64px;
       }
     }

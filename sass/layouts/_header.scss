@@ -1,1 +1,77 @@
 // File for header style
+.header {
+  background-color: $color-primary-dark;
+
+  &__container {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+
+    .logo {
+      height: 6rem;
+      width: 6rem;
+      flex: 1;
+    }
+    .search-bar {
+      flex: 7;
+    }
+    .infor {
+      flex: 2;
+    }
+    .form__contact {
+      margin-bottom: 0;
+    }
+  }
+}
+.navbar__customer {
+  margin-bottom: 0;
+  background-color: $color-white;
+  height: 5rem;
+
+  .navbar__inner {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $grid-width;
+
+    display: flex;
+    gap: 3rem;
+
+    .item {
+      display: flex;
+      align-items: center;
+      text-decoration: inherit;
+
+      svg {
+        align-items: center;
+        color: $color-white;
+        border-radius: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem;
+      }
+
+      &:nth-child(1) {
+        svg {
+          background-color: $color-primary-dark;
+        }
+      }
+
+      &:nth-child(2) {
+        svg {
+          background-color: $color-hot-line;
+        }
+      }
+
+      div {
+        color: $color-black;
+        margin-left: 0.75rem;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
