@@ -114,7 +114,7 @@
                 <div class="row">
                     <ul class="breadcrumb">
                         <li class="breadcrumb__item">
-                            <a href="#">Covid Website</a>
+                            <a href="packs.html">Covid Website</a>
                         </li>
                         <li class="breadcrumb__item">Mua theo gói</li>
                         <li class="breadcrumb__item">Gói nhu yếu phẩm 1</li>
@@ -143,7 +143,9 @@
                             </ul>
                             <ul class="table__item">
                                 <li>
-                                    <span>Mì gói hảo hảo</span>
+                                    <span class="pack__nameProduct"
+                                        >Mì gói hảo hảo</span
+                                    >
                                 </li>
 
                                 <li>
@@ -178,7 +180,9 @@
                             </ul>
                             <ul class="table__item">
                                 <li>
-                                    <span>Nước suối Lavie</span>
+                                    <span class="pack__nameProduct"
+                                        >Nước suối Lavie</span
+                                    >
                                 </li>
 
                                 <li>
@@ -213,7 +217,9 @@
                             </ul>
                             <ul class="table__item">
                                 <li>
-                                    <span>Mì tôm Omachi</span>
+                                    <span class="pack__nameProduct"
+                                        >Mì tôm Omachi</span
+                                    >
                                 </li>
 
                                 <li>
@@ -248,7 +254,9 @@
                             </ul>
                             <ul class="table__item">
                                 <li>
-                                    <span>Gạo Việt Nam</span>
+                                    <span class="pack__nameProduct"
+                                        >Gạo Việt Nam</span
+                                    >
                                 </li>
 
                                 <li>
@@ -319,5 +327,21 @@
             </footer>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            var btn_add = document.getElementsByClassName('pack__btnAdd')[0];
+            var btn_back = document.getElementsByClassName('pack__btnBack')[0];
+
+            btn_add.onclick = btn_back.onclick = () => {
+                window.open('packs.html', '_self');
+            };
+
+            Array.from(
+                document.getElementsByClassName('pack__nameProduct')
+            ).forEach((item) => {
+                item.onclick = () => {
+                    window.open('packProduct.html', '_self');
+                };
+            });
+        </script>
     </body>
 </html>
