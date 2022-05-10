@@ -1,3 +1,4 @@
+@import '../abstracts/mixin';
 *,
 *::after,
 *::before {
@@ -8,11 +9,26 @@
 
 html {
   // 1rem = 10px
-  font-size: 100%;
+  font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 160%; // 1rem = 16px
+  }
+
+  @include respond(tab-land) {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  @include respond(tab-port) {
+    font-size: 43.75%; // 1rem = 7px
+  }
+
+  @include respond(big-desktop) {
+    font-size: 37.5%; // 1rem = 6px
+  }
 }
 
 body {
-  overflow: hidden;
   text-rendering: optimizeSpeed;
   image-rendering: optimizeSpeed;
   box-sizing: border-box;

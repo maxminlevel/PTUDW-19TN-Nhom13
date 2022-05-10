@@ -1,1 +1,53 @@
 // Partial file for mixin
+@mixin hoverBtnUp {
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+}
+
+// Responsive break points in my opinion
+/*
+  0 - 600px: Phone
+  600 - 900px: Tablet Portait
+  900 - 1200px: Tablet Landscape
+  1200 - 1800px: Desktop (current)
+  1800+ : Big desktop
+*/
+
+// Dùng em cho responsive, tại rem có những browser không hỗ trợ (Opera, IE)
+// 1em = 16px
+@mixin respond($breakPoint) {
+  @if ($breakPoint == phone){
+    // 600px
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if ($breakPoint == tab-port){
+    // 900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if ($breakPoint == tab-land){
+    // 1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if ($breakPoint == big-desktop){
+    // 1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+
+}
