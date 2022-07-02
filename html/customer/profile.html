@@ -53,30 +53,35 @@
       <div class="row">
         <div class="c-profile">
           <ul class="c-profile__list">
-            <li class="selected">
+            <li class="c-profile__item active" data-section="account">
               <a href="#" class="btn btn--white">
                 <i class="fa-solid fa-user c-profile__icon"></i>Tài khoản</a
               >
             </li>
-            <li>
+            <li class="c-profile__item " data-section="password">
               <a href="#" class="btn btn--white"
                 ><i class="fa-solid fa-lock c-profile__icon"></i></i>Đổi mật
                 khẩu</a
               >
             </li>
-            <li>
+            <li class="c-profile__item" data-section="connect">
               <a href="#" class="btn btn--white a--center"
                 ><i class="fa-solid fa-wallet c-profile__icon"></i>Liên kết hệ thống thanh toán</a
               >
             </li>
-            <li><a href="#" class="btn btn--white">
+            <li class="c-profile__item" data-section="managed">
+              <a href="#" class="btn btn--white">
               <i class="fa-solid fa-list c-profile__icon"></i>Lịch sử quản lý</a></li>
-            <li><a href="#" class="btn btn--white">
+            <li class="c-profile__item" data-section="consume">
+              <a href="#" class="btn btn--white">
               <i class="fa-solid fa-basket-shopping c-profile__icon"></i>Lịch sử tiêu thụ</a></li>
-            <li><a href="#" class="btn btn--white">
+            <li class="c-profile__item"  data-section="payment">
+              <a href="#" class="btn btn--white">
               <i class="fa-solid fa-credit-card c-profile__icon"></i>Lịch sử thanh toán</a></li>
           </ul>
-          <div class="c-profile__infor">
+
+          <!-- Section contents -->
+          <div class="c-profile__infor c-profile__infor--account active">
             <p class="c-profile__title">Tổng quan</p>
             <table class="c-profile__table">
               <tbody>
@@ -137,6 +142,206 @@
               </tbody>
             </table>
           </div>
+          <div class="c-profile__infor c-profile__infor--password">
+            <p class="c-profile__title">Đổi mật khẩu</p>
+            <form class="c-profile__form">
+              <label>Nhập mật khẩu mới</label>
+              <input type="text">
+              <label>Xác nhận mật khẩu</label>
+              <input type="text">
+              <input type="submit" value="Đổi mật khẩu" class="submit-btn">
+            </form>
+          </div>
+          <div class="c-profile__infor c-profile__infor--managed">
+            <p class="c-profile__title">Lịch sử quản lý</p>
+            <table class="c-profile__table">
+              <thead>
+                <th>Thời gian bắt đầu</th>
+                <th>Thời gian kết thúc</th>
+                <th>Địa chỉ</th>
+                <th>Trạng thái</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>Quân khu 5</td>
+                  <td>F0</td>
+                </tr>
+                <tr>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>Quân khu 5</td>
+                  <td>F0</td>
+                </tr>
+                <tr>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>Quân khu 5</td>
+                  <td>F0</td>
+                </tr>
+                <tr>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>Quân khu 5</td>
+                  <td>F0</td>
+                </tr>
+                <tr>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>Quân khu 5</td>
+                  <td>F0</td>
+                </tr>
+                <tr>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>Quân khu 5</td>
+                  <td>F0</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a class="active" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
+          </div>
+          <div class="c-profile__infor c-profile__infor--connect">
+            <p class="c-profile__title">Liên kết hệ thống thanh toán</p>
+            <div class="c-profile__national">
+              <h3>Thẻ quốc tế</h3>
+              <div class="c__profile--list-box">
+                <div class="c__profile--box">
+                  <img src="../../images/visa.png" alt="visa">
+                  <p>VISA</p>
+                </div>
+                <div class="c__profile--box">
+                  <img src="../../images/master-card.png" alt="master-card">
+                  <p style="margin-top: 1.8rem;">MasterCard</p>
+                </div>
+                <div class="c__profile--box">
+                  <img src="../../images/jcb.png" alt="JCB">
+                  <p >JCB</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="c-profile__national">
+              <h3>Ngân hàng liên kết</h3>
+              <div class="c__profile--list-box">
+                <div class="c__profile--box">
+                  <img src="../../images/viettinbank.png" alt="Viet tin bank">
+                  <p>ViettinBank</p>
+                </div>
+                <div class="c__profile--box">
+                  <img src="../../images/bidv.png" alt="BIDV">
+                  <p>BIDV</p>
+                </div>
+                <div class="c__profile--box">
+                  <img src="../../images/vietcombank.png" alt="Vietcom bank">
+                  <p>VietcomBank</p>
+                </div>
+                <div class="c__profile--box">
+                  <img src="../../images/argibank.png" alt="Argibank">
+                  <p>Argibank</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-profile__infor c-profile__infor--consume">
+            <p class="c-profile__title">Lịch sử tiêu thụ gói</p>
+            <table class="c-profile__table">
+              <thead>
+                <th>Thời gian</th>
+                <th>Tên gói</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>Gói nhu yếu phẩm 2</td>
+                  <td>560.000đ</td>
+                  <td><span class="done">Đã thanh toán</span></td>
+                </tr>
+                <tr>
+                  <td>2020-03-12 16:23:50</td>
+                  <td>Gói nhu yếu phẩm 5</td>
+                  <td>710.000đ</td>
+                  <td><span class="done">Đã thanh toán</span></td>
+                </tr>
+                <tr>
+                  <td>2020-03-12 21:23:50</td>
+                  <td>Gói nhu yếu phẩm 7</td>
+                  <td>780.000đ</td>
+                  <td><span class="not-done">Chưa thanh toán</span></td>
+                </tr>
+                <tr>
+                  <td>2020-03-12 17:41:50</td>
+                  <td>Gói nhu yếu phẩm 2</td>
+                  <td>900.000đ</td>
+                  <td><span class="done">Đã thanh toán</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a class="active" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
+          </div>
+          <div class="c-profile__infor c-profile__infor--payment ">
+            <p class="c-profile__title">Lịch sử thanh toán</p>
+            <table class="c-profile__table">
+              <thead>
+                <th>Thời gian</th>
+                <th>Số tiền</th>
+                <th>Trạng thái</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2020-28-12 08:41:50</td>
+                  <td>560.000đ</td>
+                  <td><span class="done">Thành công</span></td>
+                </tr>
+                <tr>
+                  <td>2020-03-12 16:23:50</td>
+                  <td>710.000đ</td>
+                  <td><span class="done">Thành công</span></td>
+                </tr>
+                <tr>
+                  <td>2020-03-12 21:23:50</td>
+                  <td>780.000đ</td>
+                  <td><span class="not-done">Thất bại</span></td>
+                </tr>
+                <tr>
+                  <td>2020-03-12 17:41:50</td>
+                  <td>900.000đ</td>
+                  <td><span class="done">Thành công</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a class="active" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -162,5 +367,20 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      const itemContainer = document.querySelector('.c-profile__list');
+      itemContainer.addEventListener('click', (e) => {
+        const itemActive = e.target.closest('.c-profile__item');
+        console.log(itemActive.dataset.section);
+        if(!itemActive) return;
+        const items = e.currentTarget.querySelectorAll('.c-profile__item');
+        const contents = document.querySelectorAll('.c-profile__infor')
+        console.log(contents);
+        items.forEach(item => item.classList.remove('active'));
+        contents.forEach(content => content.classList.remove('active'));
+        itemActive.classList.add('active');
+        document.querySelector(`.c-profile__infor--${itemActive.dataset.section}`).classList.add('active');
+      })
+    </script>
   </body>
 </html>
