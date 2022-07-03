@@ -175,8 +175,8 @@ body {
   .login .demo {
     position: absolute;
     top: 50%;
-    left: 5rem;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center; }
     .login .demo__text {
@@ -575,8 +575,8 @@ body {
   .login .demo {
     position: absolute;
     top: 50%;
-    left: 5rem;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center; }
     .login .demo__text {
@@ -744,7 +744,8 @@ body {
       margin: 2rem 5rem;
       width: 12rem;
       padding: 0.5rem 0.5rem;
-      border-radius: 25% 0 25% 0; }
+      border-radius: 25% 0 25% 0;
+      cursor: pointer; }
     .modal .modal-content form .modal-content__btn_save {
       background-color: #63bdff;
       color: white; }
@@ -1076,6 +1077,23 @@ body {
     .a__sidebar li i {
       font-size: 1.8rem; }
 
+.m__func {
+  row-gap: 2rem; }
+  .m__func .btn, .m__func .form__search, .m__func .a__location__btn_edit, .m__func .a__location__btn_delete, .m__func .m__btn-link, .m__func div, .m__func .m__paging ul li, .m__paging ul .m__func li, .m__func .s__btn__submit ul li, .s__btn__submit ul .m__func li, .m__func .btn__save, .m__func .btn__cancel, .m__func .m__sidebar li, .m__sidebar .m__func li,
+  .m__func .a__sidebar li, .a__sidebar .m__func li, .m__func .m__person__btn_edit, .m__func .m__person__btn_delete {
+    transform: none;
+    box-shadow: none; }
+  .m__func:last-child {
+    gap: 2rem;
+    cursor: default; }
+  .m__func_textbox {
+    background-color: white;
+    font-size: 2rem;
+    color: black; }
+    .m__func_textbox input {
+      font-size: 2rem;
+      height: 4rem; }
+
 .m__person__btn_ed, .a__location__related, .a__location__history, .m__person__related, .m__person__history {
   flex-direction: row;
   justify-content: center;
@@ -1086,7 +1104,8 @@ body {
   background-color: #ffd363;
   width: 100%;
   padding: 0 1rem;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  cursor: pointer; }
 
 .m__person__btn_delete {
   background-color: #ff6363; }
@@ -1103,6 +1122,33 @@ body {
 
 .releated_id {
   background-color: black; }
+
+.m__main .btn__save,
+.m__main .btn__cancel {
+  cursor: pointer; }
+  .m__main .btn__save:hover,
+  .m__main .btn__cancel:hover {
+    box-shadow: none;
+    transform: none; }
+
+.m__container select {
+  width: 15rem; }
+
+.m__container .btn, .m__container .form__search, .m__container .a__location__btn_edit, .m__container .a__location__btn_delete, .m__container .m__btn-link, .m__container .m__func div, .m__func .m__container div, .m__container .m__paging ul li, .m__paging ul .m__container li, .m__container .s__btn__submit ul li, .s__btn__submit ul .m__container li, .m__container .btn__save, .m__container .btn__cancel, .m__container .m__sidebar li, .m__sidebar .m__container li,
+.m__container .a__sidebar li, .a__sidebar .m__container li, .m__container .m__person__btn_edit, .m__container .m__person__btn_delete {
+  cursor: pointer; }
+
+.m__products__images {
+  justify-content: center; }
+  .m__products__images .btn_view {
+    border-radius: 1rem;
+    background-color: #ffd363;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    cursor: pointer; }
+
+.modal select {
+  width: 60%; }
 
 .c-profile {
   padding: 2rem;
@@ -1927,8 +1973,8 @@ body {
   .login .demo {
     position: absolute;
     top: 50%;
-    left: 5rem;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center; }
     .login .demo__text {

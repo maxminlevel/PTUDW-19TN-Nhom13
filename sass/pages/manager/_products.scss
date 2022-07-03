@@ -1,0 +1,32 @@
+.m {
+  &__container {
+    select {
+      width: 15rem;
+    }
+
+    .btn {
+      cursor: pointer;
+    }
+  }
+
+  &__products {
+    &__images {
+      justify-content: center;
+
+      .btn_view {
+        border-radius: 1rem;
+        background-color: #ffd363;
+        padding: 0 1rem;
+        font-size: 1.6rem;
+
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.modal {
+  select {
+    width: 60%;
+  }
+}

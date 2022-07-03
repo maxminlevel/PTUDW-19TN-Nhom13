@@ -58,7 +58,12 @@
                       </li>
                       <li>
                         <label for="state">State</label>
-                        <input type="text" name="state" id="state" />
+                        <select name="state" id="state" size="1">
+                          <option value="f0">F0</option>
+                          <option value="f1">F1</option>
+                          <option value="f2">F2</option>
+                          <option value="f3">F3</option>
+                        </select>
                       </li>
                       <li>
                         <label for="address">Address</label>
@@ -85,7 +90,12 @@
                   </li>
                   <li>
                     <label for="state">State</label>
-                    <input type="text" name="state" id="state" />
+                    <select name="state" id="state" size="1">
+                      <option value="f0">F0</option>
+                      <option value="f1">F1</option>
+                      <option value="f2">F2</option>
+                      <option value="f3">F3</option>
+                    </select>
                   </li>
                   <li>
                     <label for="address">Address</label>
@@ -138,19 +148,7 @@
                     </span>
                   </th>
                   <th>
-                    <span>
-                      Related
-                      <button><i class="fa-solid fa-chevron-down"></i></button>
-                    </span>
-                  </th>
-                  <th>
-                    <span>
-                      History
-                      <button><i class="fa-solid fa-chevron-down"></i></button>
-                    </span>
-                  </th>
-                  <th>
-                    <span> </span>
+                    <span>Is related?</span>
                   </th>
                 </tr>
                 <tr class="m__person__row">
@@ -160,18 +158,6 @@
                   <td>12/12/1999</td>
                   <td>F0</td>
                   <td>112 Nguyễn Văn Cừ, P 10, Q 5, TP HCM</td>
-                  <td>
-                    <div class="m__person__history">
-                      <div id="m__person__history">1</div>
-                      <a class="btn" href="detail-related.html">Detail</a>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="m__person__related">
-                      <div id="m__person__related">1</div>
-                      <a class="btn" href="detail-cure.html">Detail</a>
-                    </div>
-                  </td>
                   <td class="m__person__btn_ed" style="border: none">
                     <div class="related_id" style="width: 100%">
                       <input type="checkbox" name="citizenID" />
@@ -181,21 +167,31 @@
               </table>
               <div id="s__paging"></div>
               <div class="s__btn__submit">
-                <div class="btn__save">Save</div>
-                <div class="btn__cancel">Cancel</div>
+                <div class="btn__save" onclick="closeAddPatient()">Save</div>
+                <div class="btn__cancel" onclick="closeAddPatient()">
+                  Cancel
+                </div>
               </div>
             </ul>
           </div>
         </div>
       </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script>
       $(function () {
         $('#m__nav').load('../shared/manager/navbar.html')
         $('#m__sidebar').load('../shared/manager/sidebar.html')
         $('#s__paging').load('../shared/paging.html')
       })
+    </script>
+
+    <script>
+      function closeAddPatient() {
+        window.location.href = './persons.html'
+      }
     </script>
   </body>
 </html>

@@ -1,14 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
-<title>Products</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <div class="m__main">
+      <div id="m__nav"></div>
+      <div class="m__container">
+        <div id="m__sidebar"></div>
+        <div class="m__content">
+          <div class="m__content__header">
+            <div class="m__title heading-primary">Products</div>
+            <div class="m__func">
+              <div class="btn btn--primary" id="new_product_btn">
+                <span>New Products</span>
+              </div>
+              <div class="btn btn--primary">Import file</div>
+            </div>
+          </div>
+          <form action="submit" method="post">
+            <ul class="s__filter">
+              <li>
+                <label for="id">ID</label>
+                <input type="text" name="id" id="id" />
+              </li>
+              <li>
+                <label for="nameProducts">Name Products</label>
+                <input type="text" name="nameProducts" id="nameProducts" />
+              </li>
+              <li>
+                <label for="price">Price</label>
+                <input
+                  type="number"
+                  name="price"
+                  id="price"
+                  min="1000"
+                  step="1000"
+                  value="1000"
+                />
+              </li>
+              <li>
+                <label for="unit">Unit</label>
+                <select name="unit" id="unit" size="1">
+                  <option value="gram">Gram</option>
+                  <option value="kg">Kg</option>
+                  <option value="pack">Pack</option>
+                </select>
+              </li>
+              <li>
+                <button type="submit" value="submit" class="form__search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </li>
+            </ul>
+          </form>
+          <div class="line"></div>
+          <table class="s__table">
+            <tr>
+              <th>
+                <span>
+                  ID
+                  <button><i class="fa-solid fa-chevron-down"></i></button>
+                </span>
+              </th>
+              <th>
+                <span>
+                  Name Products
+                  <button><i class="fa-solid fa-chevron-down"></i></button>
+                </span>
+              </th>
+              <th>
+                <span>
+                  Images
+                  <button><i class="fa-solid fa-chevron-down"></i></button>
+                </span>
+              </th>
+              <th>
+                <span>
+                  Price
+                  <button><i class="fa-solid fa-chevron-down"></i></button>
+                </span>
+              </th>
+              <th>
+                <span> Unit </span>
+              </th>
+              <th>
+                <span> </span>
+              </th>
+            </tr>
+            <tr class="m__products__row">
+              <td>001</td>
+              <td>Mì tôm Hảo Hảo</td>
+              <td>
+                <div class="m__products__images">
+                  <span>1</span>
+                  <span class="btn_view view_product_images_btn">View</span>
+                </div>
+              </td>
+              <td>30.000</td>
+              <td>Pack</td>
+              <td class="m__products__btn_ed" style="border-style: none">
+                <span class="m__products__btn_edit btn edit_product_btn">
+                  <i class="fa-solid fa-pen"></i>
+                </span>
+                <span class="m__products__btn_delete btn delete_product_btn">
+                  <i class="fa-solid fa-trash"></i>
+                </span>
+              </td>
+            </tr>
+          </table>
+          <div id="s__paging"></div>
+        </div>
+      </div>
+    </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $('#m__nav').load('../shared/manager/navbar.html')
+        $('#m__sidebar').load('../shared/manager/sidebar.html')
+        $('#s__paging').load('../shared/paging.html')
+      })
+    </script>
+
+    <!-- Delete product box -->
+    <div id="delete_product_modal" class="modal">
+      <div class="modal-content">
+        <div class="m__title heading-primary u-center-text">
+          Delete this product?
+        </div>
+        <form action="submit" method="post">
+          <div class="modal-content__btn_save btn delete_product_btn_close">
+            <p>YES</p>
+          </div>
+          <div class="modal-content__btn_cancel btn delete_product_btn_close">
+            <p>NO</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Js for delete product pop up-->
+    <script>
+      var delete_product_modal = document.getElementById('delete_product_modal')
+
+      // Get the button that opens the modal
+      var delete_product_btn =
+        document.getElementsByClassName('delete_product_btn')
+
+      // Get the element that closes the modal
+      var delete_product_btn_close = document.getElementsByClassName(
+        'delete_product_btn_close'
+      )
+
+      // When the user clicks the button, open the modal
+      for (let i = 0; i < delete_product_btn.length; i++) {
+        delete_product_btn[i].onclick = () => {
+          delete_product_modal.style.display = 'block'
+        }
+      }
+
+      // When the user clicks close the modal
+      for (let i = 0; i < delete_product_btn_close.length; i++) {
+        delete_product_btn_close[i].onclick = () => {
+          delete_product_modal.style.display = 'none'
+        }
+      }
+
+      window.onclick = function (event) {
+        if (event.target == delete_product_modal) {
+          delete_product_modal.style.display = 'none'
+        }
+      }
+    </script>
+
+    <!-------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------->
+
+    <!-- View product' images box -->
+    <div id="view_product_images_modal" class="modal">
+      <div class="modal-content">
+        <span class="view_product_images_btn_close close">&times;</span>
+        <div class="product__listImage">
+          <div>
+            <img
+              src="https://cf.shopee.vn/file/7d1ad1340182f5e5baca900994aafcd3"
+            />
+          </div>
+          <div>
+            <img
+              src="https://salt.tikicdn.com/media/catalog/product/1/6/165340_39066_8936017361136_1_chon.jpg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://www.minhcaumart.vn/media/com_eshop/products/omachi.jpg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://salt.tikicdn.com/media/catalog/product/1/6/165927_75627_qtud93lhpb.jpg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://thuonghieuvietnoitieng.com//image/admin/4406f536613f4c9a35b6e6b18ed69547c8a93ea0/Masan/omachi-bo.jpg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://vn-test-11.slatic.net/p/7edb53fd4c0df5445c91ed369a1f9372.jpg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://choviet.co.uk/wp-content/uploads/2021/03/Omachi_Mi-lau-tom-chua-cay_Thung.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Js for delete product pop up-->
+    <script>
+      var view_product_images_modal = document.getElementById(
+        'view_product_images_modal'
+      )
+
+      // Get the button that opens the modal
+      var view_product_images_btn = document.getElementsByClassName(
+        'view_product_images_btn'
+      )
+
+      // Get the element that closes the modal
+      var view_product_images_btn_close = document.getElementsByClassName(
+        'view_product_images_btn_close'
+      )
+
+      // When the user clicks the button, open the modal
+      for (let i = 0; i < view_product_images_btn.length; i++) {
+        view_product_images_btn[i].onclick = () => {
+          view_product_images_modal.style.display = 'block'
+        }
+      }
+
+      // When the user clicks close the modal
+      for (let i = 0; i < view_product_images_btn_close.length; i++) {
+        view_product_images_btn_close[i].onclick = () => {
+          view_product_images_modal.style.display = 'none'
+        }
+      }
+
+      window.onclick = function (event) {
+        if (event.target == view_product_images_modal) {
+          view_product_images_modal.style.display = 'none'
+        }
+      }
+    </script>
+
+    <!-------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------->
+
+    <!-- Add product box -->
+    <div id="new_product_modal" class="modal">
+      <div class="modal-content">
+        <span class="new_product_btn_close close">&times;</span>
+        <div class="m__title heading-primary u-center-text">New Product</div>
+        <form action="submit" method="post">
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </li>
+            <li>
+              <label for="price">Price</label>
+              <input
+                type="number"
+                name="price"
+                id="price"
+                min="1000"
+                step="1000"
+                value="1000"
+              />
+            </li>
+            <li>
+              <label for="unit">Unit</label>
+              <select name="unit" id="unit" size="1">
+                <option value="gram">Gram</option>
+                <option value="kg">Kg</option>
+                <option value="pack">Pack</option>
+              </select>
+            </li>
+            <li>
+              <label for="image">Image</label>
+              <input type="file" name="price" id="price" multiple />
+            </li>
+          </ul>
+          <div class="modal-content__btn_save btn new_product_btn_close">
+            <p>Save</p>
+          </div>
+          <div class="modal-content__btn_cancel btn new_product_btn_close">
+            <p>Cancel</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Js for add product pop up-->
+    <script>
+      var new_product_modal = document.getElementById('new_product_modal')
+
+      // Get the button that opens the modal
+      var new_product_btn = document.getElementById('new_product_btn')
+
+      // Get the element that closes the modal
+      var new_product_btn_close = document.getElementsByClassName(
+        'new_product_btn_close'
+      )
+
+      // When the user clicks the button, open the modal
+      new_product_btn.onclick = () => {
+        new_product_modal.style.display = 'block'
+      }
+
+      // When the user clicks close the modal
+      for (let i = 0; i < new_product_btn_close.length; i++) {
+        new_product_btn_close[i].onclick = () => {
+          new_product_modal.style.display = 'none'
+        }
+      }
+
+      window.onclick = function (event) {
+        if (event.target == new_product_modal) {
+          new_product_modal.style.display = 'none'
+        }
+      }
+    </script>
+
+    <!-------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------->
+
+    <!-- Edit product box -->
+    <div id="edit_product_modal" class="modal">
+      <div class="modal-content">
+        <span class="edit_product_btn_close close">&times;</span>
+        <div class="m__title heading-primary u-center-text">Edit Product</div>
+        <form action="submit" method="post">
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </li>
+            <li>
+              <label for="price">Price</label>
+              <input
+                type="number"
+                name="price"
+                id="price"
+                min="1000"
+                step="1000"
+                value="1000"
+              />
+            </li>
+            <li>
+              <label for="unit">Unit</label>
+              <select name="unit" id="unit" size="1">
+                <option value="gram">Gram</option>
+                <option value="kg">Kg</option>
+                <option value="pack">Pack</option>
+              </select>
+            </li>
+            <li>
+              <label for="image">Image</label>
+              <input type="file" name="price" id="price" multiple />
+            </li>
+          </ul>
+          <div class="modal-content__btn_save btn edit_product_btn_close">
+            <p>Save</p>
+          </div>
+          <div class="modal-content__btn_cancel btn edit_product_btn_close">
+            <p>Cancel</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Js for add product pop up-->
+    <script>
+      var edit_product_modal = document.getElementById('edit_product_modal')
+
+      // Get the button that opens the modal
+      var edit_product_btn = document.getElementsByClassName('edit_product_btn')
+
+      // Get the element that closes the modal
+      var edit_product_btn_close = document.getElementsByClassName(
+        'edit_product_btn_close'
+      )
+
+      // When the user clicks the button, open the modal
+      for (let i = 0; i < edit_product_btn.length; i++) {
+        edit_product_btn[i].onclick = () => {
+          edit_product_modal.style.display = 'block'
+        }
+      }
+
+      // When the user clicks close the modal
+      for (let i = 0; i < edit_product_btn_close.length; i++) {
+        edit_product_btn_close[i].onclick = () => {
+          edit_product_modal.style.display = 'none'
+        }
+      }
+
+      window.onclick = function (event) {
+        if (event.target == edit_product_modal) {
+          edit_product_modal.style.display = 'none'
+        }
+      }
+    </script>
+  </body>
 </html>
