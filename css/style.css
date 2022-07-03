@@ -175,8 +175,8 @@ body {
   .login .demo {
     position: absolute;
     top: 50%;
-    left: 5rem;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center; }
     .login .demo__text {
@@ -575,8 +575,8 @@ body {
   .login .demo {
     position: absolute;
     top: 50%;
-    left: 5rem;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center; }
     .login .demo__text {
@@ -1927,8 +1927,8 @@ body {
   .login .demo {
     position: absolute;
     top: 50%;
-    left: 5rem;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center; }
     .login .demo__text {

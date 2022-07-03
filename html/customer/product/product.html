@@ -21,48 +21,7 @@
     <title>Product detail</title>
   </head>
   <body>
-    <header class="header">
-      <div class="row">
-        <div class="header__container">
-          <a href="../../../html/customer/product/products.html">
-            <img
-              src="../../../images/logo.png"
-              alt="Logo website"
-              class="logo"
-            />
-          </a>
-          <div class="search-bar">
-            <input
-              type="text"
-              class="form__contact"
-              placeholder="Tìm kiếm sản phẩm"
-            />
-            <div class="search-bar__icon">
-              <div class="btn btn--accent-dark">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-              </div>
-            </div>
-          </div>
-          <div class="infor">
-            <a href="../../../html/customer/profile.html">
-              <img
-                src="../../../images/avatar.jpg"
-                alt="Avatar person"
-                class="infor__avatar"
-              />
-            </a>
-            <div class="infor__text">
-              <p class="infor__name">Trịnh Nguyên Hưng</p>
-              <a
-                href="../../../html/login.html"
-                class="btn-link btn-link--white"
-                >Đăng xuất</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <header class="header" id="c_navbar"></header>
     <div class="navbar__customer">
       <div class="navbar__inner">
         <a href="../pack/packs.html" class="item">
@@ -211,6 +170,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+      $('#c_navbar').load('../../shared/customer/navbar.html')
       var btn_close = document.getElementsByClassName('btn__close')[0]
       var btn_add = document.getElementsByClassName('product__btnAdd')[0]
       var btn_back = document.getElementsByClassName('product__btnBack')[0]
