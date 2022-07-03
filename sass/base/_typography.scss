@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   /* Nghĩa là line height gấp 1.7 lần line height mặc định */
   line-height: 1.2;
@@ -9,7 +9,20 @@ body {
 .heading-primary {
   color: $color-accent;
   text-transform: capitalize;
-  font-size: 5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.heading-secondary {
+  color: $color-black;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.heading-tertiary {
+  color: $color-black;
+  text-transform: uppercase;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -31,6 +44,8 @@ body {
   font-weight: 700;
   color: $color-grey-light;
 }
+
+
 
 .text-devide {
   color: $color-black;

@@ -29,3 +29,37 @@
   - c là customer
   - a là admin
   - s là cho component/html/css dùng chung
+
+### Tool:
+- Sử dụng jquery để load các component dùng chung thông qua id. Ví dụ: Navbar, sidebar, paging bar, footer
+- Sử dụng cli node-sass để compile css:
+  ```bash
+  npm install
+  npm run compile:sass  # node-sass sass/main.scss css/style.css -w
+  ```
+  File style.css sẽ tự động build khi bạn lưu file scss.
+
+### Deploy:
+- Sử dụng netilify
+  - Build với lệnh: ```npm instal && node-sass sass/main.scss css/style.css -o```
+- Nhánh production: main
+- Nhánh preview: develop
+- Nhánh còn lại để cài đặt tính năng
+
+## Contributor:
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://maxminlevel.github.io"><img src="https://avatars.githubusercontent.com/u/23698695?v=4?s=100" width="100px;" alt=""/><br /><sub><b>V.Toan Vo</b></sub></a><br /><a href="" title="Content">🖋</a> <a href="" title="Code">💻</a> <a href="#design-corneliusroemer" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/tnghung"><img src="https://avatars.githubusercontent.com/u/100503370?v=4?s=100" width="100px;" alt=""/><br /><sub><b>N.Hung Trinh</b></sub></a><br /><a href="" title="Technical">📖</a><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/drwpls"><img src="https://avatars.githubusercontent.com/u/56083989?v=4?s=100" width="100px;" alt=""/><br /><sub><b>L.Son Phan</b></sub></a><br /><a href="" title="Technical">📖</a><a href="" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/NXV5111"><img src="https://avatars.githubusercontent.com/u/66857046?v=4?s=100" width="100px;" alt=""/><br /><sub><b>X.Vy Nguyen</b></sub></a><br /><a href="" title="Technical">📖</a><a href="" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->

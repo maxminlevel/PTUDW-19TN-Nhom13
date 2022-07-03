@@ -1,14 +1,19 @@
 .polygon-icon {
+  position: relative;
   display: inline-block;
-  position: absolute;
-  top: 18%;
-  right: -10%;
+  top: -5px;
+  right: -5px;
+
   &::before {
     position: absolute;
-    top: 65%;
-    left: 1%;
     display: block;
-    content: "\0394";
+    top: 75%;
+    left: 0;
+    content: '\0394';
     transform: rotate(180deg);
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
