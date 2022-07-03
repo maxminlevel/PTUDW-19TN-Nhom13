@@ -12,10 +12,32 @@
 </head>
 
 <body>
-  <div class="m__main">
-    <div id="m__nav"></div>
+  <div class="a__main">
+    <div id="a__nav"></div>
     <div class="m__container">
-      <div id="m__sidebar"></div>
+      <div id="m__sidebar">
+        <aside class="m__sidebar">
+          <ul class="list-item">
+            <li class="item">
+              <i class="fa-solid fa-list"></i>
+              <a class="a__sidebar__func" href="/html/admin/users.html">User</a>
+            </li>
+            <li class="item active">
+              <i class="fa-solid fa-list"></i>
+              <a class="a__sidebar__func" href="/html/admin/location.html">Treatment Locations</a>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <a class="a__sidebar__func" href="/html/admin/history.html">Activity History</a>
+            </li>
+
+            <li class="item">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <a class="a__sidebar__func" href="../../../html/login.html"> Sign out </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
       <div class="m__content">
         <div class="m__content__header">
           <div class="m__title heading-primary">Treatment Locations</div>
@@ -105,14 +127,13 @@
             <td>200</td>
             <td>123</td>
 
-            </td>
-            <td class="m__location__btn_ed" style="display: block;">
-              <div class="m__location__btn_edit" id="edit_location_btn">
+            <td class="m__location__btn_ed">
+              <span class="m__location__btn_edit edit_location_btn">
                 <i class="fa-solid fa-pen"></i>
-              </div>
-              <div class="m__location__btn_delete" id="remove_location_btn">
+              </span>
+              <span class="m__location__btn_delete remove_location_btn">
                 <i class="fa-solid fa-trash"></i>
-              </div>
+              </span>
             </td>
           </tr>
 
@@ -124,14 +145,13 @@
             <td>200</td>
             <td>123</td>
 
-            </td>
-            <td class="m__location__btn_ed" style="display: block;">
-              <div class="m__location__btn_edit">
+            <td class="m__location__btn_ed">
+              <span class="m__location__btn_edit edit_location_btn">
                 <i class="fa-solid fa-pen"></i>
-              </div>
-              <div class="m__location__btn_delete">
+              </span>
+              <span class="m__location__btn_delete remove_location_btn">
                 <i class="fa-solid fa-trash"></i>
-              </div>
+              </span>
             </td>
           </tr>
 
@@ -143,14 +163,13 @@
             <td>200</td>
             <td>123</td>
 
-            </td>
-            <td class="m__location__btn_ed" style="display: block;">
-              <div class="m__location__btn_edit">
+            <td class="m__location__btn_ed">
+              <span class="m__location__btn_edit edit_location_btn">
                 <i class="fa-solid fa-pen"></i>
-              </div>
-              <div class="m__location__btn_delete">
+              </span>
+              <span class="m__location__btn_delete remove_location_btn">
                 <i class="fa-solid fa-trash"></i>
-              </div>
+              </span>
             </td>
           </tr>
 
@@ -162,14 +181,13 @@
             <td>200</td>
             <td>123</td>
 
-            </td>
-            <td class="m__location__btn_ed" style="display: block;">
-              <div class="m__location__btn_edit">
+            <td class="m__location__btn_ed">
+              <span class="m__location__btn_edit edit_location_btn">
                 <i class="fa-solid fa-pen"></i>
-              </div>
-              <div class="m__location__btn_delete">
+              </span>
+              <span class="m__location__btn_delete remove_location_btn">
                 <i class="fa-solid fa-trash"></i>
-              </div>
+              </span>
             </td>
           </tr>
         </table>
@@ -202,10 +220,10 @@
             <input type="text" name="current" id="current" />
           </li>
         </ul>
-        <div class="modal-content__btn_save btn">
+        <div class="modal-content__btn_save btn new_location_btn_close">
           <p>Save</p>
         </div>
-        <div class="modal-content__btn_cancel btn">
+        <div class="modal-content__btn_cancel btn new_location_btn_close">
           <p>Cancel</p>
         </div>
       </form>
@@ -237,10 +255,10 @@
             <input type="text" name="current" id="current" />
           </li>
         </ul>
-        <div class="modal-content__btn_save btn">
+        <div class="modal-content__btn_save btn edit_location_btn_close">
           <p>Save</p>
         </div>
-        <div class="modal-content__btn_cancel btn">
+        <div class="modal-content__btn_cancel btn edit_location_btn_close">
           <p>Cancel</p>
         </div>
       </form>
@@ -248,16 +266,16 @@
 
   </div>
 
-  <!-- Edit Location box -->
+  <!-- Remove Location box -->
   <div id="remove_location_modal" class="modal">
     <div class="modal-content">
       <span class="remove_location_btn_close close">&times;</span>
-      <div class="m__title heading-primary u-center-text">Edit location</div>
+      <div class="m__title heading-primary u-center-text">Delete this location?</div>
       <form action="submit" method="post">
-        <div class="modal-content__btn_save btn">
+        <div class="modal-content__btn_save btn remove_location_btn_close">
           <p>YES</p>
         </div>
-        <div class="modal-content__btn_cancel btn">
+        <div class="modal-content__btn_cancel btn remove_location_btn_close">
           <p>NO</p>
         </div>
       </form>
@@ -269,46 +287,48 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(function () {
-      $('#m__nav').load('../shared/manager/navbar.html')
-      $('#m__sidebar').load('../shared/admin/sidebar.html')
-      $('#s__paging').load('../shared/paging.html')
+      $('#a__nav').load('../shared/admin/navbar.html');
+      $('#s__paging').load('../shared/paging.html');
     })
 
     var new_location_modal = document.getElementById("add_location_modal");
     var edit_location_modal = document.getElementById("edit_location_modal");
     var remove_location_modal = document.getElementById("remove_location_modal");
+
     // Get the button that opens the modal
     var new_location_btn = document.getElementById("new_location_btn");
-    var edit_location_btn = document.getElementById("edit_location_btn");
-    var remove_location_btn = document.getElementById("remove_location_btn");
+    var edit_location_btn = document.getElementsByClassName("edit_location_btn");
+    var remove_location_btn = document.getElementsByClassName("remove_location_btn");
+
     // Get the <span> element that closes the modal
-    var new_location_close = document.getElementsByClassName("new_location_btn_close")[0];
-    var edit_location_close = document.getElementsByClassName("edit_location_btn_close")[0];
-    var remove_location_close = document.getElementsByClassName("remove_location_btn_close")[0];
+    var new_location_close = document.getElementsByClassName("new_location_btn_close");
+    var edit_location_close = document.getElementsByClassName("edit_location_btn_close");
+    var remove_location_close = document.getElementsByClassName("remove_location_btn_close");
+
     // When the user clicks the button, open the modal 
     new_location_btn.onclick = function () {
       new_location_modal.style.display = "block";
     }
 
-    edit_location_btn.onclick = function () {
-      edit_location_modal.style.display = "block";
+    for (let i = 0; i < edit_location_btn.length; i++) {
+      edit_location_btn[i].onclick = () => edit_location_modal.style.display = "block";
     }
 
-    remove_location_btn.onclick = function () {
-      remove_location_modal.style.display = "block";
+    for (let i = 0; i < remove_location_btn.length; i++) {
+      remove_location_btn[i].onclick = () => remove_location_modal.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
-    new_location_close.onclick = function () {
-      new_location_modal.style.display = "none";
+    for (let i = 0; i < new_location_close.length; i++) {
+      new_location_close[i].onclick = () => new_location_modal.style.display = "none";
     }
 
-    edit_location_close.onclick = function () {
-      new_location_modal.style.display = "none";
+    for (let i = 0; i < edit_location_close.length; i++) {
+      edit_location_close[i].onclick = () => edit_location_modal.style.display = "none";
     }
 
-    remove_location_close.onclick = function () {
-      remove_location_modal.style.display = "none";
+    for (let i = 0; i < remove_location_close.length; i++) {
+      remove_location_close[i].onclick = () => remove_location_modal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
