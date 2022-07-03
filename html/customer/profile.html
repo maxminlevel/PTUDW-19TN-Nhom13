@@ -17,38 +17,8 @@
     <title>Covid | Profile</title>
   </head>
   <body>
-    <header class="header">
-      <div class="row">
-        <div class="header__container">
-          <a href="#">
-            <img src="../../images/logo.png" alt="Logo website" class="logo" />
-          </a>
-          <div class="search-bar">
-            <input
-              type="text"
-              class="form__contact"
-              placeholder="Tìm kiếm sản phẩm"
-            />
-            <div class="search-bar__icon">
-              <div class="btn btn--accent-dark">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-              </div>
-            </div>
-          </div>
-          <div class="infor">
-            <img
-              src="../../images/avatar.jpg"
-              alt="Avatar person"
-              class="infor__avatar"
-            />
-            <div class="infor__text">
-              <p class="infor__name">Trịnh Nguyên Hưng</p>
-              <a href="#" class="btn-link btn-link--white">Đăng xuất</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <header class="header" id="c_navbar"></header>
+
     <main class="main">
       <div class="row">
         <div class="c-profile">
@@ -368,6 +338,8 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+      $('#c_navbar').load('../shared/customer/navbar.html')
+
       const itemContainer = document.querySelector('.c-profile__list');
       itemContainer.addEventListener('click', (e) => {
         const itemActive = e.target.closest('.c-profile__item');
