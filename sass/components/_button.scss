@@ -42,16 +42,16 @@
       cursor: pointer;
     }
   }
-  &:hover:not(&--accent-dark) {
-    cursor: pointer;
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-  }
+  // &:hover:not(&--accent-dark) {
+  //   cursor: pointer;
+  //   transform: translateY(-0.3rem);
+  //   box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  // }
 
-  &:active:not(&--accent-dark) {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-  }
+  // &:active:not(&--accent-dark) {
+  //   transform: translateY(-1px);
+  //   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  // }
 }
 
 .btn-link {

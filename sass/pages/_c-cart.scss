@@ -1,12 +1,10 @@
 // Edit for customer-cart layout
 .main {
-  height: 80vh;
-  padding-bottom: 4rem;
+  min-height: 100vh;
+  padding: 2rem 8rem 4rem;
   background-color: $color-grey;
 
   .cart {
-    padding: 0 4rem;
-
     &__content {
       margin: 1rem 0;
       display: flex;
@@ -25,7 +23,7 @@
     &__btn {
       width: 90%;
       display: flex;
-      margin: 1rem auto;
+      margin: 1.2rem auto;
       column-gap: 1.5rem;
       justify-content: flex-end;
       .btn {
@@ -42,7 +40,7 @@
           color: $color-primary-dark;
           border: 2px solid $color-primary-dark;
         }
-      } 
+      }
     }
   }
 }

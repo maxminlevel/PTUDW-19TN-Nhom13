@@ -76,11 +76,15 @@
   .demo {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // text-transform: uppercase;
+    // text-align: center;
+
+    left: 5rem;
+    transform: translateY(-50%);
     text-transform: uppercase;
     text-align: center;
-
     &__text {
       font-size: 3rem;
       color: $color-white;
