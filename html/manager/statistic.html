@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
-<title>Statistic</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/themes/2.0.0/light_glamour.min.js"></script>
+    <script src="https://cdn.anychart.com/themes/2.0.0/light_provence.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>Statistics</title>
+  </head>
+  <body>
+    <body>
+      <div class="m__main">
+        <div id="m__nav"></div>
+        <div class="m__container">
+          <div id="m__sidebar"></div>
+          <div class="m__content">
+            <div class="m__content__header">
+              <div class="m__title heading-primary">Statistics</div>
+            </div>
+            <div class="line"></div>
+            <div class="chart">
+              <h3 class="chart__title">Number of user by time</h3>
+              <div class="chart__area" id="chart__area--user"></div>
+            </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</body>
+            <div class="chart">
+              <h3 class="chart__title">Number of user die by time</h3>
+              <div class="chart__area" id="chart__area--die"></div>
+            </div>
+
+            <div class="chart">
+              <h3 class="chart__title">
+                Number of user turn to normal by time
+              </h3>
+              <div class="chart__area" id="chart__area--normal"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+        $(function () {
+          $('#m__nav').load('../shared/manager/navbar.html')
+          $('#m__sidebar').load('../shared/manager/sidebar.html')
+          $('#s__paging').load('../shared/paging.html')
+        })
+
+        const data = {
+          header: ['Month', 'Amount'],
+          rows: [
+            ['Jan', 429],
+            ['Feb', 451],
+            ['Mar', 383],
+            ['April', 413],
+            ['May', 454],
+            ['June', 359],
+            ['July', 415],
+            ['Aug', 430],
+            ['Sep', 402],
+            ['Oct', 432],
+            ['Nov', 232],
+            ['Dec', 522]
+          ]
+        }
+
+        // Draw chart function
+        const drawChart = function (eleNode, theme, data) {
+          anychart.onDocumentReady(function () {
+            anychart.theme(theme)
+
+            // create the chart
+            var chart = anychart.area()
+
+            // add the data
+            chart.data(data)
+
+            chart.container(eleNode)
+            chart.draw()
+          })
+        }
+
+        drawChart('chart__area--user', 'lightGlamour', data)
+        drawChart('chart__area--die', 'lightProvence', data)
+        drawChart('chart__area--normal', 'default ', data)
+      </script>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
 </html>

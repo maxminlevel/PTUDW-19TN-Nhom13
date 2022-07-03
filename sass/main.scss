@@ -7,7 +7,6 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'pages/login';
 @import 'components/button';
 @import 'components/form';
 @import 'components/search-bar';
@@ -15,6 +14,7 @@
 @import 'components/breadcrumb';
 @import 'components/table';
 @import 'components/polygon-icon';
+@import 'components/chart';
 
 @import 'layouts/header';
 @import 'layouts/footer';
@@ -34,6 +34,7 @@
 @import 'pages/manager/persons';
 @import 'pages/manager/add-person';
 @import 'pages/manager/products';
+@import 'pages/manager/packs';
 // @import "../node_modules/bootstrap/scss/bootstrap.scss"
 // @import 'pages/manager/money';
 
