@@ -1,0 +1,11 @@
+.a {
+  &__main {
+    background-color: $color-white;
+
+    .reset_password_btn,
+    .lock_user_btn,
+    .unlock_user_btn {
+      cursor: pointer;
+    }
+  }
+}
