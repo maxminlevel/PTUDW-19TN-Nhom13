@@ -24,10 +24,10 @@
         <div id="m__sidebar"></div>
         <div class="m__content">
           <div class="m__content__header">
-            <div class="m__title heading-primary">Products</div>
+            <div class="m__title heading-primary">Pack Products</div>
             <div class="m__func">
               <div class="btn btn--primary">
-                <a href="./add-person.html">New pack product</a>
+                <a href="./add-person.html">New Pack products</a>
               </div>
               <div class="btn btn--primary">Import file</div>
             </div>
@@ -39,7 +39,7 @@
                 <input type="text" name="fullname" id="id" />
               </li>
               <li style="flex: 1">
-                <label for="new-product">New Pack Products</label>
+                <label for="new-product">Name Pack Products</label>
                 <input type="text" name="citizen" id="new-product" />
               </li>
               <li>
@@ -60,43 +60,7 @@
               </th>
               <th>
                 <span>
-                  Fullname
-                  <button><i class="fa-solid fa-chevron-down"></i></button>
-                </span>
-              </th>
-              <th>
-                <span>
-                  Citizen ID
-                  <button><i class="fa-solid fa-chevron-down"></i></button>
-                </span>
-              </th>
-              <th>
-                <span>
-                  DoB
-                  <button><i class="fa-solid fa-chevron-down"></i></button>
-                </span>
-              </th>
-              <th>
-                <span>
-                  State
-                  <button><i class="fa-solid fa-chevron-down"></i></button>
-                </span>
-              </th>
-              <th>
-                <span>
-                  Address
-                  <button><i class="fa-solid fa-chevron-down"></i></button>
-                </span>
-              </th>
-              <th>
-                <span>
-                  Related
-                  <button><i class="fa-solid fa-chevron-down"></i></button>
-                </span>
-              </th>
-              <th>
-                <span>
-                  History
+                  Name Pack Products
                   <button><i class="fa-solid fa-chevron-down"></i></button>
                 </span>
               </th>
@@ -104,30 +68,14 @@
                 <span> </span>
               </th>
             </tr>
-            <tr class="m__person__row">
+            <tr class="m__packs__row">
               <td>001</td>
-              <td>Nguyễn Văn A</td>
-              <td>1122334556677</td>
-              <td>12/12/1999</td>
-              <td>F0</td>
-              <td>112 Nguyễn Văn Cừ, P 10, Q 5, TP HCM</td>
-              <td>
-                <div class="m__person__history">
-                  <div id="m__person__history">1</div>
-                  <a class="btn" href="detail-cure.html">Detail</a>
-                </div>
-              </td>
-              <td>
-                <div class="m__person__related">
-                  <div id="m__person__related">1</div>
-                  <a class="btn" href="detail-related.html">Detail</a>
-                </div>
-              </td>
-              <td class="m__person__btn_ed" style="border-style: none">
-                <div class="m__person__btn_edit">
+              <td>Gói cứu trợ cơ bản số 1</td>
+              <td class="m__packs__btn_ed" style="border-style: none">
+                <div class="m__packs__btn_edit edit_pack_btn">
                   <i class="fa-solid fa-pen"></i>
                 </div>
-                <div class="m__person__btn_delete">
+                <div class="m__packs__btn_delete delete_pack_btn">
                   <i class="fa-solid fa-trash"></i>
                 </div>
               </td>
@@ -137,13 +85,65 @@
         </div>
       </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script>
       $(function () {
         $('#m__nav').load('../shared/manager/navbar.html')
         $('#m__sidebar').load('../shared/manager/sidebar.html')
         $('#s__paging').load('../shared/paging.html')
       })
+    </script>
+
+    <!-- Delete product box -->
+    <div id="delete_pack_modal" class="modal">
+      <div class="modal-content">
+        <div class="m__title heading-primary u-center-text">
+          Delete this product?
+        </div>
+        <form action="submit" method="post">
+          <div class="modal-content__btn_save btn delete_pack_btn_close">
+            <p>YES</p>
+          </div>
+          <div class="modal-content__btn_cancel btn delete_pack_btn_close">
+            <p>NO</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Js for delete pack pop up-->
+    <script>
+      var delete_pack_modal = document.getElementById('delete_pack_modal')
+
+      // Get the button that opens the modal
+      var delete_pack_btn = document.getElementsByClassName('delete_pack_btn')
+
+      // Get the element that closes the modal
+      var delete_pack_btn_close = document.getElementsByClassName(
+        'delete_pack_btn_close'
+      )
+
+      // When the user clicks the button, open the modal
+      for (let i = 0; i < delete_pack_btn.length; i++) {
+        delete_pack_btn[i].onclick = () => {
+          delete_pack_modal.style.display = 'block'
+        }
+      }
+
+      // When the user clicks close the modal
+      for (let i = 0; i < delete_pack_btn_close.length; i++) {
+        delete_pack_btn_close[i].onclick = () => {
+          delete_pack_modal.style.display = 'none'
+        }
+      }
+
+      window.onclick = function (event) {
+        if (event.target == delete_pack_modal) {
+          delete_pack_modal.style.display = 'none'
+        }
+      }
     </script>
   </body>
 </html>
