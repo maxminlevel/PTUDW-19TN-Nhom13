@@ -2,14 +2,14 @@
   position: relative;
   display: inline-block;
   top: -5px;
-  right: -5px;
+  right: -2px;
 
   &::before {
     position: absolute;
     display: block;
-    top: 75%;
+    top: 60%;
     left: 0;
-    content: "\0394";
+    content: '\0394';
     transform: rotate(180deg);
   }
 

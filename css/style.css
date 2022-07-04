@@ -348,13 +348,13 @@ body {
   position: relative;
   display: inline-block;
   top: -5px;
-  right: -5px; }
+  right: -2px; }
   .polygon-icon::before {
     position: absolute;
     display: block;
-    top: 75%;
+    top: 60%;
     left: 0;
-    content: "\0394";
+    content: '\0394';
     transform: rotate(180deg); }
   .polygon-icon:hover {
     cursor: pointer; }
@@ -858,13 +858,27 @@ body {
     text-decoration: none;
     color: white; }
 
+.m__content--fullname {
+  display: flex;
+  align-items: center;
+  padding: 0 6rem;
+  column-gap: 2rem; }
+  .m__content--fullname label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black; }
+  .m__content--fullname input {
+    flex: 1;
+    padding: 1.2rem 1rem;
+    font-size: 1.8rem; }
+
 .m__title {
   font-size: 3rem;
   order: 0;
   color: #047ffa; }
 
 .m__paging, .s__btn__submit {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: flex-end; }
   .m__paging ul, .s__btn__submit ul {
@@ -920,6 +934,12 @@ body {
 
 .btn__cancel {
   border: 2px solid #9ecaed; }
+
+.high-light {
+  display: inline-block;
+  padding: 0.4rem;
+  background-color: yellowgreen;
+  border-radius: 1.2rem; }
 
 .m__nav,
 .a__nav {

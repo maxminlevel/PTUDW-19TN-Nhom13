@@ -20,6 +20,7 @@
     flex-direction: row;
     background-color: #ffff;
   }
+
   &__sidebar {
     padding: 1rem;
     margin: 1rem;
@@ -80,13 +81,32 @@
       }
     }
   }
+
+  &__content--fullname {
+    display: flex;
+    align-items: center;
+    padding: 0 6rem;
+    column-gap: 2rem;
+
+    label {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: black;
+    }
+    input {
+      flex: 1;
+      padding: 1.2rem 1rem;
+      font-size: 1.8rem;
+    }
+  }
+
   &__title {
     font-size: 3rem;
     order: 0;
     color: $m-color-foreground;
   }
   &__paging {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: flex-end;
     ul {
@@ -166,4 +186,11 @@
   &__cancel {
     border: 2px solid #9ecaed;
   }
+}
+
+.high-light {
+  display: inline-block;
+  padding: 0.4rem;
+  background-color: yellowgreen;
+  border-radius: 1.2rem;
 }
