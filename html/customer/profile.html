@@ -18,7 +18,6 @@
   </head>
   <body>
     <header class="header" id="c_navbar"></header>
-
     <main class="main">
       <div class="row">
         <div class="c-profile">
@@ -339,11 +338,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       $('#c_navbar').load('../shared/customer/navbar.html')
-
       const itemContainer = document.querySelector('.c-profile__list');
       itemContainer.addEventListener('click', (e) => {
         const itemActive = e.target.closest('.c-profile__item');
-        console.log(itemActive.dataset.section);
         if(!itemActive) return;
         const items = e.currentTarget.querySelectorAll('.c-profile__item');
         const contents = document.querySelectorAll('.c-profile__infor')
