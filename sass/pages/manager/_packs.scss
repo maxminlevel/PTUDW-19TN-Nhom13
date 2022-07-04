@@ -1,0 +1,25 @@
+.m {
+  &__packs {
+    &__btn {
+      &_ed {
+        justify-content: center;
+        width: 8rem;
+      }
+
+      &_edit,
+      &_delete {
+        @extend .btn;
+        border-radius: 1rem;
+        background-color: #ffd363;
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem;
+
+        cursor: pointer;
+      }
+
+      &_delete {
+        background-color: #ff6363;
+      }
+    }
+  }
+}

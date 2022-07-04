@@ -1,0 +1,11 @@
+.m__main {
+  .btn__save,
+  .btn__cancel {
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}

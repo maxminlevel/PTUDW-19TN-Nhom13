@@ -26,27 +26,24 @@
           <div class="m__content__header">
             <div class="m__title heading-primary">Money</div>
             <div class="m__func">
-              <h3
-                style="
-                  float: left;
-                  margin-top: 1.6rem;
-                  font-size: 2rem;
-                  color: black;
-                "
-              >
-                Mức nợ thấp nhất
-              </h3>
-              <div
-                class="btn btn--primary"
-                style="background-color: white; border: 2px solid black"
-              >
-                <a
-                  href="./add-person.html"
-                  style="color: black; font-weight: 600"
-                  >100.000</a
-                >
+              <form action="submit" method="post">
+                <span class="m__func_textbox">
+                  <label for="lowestDest">Lowest dest</label>
+                  <input
+                    type="number"
+                    name="lowestDest"
+                    id="lowestDest"
+                    min="0"
+                    step="1000"
+                    value="0"
+                  />
+                </span>
+                <div class="btn btn--primary">Change</div>
+              </form>
+              <div>
+                <div class="btn btn--primary">Remove debt</div>
+                <div class="btn btn--primary">Payment reminder</div>
               </div>
-              <div class="btn btn--primary">Change</div>
             </div>
           </div>
           <form action="submit" method="post">
